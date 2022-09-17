@@ -1,11 +1,45 @@
-let daynames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const date1 = document.querySelector("#currentdate");
 
-let today = new Date();
-let dayName = days[today.getDay()];
-let monthName = months[today.getMonth()];
-let year = today.getFullYear();
+try {
+	const options = {
+		weekday: "long",
+		day: "numeric",
+		month: "long",
+		year: "numeric"
+	};
+	date1.innerHTML = `Today is <span class="highlight">${new Date().toLocaleDateString("en-UK", options)}</span>!`;
+} catch (e) {
+	alert("Error with code or your browser does not support Locale");
+}
 
-let fullDate = dayName + ", " + monthName + " " + today.getDate() + ", " + year;
+// Long hand method ... building day and month names from built-in date methods.
 
-document.getElementById("currentDate").textContent = fullDate;
+const daynames = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday"
+];
+const months = [
+	"January",
+	"February",
+	"March",
+	"April",
+	"May",
+	"June",
+	"July",
+	"August",
+	"September",
+	"October",
+	"November",
+	"December"
+];
+const d = new Date();
+const dayName = daynames[d.getDay()];
+const monthName = months[d.getMonth()];
+const year = d.getFullYear();
+const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
+document.querySelector("#currentdate").textContent = fulldate;
