@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
-.container { 
+.maincontainer { 
     display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 head {
     color: rgb(73, 45, 94);
@@ -13,6 +14,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 header {
+    display: grid;
     background-color: rgba(73, 45, 94);
     color: white;
 }
@@ -28,9 +30,6 @@ h2 {
 a {
     color: rgb(73, 45, 94);
 
-}
-img {
-    padding-right: 42rem;
 }
 footer {
     border-radius: 10px;
