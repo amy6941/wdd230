@@ -1,0 +1,23 @@
+@media (min-width: 32.5em) {
+    header {
+        border-radius: 10px;
+        padding: 4px;
+        color: white;
+    }
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+        color: rgb(94, 45, 53);
+    }
+    img {
+        max-width: 150px;
+        max-height: 150px;
+        margin-left: -2em;
+        margin-top: 2rem;
+        display: block;
+        float: right; 
+    }
+
+}
