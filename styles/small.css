@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 .maincontainer { 
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 head {
     color: rgb(73, 45, 94);
@@ -14,13 +14,23 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 header {
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(73, 45, 94);
     color: white;
 }
 h1 {
+    grid-column: 2/3;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+header img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 2em;
 }
 h2 {
     text-align: center;
