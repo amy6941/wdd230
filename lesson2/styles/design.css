@@ -1,0 +1,44 @@
+body {
+    max-width: 1280px;
+    color: #6d466b;
+}
+header {
+  color: white;
+  background-color: rgba(94, 45, 53, 0.878);
+}
+main {
+  display: grid;
+  margin: auto;
+}
+
+.designPrinciple {
+  border-color: #6d466b;
+  border-style: solid;
+  margin: 0.5em;
+}
+
+h3,
+h4 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+img {
+  float: none;
+}
+footer {
+  border-radius: 10px;
+  background-color: rgba(94, 45, 53, 0.878);
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
