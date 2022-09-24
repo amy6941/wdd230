@@ -5,39 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Assignment portal for Amy Burton in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <title>Amy Burton Design Principles Assignment</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/design.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <script src="scripts/date.js" defer></script>
+    <title>Amy Burton Design Principles Assignment</title>    
 </head>
 <body>
     <header>
-        <h1>Amy Burton</h1>
-    </header>
-    <h2>W01 Assignment Design Principles Document</h2>
+        <h1>Design Principles Document</h1>
+        <h2>Amy Burton</h2>
+    </header>    
     <main>
-        <section class="designPrinciple" id="contrast"></section>
-            <img src="images/theRanch.jpg" alt="The Ranch Restaurant and Saloon">
-        
-
-
+        <div class="card">
+            <h2>Contrast</h2>
+            <div class="card_content">
+                <h3>The Ranch Restaurant and Saloon</h3>
+                <a href="https://www.theranch.com/">theranch.com</a>
+                <img src="images/theranch.com.jpg" alt="theranch.com home page screen shot">
+                <p>This page has awesome contrast.  White text on a black background grabs your attention and holds it.  This make the site dynamic to look at and easy to focus on where they want you to look. Fonts are easy to see and read against the background. </p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Repetition</h2>
+            <div class="card_content">
+                <h3>YouTube</h3>
+                <a href="https://m.youtube.com">m.youtube.com</a>
+                <img src="images/youtube.jpg" alt="Youtube mobile screenshot">
+                <p>Youtube is the king of repetition.  Every thumbnail and icon is the same.  It doesn't matter how far you scroll down, the content all has the same format. This makes it easy to look at and continue scrolling.  </p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>White Space</h2>
+            <div class="card_content">
+                <h3>Google</h3>
+                <a href="https://www.google.com">google.com</a>
+                <img src="images/google.com.jpg" alt="Google.com home page screen shot" >
+                <p>White space rules this site. They have used minimal objects on the page to direct the user to the page function, which is the search.  By keeping the page clean and clutter free, it is easy to see exactly what the page is designed to do and easy to use. </p>
+            </div>
+        </div>
     </main>
     <footer>
-        <div>
-            <span>
-                 ©2022 | Amy Burton | Texas | 
-                <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-            </span>
-            <p>
-                Last Updated:  
-                <span id='currentdate'>Wednesday, June 8, 2022</span>                
-            </p>
-            
-        </div>
-    </footer>
-    <script src="scripts/date.js"></script>
-    
+        <p>© 2022<code id="year"></code>| Amy Burton | Texas </p>
+        <p>Last Updated: <code id="timestamp"></code></p>
+    </footer>    
 </body>
 </html>

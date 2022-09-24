@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Assignment portal for Amy Burton in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <title>Amy Burton Assignment Portal</title>
+    <script src="scripts/date.js" defer></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <title>Amy Burton Assignment Portal</title>
+   
 </head>
 <body>
     <div id="maincontainer">
@@ -22,7 +24,7 @@
             <ul>
                 <li><span>
                     Lesson 02: 
-                    <a href="#">Title</a>
+                    <a href="lesson2/designDoc.html">Design Principles Document</a>
                 </span></li>
                 <li><span>
                     Lesson 03: 
@@ -63,17 +65,9 @@
             </ul>
         </main>
         <footer>
-            <div>
-                <span id="byu">
-                    ©2022 | Amy Burton | Texas
-               </span>
-               <p>
-                   Last Updated:  
-                   <span id='currentdate'></span>                
-               </p>
-            </div>
+            <p>© 2022<code id="year"></code>| Amy Burton | Texas </p>
+            <p>Last Updated: <code id="timestamp"></code></p>
         </footer>
-        <script src="scripts/date.js"></script>
     </div>
     
 </body>
