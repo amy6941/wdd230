@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 head {
-    color: rgb(73, 45, 94);
+    color: rgb(94, 45, 53);
 }
 body {
     margin-top: 5px;
@@ -17,7 +17,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(73, 45, 94);
+    background-color: rgba(94, 45, 53);
     color: white;
 }
 h1 {
@@ -33,14 +33,14 @@ header img {
 h2 {
     text-align: center;
     font-size: 1.25rem;
-    color: rgb(73, 45, 94);
+    color: rgb(94, 45, 53);
 }
 a {
-    color: rgb(73, 45, 94);
+    color: rgb(94, 45, 53);
 }
 footer {
     border-radius: 10px;
-    background-color: rgb(73, 45, 94);
+    background-color: rgb(94, 45, 53);
     color: white;
     text-align: center;
 }
