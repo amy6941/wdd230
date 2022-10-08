@@ -211,9 +211,7 @@ main {
   
 }
 
-footer{
-    display: flex;
-    justify-content: space-around;
+footer {
     padding: 1em;
     text-align: center;
     color: var(--headline-color-on-color);
@@ -233,22 +231,10 @@ footer .social img {
 .logo {
     width: 80px;
 }
-.logo {
-    width: 80px;
-}
-
 footer h2{
     font-size: medium;
 }
 
 p {
     margin-top: -5px;
-}
-footer a#map_link {
-    color: var(--headline-color-on-color);
-}
-
-footer hr { 
-    width: 70%;
-    border: 2px solid white;
 }

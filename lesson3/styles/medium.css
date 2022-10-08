@@ -38,9 +38,10 @@
 		height: auto;
 		border: 1px solid #bbb;
 	}
-	
-	footer p {
+		footer p {
 		flex-direction: row;
+		display: flex;
+		justify-content: space-around;
 	}
 	
 	footer p span:not(:last-child)::after {
