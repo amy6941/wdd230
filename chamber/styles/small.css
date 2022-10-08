@@ -45,24 +45,19 @@ header {
     flex-wrap: wrap;
     align-items: start;
     padding: 1em;
-    /*text-align: center;*/
+    text-align: center;
     color: var(--paragraph-color-on-color);
     background-color: var(--nav-background-color);
 }
 
 header img#logo {
-    width: 10%;
+    width: 5%;
     height: auto;
 
 }
-
-img.social {
-    border-radius: 100%;
-    width: 80%;
-  
+aside {
+    display: flex;
 }
-
-
 header h1 {
     width: 40%;
     letter-spacing: 7px;
@@ -179,7 +174,7 @@ body {
 img {
     display: block;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 40%;
     height: auto;
 }
 
