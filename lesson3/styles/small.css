@@ -32,7 +32,7 @@ header, footer {
   padding: 1em;  
   color: var(--paragraph-color-on-color);
   background-color: var(--nav-background-color);
-  }
+}
 header > h1, header > h2 {
   padding: .25em;
   color: var(--headline-color-on-color);
@@ -72,8 +72,8 @@ nav ul li a {
 }
   
 /*.active {
-  color: var(--accent3-color)*/
-}
+  color: var(--accent3-color)
+}*/
 
 nav a:hover {
   --d: 75%;
