@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Brookshire Chamber of Commerce Home Page</title>
+</head>
+<body>
+    <header>
+        <img src="images/CoClogo.png" alt="Brookshire Chamber of Commerce Logo">
+        <h1>Brookshire</h1>
+        <span id="subtitle">Chamber of Commerce</span>
+        <nav>
+            <button id="hamburgerBtn">&#9776</button>
+            <ul id="primaryNav" class="open">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="section" id="hero">Hero with site name and call to action</div>
+        <div class="section" id="Event">Event</div>
+        <div class="section" id="Weather">Weather</div>
+        <div class="section" id="NewsRelease">News Release</div>
+        <div class="section" id="Join">Join</div>
+        <div class="spotlightContainer" id="spotlight">
+            <div class="spotlightSection" id="spotlight1">Spotlight 1</div>
+            <div class="spotlightSection" id="spotlight2">Spotlight 2</div>
+        </div>
+
+    </main>
+     <footer>
+        <img src="images/CoClogo.png" alt="Brookshire Chamber of Commerce Logo">
+        <p><span id="footer_header">Brookshire Chamber of Commerce</span><br>
+            100 Center St<br>
+            Brookshire, TX 77423
+        </p>
+        <p>Info@brookshirechamber.com</p>
+        <p>&copy; <code id="year"></code>| Amy Burton | Texas </p>
+        <p>Last Updated: <code id="timestamp"></code></p>
+        <div class="social">
+            <a href="https://facebook.com" target="blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://instagram.com" target="blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+            <a href="https://twitter.com" target="blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>
