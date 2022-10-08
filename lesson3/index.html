@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/menu.js" defer></script>
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/media.css">
@@ -15,8 +13,8 @@
     <header>
         <h1>Brookshire Chamber of Commerce Website Planning Document</h1>
         <nav>
-            <button>&#9776</button>
-            <ul class="navigation">
+            <button id="hamburgerBtn">&#9776</button>
+            <ul id="primaryNav" class="open">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="target.html">Target Audience</a></li>
                 <li><a href="typography.html">Typography</a></li>
@@ -42,5 +40,7 @@
         <p>&copy; <code id="year"></code>| Amy Burton | Texas </p>
         <p>Last Updated: <code id="timestamp"></code></p>
     </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
