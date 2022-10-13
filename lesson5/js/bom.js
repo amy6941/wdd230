@@ -1,1 +1,37 @@
-const = 
+const input = document.getElementById("favchap");
+const button = document.getElementById("button");
+const list = document.getElementById("scriptureLlist");
+
+
+function addChapter() {
+
+
+    // safeguard blank values
+    if (input.value != "") {
+        // create the list item
+        listItem = document.createElement('li');
+        listItem.innerText = input.value;
+
+        // create the delete button
+        deleteButton = document.createElement('button');
+        deleteButton.textContent = "❌";
+
+
+        // append to list item
+        listItem.appendChild(deleteButton);
+
+        // append to list
+        list.appendChild(listItem);
+
+        // add listener
+        deleteButton.addEventListener('click', function() {
+            list.removeChild(this.parentElement);
+        })
+
+    }
+    input.value = "";
+    input.focus();
+
+}
+
+button.addEventListener("click", addChapter);
