@@ -1,6 +1,9 @@
+
+
+
 const input = document.getElementById("favchap");
 const button = document.getElementById("button");
-const list = document.getElementById("scriptureLlist");
+const list = document.getElementById("scripture_list");
 
 
 function addChapter() {
