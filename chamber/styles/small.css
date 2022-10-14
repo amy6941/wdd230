@@ -40,12 +40,8 @@ span#subtitle {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: start;
-    padding: 1em;
-    text-align: center;
+    display: grid;
+    grid-template: 1fr auto/1fr 2fr 1fr;
     color: var(--paragraph-color-on-color);
     background-color: var(--nav-background-color);
 }
