@@ -188,7 +188,8 @@ img {
 }
 
 .spotlightContainer {
-    display: block;
+    /*display: block;*/
+    
     background-color: #F2E9E4;
     outline: 2px solid #22223B;
     padding: 1em;
