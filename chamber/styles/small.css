@@ -183,8 +183,8 @@ img {
 }
 
 #spotlight {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
 }
 
 .spotlightContainer {
@@ -206,8 +206,9 @@ img {
 
 
 main {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template: auto auto auto/1fr 2fr 1fr;
+    grid-gap: 10px;
   
 }
 
