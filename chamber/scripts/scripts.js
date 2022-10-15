@@ -3,10 +3,11 @@ document.querySelector("#year").innerHTML = date
 document.querySelector("#timestamp").innerHTML= document.lastModified;
 
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
+    document.getElementById("main.nav").classList.toggle("open");
+	document.getElementById("ham_btn").toggle("open");
 }
-const x = document.getElementById("hamburgerBtn");
-x.onclick = toggleMenu;
+
+document.getElementById("ham_btn").onclick = toggleMenu;
 
 // select the elements to manipulate (output to)
 const datefield = document.querySelector(".date");

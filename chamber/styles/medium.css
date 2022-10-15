@@ -1,5 +1,112 @@
 @media only screen and (min-width: 64em) {
 
+    header div h1 {
+        font-size: 44px;
+        margin-left: -1em;
+    }
+  
+    span#subtitle {
+        font-size: 20px;
+    }
+  
+    #main_nav li {
+        width: 100%;
+    }
+  
+    header div#top_header p#date {
+        width: 100%;
+    }
+  
+    #join {
+        display: block;
+    }
+  
+    .spotlight_div {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+  
+    #spotlight {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+  
+    main .main_div:nth-child(1) {
+        order: 1;
+        width: 100%;
+    }
+    main .main_div:nth-child(2) {
+        order: 5;
+        width: 60%;
+    }
+    main .main_div:nth-child(3) {
+        order: 6;
+        width: 30%;
+    }
+    main .main_div:nth-child(4) {
+        order: 4;
+        width: 100%;
+    }
+    main .main_div:nth-child(5) {
+        order: 2;
+        width: 100%;
+    }
+    main .spotlight_container:nth-child(6) {
+        order: 3;
+        width: 100%;
+    }
+  
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        padding: 0px;
+    }
+      
+    footer div#footer_address {
+        align-self: center;
+        display: flex;
+        justify-content: center;
+    }
+  
+    footer div#address {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+    }
+  
+    footer div#footer_footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  
+    footer hr {
+        width: 90%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/*{
+
     header h1 {
         font-size: 2em;
     }
@@ -35,3 +142,4 @@
     main .section:nth-child(5) { order: 2; }
     main .spotlight_container:nth-child(6) { order: 3; }
 }
+*/
