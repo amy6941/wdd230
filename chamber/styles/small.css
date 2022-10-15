@@ -248,7 +248,7 @@ footer {
     padding: 1em;
     text-align: center;
     color: var(--headline-color-on-color);
-    background-color: var(--paragraph-background-color);
+    background-color: var(--nav-background-color);
     margin-top: 1em;
     justify-content: space-between;
 }
