@@ -13,10 +13,10 @@
     --paragraph-font: Lato, sans-serif;
   
     --headline-color-on-white: #22223B; /* headlines on a white background */
-    --headline-color-on-color: #black; /* headlines on a colored background */
+    --headline-color-on-color: white; /* headlines on a colored background */
     --paragraph-color-on-white: #22223B; /* paragraph text on a white background */
-    --paragraph-color-on-color: #black; /* paragraph text on a colored background */
-    --paragraph-background-color: #white;
+    --paragraph-color-on-color: #000; /* paragraph text on a colored background */
+    --paragraph-background-color: #C9ADA7;
     --nav-link-color: #22223B;
     --nav-background-color: #9A8C98;
     --nav-hover-link-color: #C9ADA7;
@@ -33,7 +33,7 @@ body {
   
 #banner {
     display: none;
-    background-color: var(--headline-color-on-color);   
+    background-color: var(--accent1-color);   
     line-height: 1.5;
 }
   
@@ -248,7 +248,7 @@ footer {
     padding: 1em;
     text-align: center;
     color: var(--headline-color-on-color);
-    background-color: var(--nav-background-color);
+    background-color: var(--paragraph-background-color);
     margin-top: 1em;
     justify-content: space-between;
 }
