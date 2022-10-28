@@ -346,19 +346,19 @@ main a {font-size: small;
 }
 
 div.main_div p {
-
   font-size: medium;
 }
 
 div#hero {
-    background: url('../images/hero.jpg') no-repeat;
-    background-position-y: 10%;
-    background-size: 160%;
+
+  background: url('../images/hero.jpg') no-repeat;
+  background-position-y: 10%;
+  background-size: 160%;
 }
 
 
 main div h4 {
-    color: var(--accent4-color);
+  color: var(--accent4-color);
 }
 
 div.contrast_heading, div.hero_contrast_heading {
