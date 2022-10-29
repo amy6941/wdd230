@@ -153,9 +153,9 @@ nav {
 }
 
 .main_div {
-  height: 200px;
+  /*height: 200px;*/
   outline: 2px solid black;
-  padding: 0.75em;
+  /*padding: 0.75em;*/
   margin-top: 15px;
 }
 
@@ -310,7 +310,7 @@ main div h3, main div div h3 {
 main div h2 {
   font-size: x-large;
   color: var(--accent3-color);
-  text-align: left;
+  /*text-align: left;*/
   text-shadow: -1px 1px 0 white,
 				  1px 1px 0 white,
 				 1px -1px 0 white;
@@ -351,7 +351,7 @@ div.main_div p {
 
 div#hero {
 
-  background: url('../images/hero.jpg') no-repeat;
+  /*background: url('../images/hero.jpg') no-repeat; */
   background-position-y: 10%;
   background-size: 160%;
 }
