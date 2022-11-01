@@ -350,12 +350,10 @@ div.main_div p {
 }
 
 div#hero {
-
   /*background: url('../images/hero.jpg') no-repeat; */
   background-position-y: 10%;
   background-size: 160%;
 }
-
 
 main div h4 {
   color: var(--accent4-color);
