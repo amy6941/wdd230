@@ -82,8 +82,13 @@
     
     main .main_div#hero {
         order: 4;
-        width: 48%;
+        width: 50%;
         height: 450px;
+    }
+
+    .hero-image {
+        width: 100%;
+        object-fit: cover;
     }
     
     main .main_div#event {
