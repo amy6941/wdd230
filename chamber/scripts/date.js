@@ -29,3 +29,6 @@ function currentDate() {
     let fulldate = dayName + "," + " " + d.getDate() + " " + monthName + " " + year;
     document.getElementById("currentdate").textContent = fulldate;
 }
+
+// display the lastmod date and time
+document.getElementById("timestamp").textContent = `Last updated: ${document.lastModified}`;
