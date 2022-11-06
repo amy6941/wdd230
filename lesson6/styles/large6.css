@@ -1,5 +1,4 @@
 @media only screen and (min-width: 1200px) {
-
     header nav ul li {
         width: 100%;
     }
@@ -23,9 +22,9 @@
         width: 10%;
     }
     
-    .header_order {
+    /*.header_order {
         width: 50%;
-    }
+    }*/
     
     header div#top_header {
         flex-direction: row;
@@ -70,45 +69,14 @@
     }
     
     main {
-        flex-direction: column;
-        flex-wrap: wrap;
         height: 740px;
         align-content: space-evenly;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
         padding: 0;
     }
     
-    main .main_div#hero {
-        order: 4;
-        width: 50%;
-        height: 450px;
-    }
-
     
-    main .main_div#event {
-        order: 1;
-        width: 19%;
-    }
-    
-    main .main_div#weather {
-        order: 2;
-        width: 19%;
-    }
-    
-    main .main_div#join {
-        order: 3;
-        width: 19%;
-    }
-    main .main_div#news_release {
-        order: 5;
-        width: 50%;
-    }
-    main .spotlight_container#spotlight {
-        order: 6;
-        height: 100%;
-        width: 18%;
-        padding-top: 15px;
-        padding-left: 15px;
-    }
     
     .spotlight_div {
         width: auto;
@@ -121,14 +89,20 @@
     
     #spotlight {
         display: flex;
+        grid-column: 4;
+        grid-row: 1/4;
         flex-direction: column;
     }
     
-    main p {font-size: 12px;
+    main p {
+        font-size: 12px;
     }
     
     div#hero {
-        background-size: 210%;
-        background-position-y: 0;
+        /* background-size: 210%; */
+        grid-column: 2/4;
+        grid-row: 1/3;
+        /* background-position-y: 0; */
     }
 }
+    
