@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.webp">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/baseg.css">
+        <link rel="stylesheet" href="styles/mediumg.css">
+        <link rel="stylesheet" href="styles/largeg.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+    <title>Brookshire CHamber of Commerce Directory</title>
+</head>
+<body>
+    <header>
+        <div id="top_header">
+            <img class="header_order" id="logo" src="images/CoClogo.png" alt="Brookshire logo" width="540"
+                height="640">
+            <h1 class="header_order"><span class="first_line">Brookshire</span><span id="subtitle">Chamber of
+                    Commerce</span>
+            </h1>
+            <div class="header_order" id="social">
+                <a href="https://www.facebook.com"><img class="social" src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="Twitter"></a>
+            </div>
+            <p class="header_order" id="date"></p>
+            <div id="currentDate"></div>
+            <nav class="header_order">
+                <button class="header_order" id="ham_btn"><span>&#9776;</span></button>
+                <ul id="main_nav">
+                    <li><a class="ham" href="#">Menu</a></li>
+                    <li><a href="#" class="internal">Discover</a></li>
+                    <li><a href="#" class="internal">Directory</a></li>
+                    <li><a href="#" class="internal">Join</a></li>
+                    <li><a href="#" class="internal">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-div directory-button-bar">
+            <button class="directory-button" id="grid">
+                <img src="images/card-view.svg" height="48" width="48">
+            </button>
+            <button class="directory-button" id="list">
+                <img src="images/list-view.svg" height="48" width="48">
+            </button>
+        </div>
+        <div class="cards member-grid" id="member-data"></div>
+    </main>
+    <footer>
+        <div id="footer_address">
+            <img id="footer_logo" src="images/CoClogo.png" alt="Brookshire logo">
+            
+            <div id="address">
+                <h2><span class="first_line">Brookshire</span>
+                    <span id="footer_subtitle">Chamber of Commerce</span>
+                </h2>
+                <div id="footer_contact_info">                
+                    <a id="map_link" href="http://maps.google.com"> 
+                    Find us!</a>
+                </div>
+                <br>
+                <p>100 Center St<br>
+                    Brookshire, TX 77423<br>
+                    info@brookshirechamber.com</p>
+            </div>
+        </div>
+        
+        <hr>
+        <br>
+        <div id="footer_footer">
+            <div id="footer_footer_top_row">
+                <p>&copy; <code id="year"></code>| Amy Burton | WDD230 Project </p>
+            </div>
+            <div id="footer_footer_bottom_row">
+                <p> | <code id="timestamp"></code></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/toggle.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/windchill.js"></script>
+    
+</body>
+</html>

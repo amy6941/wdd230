@@ -1,0 +1,84 @@
+{
+    "members": [
+        {
+            "member": "Hasta la Pasta Italian Grill",
+            "address": "1450 W. Grand Pkwy S., Katy, TX 77494",
+            "phone": "281-392-0045",
+            "email": "questions@hastalapasta.com",
+            "website": "https://www.hastalapasta.com/",
+            "logo": "images/members/hasta.png"
+        },
+        {
+            "name": "Kilwins Chocolate & Ice Cream",
+            "address": "5000 Katy Mills Circle, Katy, TX 77494",
+            "phone": "832-630-7163",
+            "email": "katymills@kilwins.com",
+            "website": "https://www.kilwins.com/",
+            "logo":"images/members/kilwins.png"
+        },
+        {
+            "name": "Katy Vibes",
+            "address": "24757 Katy Fwy., Katy, TX 77494",
+            "phone": "832-437-2807",
+            "email": "contact@katyvibes.com",
+            "website": "https://katyvibes.com/",
+            "logo": "images/members/katyvibes.png"
+        },
+        {
+            "name": "Topgolf",
+            "address": "1030 Memorial Brook Blvd., Houston, TX 77084",
+            "phone": "281-406-3176",
+            "email": "info@topgolfhouston.com",
+            "website": "https://topgolf.com/us/",
+            "logo": "images/members/topgolf.png"
+        },
+        {
+            "name": "Dewberry Farm",
+            "address": "FM 362 & Morrison Rd., Brookshire, TX 77423",
+            "phone": "281-934-FARM",
+            "email": "info@dewberryfarm.com",
+            "website": "https://dewberryfarm.com/",
+            "logo": "images/members/dewberryfarm.avif"
+        },
+        {
+            "name": "Typhoon Texas",
+            "address": "555 Katy Fort Bend Rd., Brookshire, TX 77423",
+            "phone": "832-426-7071",
+            "email": "guestservices@ttx.com",
+            "website": "https://www.typhoontexas.com/",
+            "logo": "images/members/ttx/png"
+        },
+        {
+            "name": "Andretti Indoor Karting & Games",
+            "address": "1230 Grand West Blvd., Brookshire, TX 77423",
+            "phone": "832-974-2204",
+            "email": "help@andrettikarting.com",
+            "website": "https://andrettikarting.com/",
+            "logo": "images/members/andrettikarting.svg"
+        },
+        {
+            "name": "Alamo Drafthouse Cinema",
+            "address": "2707 Commercial Center Blvd., Brookshire, TX 77423",
+            "phone": "281-492-6900",
+            "email": "movies@alamo.com",
+            "website": "https://drafthouse.com/houston/theater/lacenterra",
+            "logo": "images/members/alamo.svg"
+        },
+        {
+            "name": "KPM Management",
+            "address": "5757 FLewellen Oaks Ln., Ste. 404, Fulshear, TX 77441",
+            "phone": "281-685-3090",
+            "email": "MGMT@KPMManagement.com",
+            "website": "https://kpmcommunities.com/",
+            "logo": "images/members/kpm.png"
+        },
+        {
+            "name": "Texas Pride Disposal",
+            "address": "4411 Landrum Ln., Missouri City, TX 77471",
+            "phone": "281-342-8178",
+            "email": "request@texasdisposal.com",
+            "website": "https://www.texaspridedisposal.com/",
+            "logo": "images/members/texaspride.png"
+        }
+    ]
+}
