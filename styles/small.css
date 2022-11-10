@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 head {
-    color: #a4133c;
+    color: #640d14;
 }
 body {
     margin-top: 5px;
@@ -17,7 +17,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #a4133c;
+    background-color: #640d14;
     color: white;
 }
 h1 {
@@ -33,14 +33,14 @@ header img {
 h2 {
     text-align: center;
     font-size: 1.25rem;
-    color: #a4133c;
+    color: #640d14;
 }
 a {
-    color: #a4133c;
+    color: #640d14;
 }
 footer {
     border-radius: 10px;
-    background-color: #a4133c;
+    background-color: #640d14;
     color: white;
     text-align: center;
 }
