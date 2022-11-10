@@ -20,7 +20,8 @@ function displayProphets(prophet) {
     let portraitCaption = document.createElement('p');
     let birth = document.createElement('h3');
   
-    let caption = `Portrait of ${prophet.name} ${prophet.lastname}, ${prophet.order}${getOrdinal(prophet.order)} Latter-day President`;
+    let caption = `Portrait of ${prophet.name} ${prophet.lastname}, ${prophet.order}${getOrdinal
+    (prophet.order)} Latter-day President`;
 
     // Change the textContent property of the h2 element to contain the prophet's full name
     prophetName.textContent = `${prophet.name} ${prophet.lastname}`;

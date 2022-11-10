@@ -4,6 +4,15 @@
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
+h1 {
+    text-align: center;
+    padding-top: 15px;
+    background-color: #E0E1DD;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #bbb;
+}
+
 section {
     margin: 0.25rem;
     padding: 0.35rem;
@@ -18,6 +27,10 @@ section > p {
     min-height: 10px;
 }
 
+section:hover {
+    background-color: #778DA9;
+}
+
 img {
     width: auto;
     max-width: 325px;
@@ -27,20 +40,8 @@ img {
     margin-bottom: 0;
 }
 
-footer {
-    border-top: 1px solid #555;
-    padding: 20px;
-    text-align: center;
-}
-
 h2 {
     font-family: 'Satisfy', cursive;;
-}
-
-.caption {
-    font-family: 'Satisfy', cursive;;
-    font-style: italic;
-    text-align: center;
 }
 
 h3 {
@@ -50,15 +51,14 @@ h3 {
     font-size: medium;
 }
 
-h1 {
+.caption {
+    font-family: 'Satisfy', cursive;;
+    font-style: italic;
     text-align: center;
-    padding-top: 15px;
-    background-color: #E0E1DD;
-    width: 100%;
-    height: 60px;
-    border: 1px solid #bbb;
 }
 
-section:hover {
-    background-color: #778DA9;
+footer {
+    border-top: 1px solid #555;
+    padding: 20px;
+    text-align: center;
 }
