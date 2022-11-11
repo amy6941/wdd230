@@ -45,14 +45,31 @@
     </header>
     <main>
         <div class="main-div directory-button-bar">
-            <button class="directory-button" id="grid">
-                <img src="images/card-view.svg" height="48" width="48">
-            </button>
-            <button class="directory-button" id="list">
-                <img src="images/list-view.svg" height="48" width="48">
-            </button>
+            <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+            <button onclick="listView()"><i class="fa fa-bars"></i> List</button>
         </div>
         <div class="cards member-grid" id="member-data"></div>
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+              <h2>Column 1</h2>
+              <p>Some text..</p>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+              <h2>Column 2</h2>
+              <p>Some text..</p>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="column" style="background-color:#ccc;">
+              <h2>Column 3</h2>
+              <p>Some text..</p>
+            </div>
+            <div class="column" style="background-color:#ddd;">
+              <h2>Column 4</h2>
+              <p>Some text..</p>
+            </div>
+          </div>
     </main>
     <footer>
         <div id="footer_address">
@@ -86,7 +103,7 @@
     </footer>
     <script src="scripts/toggle.js"></script>
     <script src="scripts/date.js"></script>
-    <script src="scripts/windchill.js"></script>
-    
+    <script src="scripts/windchill.js"></script> 
+    <script src="scripts/test.js"></script> 
 </body>
 </html>

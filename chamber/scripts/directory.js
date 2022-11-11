@@ -1,7 +1,58 @@
+// highlight current menu item
+const mainNav = document.getElementById("main_nav");
+const mainNavChildren = mainNav.children;
+
+for (let i = 0; i < mainNavChildren.length; i++) {
+    if (mainNavChildren[i].children[0].href.split("/").slice(-1)[0] == URL) {
+        mainNavChildren[i].children[0].classList.add('current-menu');
+    }
+
+}
+
+// lazy loading images
+const images = document.querySelectorAll("[data-src]");
+
+function preloadImage(img) {
+    const src = img.getAttribute("data-src");
+    if(!src) {
+        return;
+    } else {
+        img.src = src;
+        img.removeAttribute("data-src");
+    }
+}
+
+const loadImage = image => {
+    image.classList.add('fade-in');
+    image.src = image.dataset.src;
+    image.srcset = image.dataset.srcset;
+  }
+
+const imgOptions = {
+	root: document.querySelector('#scrollArea'),
+	rootMargin: '10px',
+	threshold: 1.0
+};
+
+const imgObserver = new IntersectionObserver((entries, 
+    imgObserver) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            preloadImage(entry.target);
+            imgObserver.unobserve(entry.target);
+        }
+    })
+}, imgOptions);
+
+images.forEach(image => {
+    imgObserver.observe(image);
+})
 // add cards and read json for directory page
 if (URL == 'directory.html') {
 
-    const requestURL = 'scripts/data.json';
+    const requestURL = 'https://github.com/amy6941/wdd230/blob/main/chamber/scripts/data.json';
     const cards = document.querySelector('.cards');
     
     
