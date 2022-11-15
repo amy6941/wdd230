@@ -1,3 +1,41 @@
+// set date values on footer
+date = new Date();
+document.querySelector("#year").textContent = date.getFullYear();
+document.querySelector("#timestamp").textContent= document.lastModified;
+var URL
+// handle case where no index.html is specified in url
+if (document.URL.split("/").slice(-2)[0] =='chamber' &
+    document.URL.split("/").slice(-1)[0] == '') {
+    URL = "index.html"
+}
+else {
+    URL = document.URL.split("/").slice(-1)[0]
+}
+
+// set date value in header
+const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
+document.querySelector("#date").innerHTML = fullDate;
+
+// set banner for monday/tuesday
+let dow = date.getDay();
+if (dow == 1 | dow ==2) {
+    let banner = document.getElementById("banner");
+    if (banner != undefined) {
+        banner.style.display = "block";
+        banner.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+    }
+}
+
+// toggle hamburger button
+function toggleMenu() {
+    document.getElementById("main_nav").classList.toggle("open");
+    document.getElementById("ham_btn").classList.toggle("open");
+}
+
+// add event to toggle 
+document.getElementById("ham_btn").onclick = toggleMenu;
+
+
 // highlight current menu item
 const mainNav = document.getElementById("main_nav");
 const mainNavChildren = mainNav.children;
@@ -49,39 +87,51 @@ const imgObserver = new IntersectionObserver((entries,
 images.forEach(image => {
     imgObserver.observe(image);
 })
+
+
+// set application date on join page
+if (URL == "join.html") {
+    document.getElementById("application_date").value = date.getTime();
+}
+
+
 // add cards and read json for directory page
 if (URL == 'directory.html') {
 
-    const requestURL = 'scripts/data.json';
-    const cards = window.document.querySelector('.cards');
+    const requestURL = 'content/data.json';
+    const cards = document.querySelector('.cards');
     
     
     fetch(requestURL)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (jsonObject) {
+        const members = jsonObject['data'];
+        members.forEach(displayMembers);
+    });
 
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (jsonObject) {
-            const members = jsonObject['data'];
-            members.forEach(displayMembers);
-        });
+    gridButton = document.getElementById("grid");
+    listButton = document.getElementById("list");
+    display = document.getElementById("member-data")
 
-        gridButton = document.getElementById("grid");
-        listButton = document.getElementById("list");
-        display = document.getElementById("member-data")
+    gridButton.addEventListener("click", () => {
+        // example using arrow function
+        display.classList.add("member-grid");
+        display.classList.remove("member-list");
+    });
 
-        gridButton.addEventListener("click", () => {
-            display.classList.add("member-grid");
-            display.classList.remove("member-list");
-        });
+    listButton.addEventListener("click", () => {
+        // example using arrow function
+        display.classList.remove("member-grid");
+        display.classList.add("member-list");
+    });
 
-        listButton.addEventListener("click", () => {
-            display.classList.remove("member-grid");
-            display.classList.add("member-list");
-        });
+
 }
 
 function displayMembers(member) {
+    // Create elements to add to the document
     let card = document.createElement('section');
     let memberName = document.createElement('h2');
     let memberLogo = document.createElement('img');
@@ -100,7 +150,7 @@ function displayMembers(member) {
     memberLogo.width = 100;
     memberLogo.height = 100;
     if (member.index > 3) {
-        memberLogo.setAttribute('loading', 'lazy');
+    memberLogo.setAttribute('loading', 'lazy');
     }
 
     memberAddress.innerHTML = member.address1;
