@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background-color: rgb(183, 183, 222);
+}
+p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#weather {
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
