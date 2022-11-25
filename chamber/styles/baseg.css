@@ -60,7 +60,7 @@ div#top_header {
 }
 
 header div img#logo {
-    width: 50px;
+    width: 80px;
     height: auto;
     padding-left: 1.5em;
 }
@@ -136,7 +136,6 @@ div#top_header button {
     margin: 5px auto;
     background-color: var(--nav-background-color);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-    /*padding-inline-start: 0px;*/
 }
 
 #main_nav.open {
