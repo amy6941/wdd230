@@ -36,26 +36,22 @@
             <nav class="header_order">
                 <button class="header_order" id="ham_btn"><span>&#9776;</span></button>
                 <ul id="main_nav">
-                    <li><a class="ham" href="#">Menu</a></li>
-                    <li><a href="#" class="internal">Discover</a></li>
-                    <li><a href="#" class="internal">Directory</a></li>
-                    <li><a href="#" class="internal">Join</a></li>
-                    <li><a href="#" class="internal">Contact</a></li>
+                    <li><a class="ham" href="index.html">Menu</a></li>
+                    <li><a href="discover.html" class="internal">Discover</a></li>
+                    <li><a href="directory.html" class="internal">Directory</a></li>
+                    <li><a href="join.html" class="internal">Join</a></li>
+                    <li><a href="contact.html" class="internal">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+    <main id="directory">
         <h1>Member Directory</h1>
-        <div class="main-div directory-button-bar">
-            <button class="directory-button" id="list">
-                <span>LIST VIEW</span>
-            </button>
-            <button class="directory-button" id="grid">
-                <span>GRID VIEW</span>
-            </button>
-        </div>    
-        <div class="cards member-grid" id="member-data"></div>
+        <section>
+            <button id="grid">Grid</button>
+                <button id="list">List</button>
+            <div class="cards"></div>
+          </section>
     </main>
     <footer>
         <div id="footer_address">
@@ -89,7 +85,6 @@
     </footer>
     <script src="scripts/toggle.js"></script>
     <script src="scripts/date.js"></script>
-    <script src="scripts/directory.js"></script>
-    <script src="scripts/data.json"></script>
+    <script src="scripts/cards.js"></script>
 </body>
 </html>

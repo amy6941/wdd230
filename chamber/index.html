@@ -22,10 +22,9 @@
     <body>
         <header>
             <div id="top_header">
-                <img class="header_order" id="logo" src="images/CoClogo.png" alt="Brookshire logo" width="540"
-                    height="640">
-                <h1 class="header_order"><span class="first_line">Brookshire</span><span id="subtitle">Chamber of
-                        Commerce</span>
+                <img class="header_order" id="logo" src="images/CoClogo.png" alt="Brookshire logo">
+                <h1 class="header_order"><span class="first_line">Brookshire</span><br>
+                    <span id="subtitle">Chamber of Commerce</span>
                 </h1>
                 <div class="header_order" id="social">
                     <a href="https://www.facebook.com"><img class="social" src="images/facebook.png" alt="Facebook"></a>
@@ -37,7 +36,7 @@
                 <nav class="header_order">
                     <button class="header_order" id="ham_btn"><span>&#9776;</span></button>
                     <ul id="main_nav">
-                        <li><a class="ham" href="#">Menu</a></li>
+                        <li><a class="ham" href="index.html">Menu</a></li>
                         <li><a href="discover.html" class="internal">Discover</a></li>
                         <li><a href="directory.html" class="internal">Directory</a></li>
                         <li><a href="join.html" class="internal">Join</a></li>
@@ -65,24 +64,19 @@
                 </p>
             </div>
             <div class="main_div" id="weather">
-                <h3>Weather</h3>
-                <span class="spotlight_icon">⛅</span>
-                <span class="temperature">
-                    74</span>&deg;F</span><br>
-                <section>
-                    <span>Currently:</span>
-                    <span class="colored">Raining</span><br>
-                    <span>Wind Chill:</span>
-                    <span class="colored chill"><span class="wind-chill">
-                        </span>&deg;F</span><br>
-                    <span>Wind Speed:</span>
-                    <span class="colored"><span class="wind-speed">
-                        12</span> mph</span><br>
+                <h3>Current Weather</h3>
+                <section class="weather-summary">
+                    <p>Current: <span id="currentTemp"></span>°F</p>
+                    <p>High: <span id="highTemp"></span>°F</p>
+                    <p>Windchill: <span id="windChill"></span>°F</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind Speed: <span id="windSpeed"></span> mph</p>
                 </section>
+                <script src="weatherapi.js"></script> 
             </div>
             <div class="main_div" id="join">
                 <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-                <div class="contrast_heading"><a href="#">Join Us!</a></div>
+                <div class="contrast_heading"><a href="#">Sign Up Today!</a></div>
             </div>
             <div class="main_div" id="news_release">
                 <h3>News Release</h3>
@@ -159,5 +153,6 @@
         <script src="scripts/toggle.js"></script>
         <script src="scripts/date.js"></script>
         <script src="scripts/windchill.js"></script>
+
     </body>
 </html>

@@ -413,3 +413,49 @@ div#footer_address {
     background-color: #666;
     color: white;
 }
+/* Dicover Page*/
+#directory {
+    margin-top: 1rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list img {
+    display: none;
+}
+
+#directory img {
+    width: 70px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#directory section {
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border: 5px solid var(--accent2-color);
+    background-color: var(--paragraph-background-color);
+}
+
+#directory h2 {
+    color: white;
+}
+
+#directory p {
+    color: white;
+}

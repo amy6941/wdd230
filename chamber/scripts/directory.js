@@ -50,82 +50,63 @@ images.forEach(image => {
     imgObserver.observe(image);
 })
 // add cards and read json for directory page
-if (URL == 'directory.html') {
+const cards = document.querySelector(".cards");
 
-    const requestURL = 'scripts/data.json';
-    const cards = window.document.querySelector('.cards');
-    
-    
-    fetch(requestURL)
+const fetchJSON = async () => {
+    const jsonURL = "json/data.json";
+    const req = new Request(jsonURL);
+    const res = await fetch(req);
+    const jsonObject = await res.json();
+    const members = jsonObject["members"];
 
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (jsonObject) {
-            const members = jsonObject['data'];
-            members.forEach(displayMembers);
-        });
+    members.forEach(displayCards);
+};
 
-        gridButton = document.getElementById("grid");
-        listButton = document.getElementById("list");
-        display = document.getElementById("member-data")
+fetchJSON();
 
-        gridButton.addEventListener("click", () => {
-            display.classList.add("member-grid");
-            display.classList.remove("member-list");
-        });
+const displayCards = (cardObj) => {
+  let card = document.createElement("section");
+  let name = document.createElement("h2");
+  let category = document.createElement("h3");
+  let addr = document.createElement("p");
+  let phone = document.createElement("p");
+  let url = document.createElement("a");
+  let member = document.createElement("p");
+  let logo = document.createElement("img");
 
-        listButton.addEventListener("click", () => {
-            display.classList.remove("member-grid");
-            display.classList.add("member-list");
-        });
-}
+  logo.setAttribute("src", cardObj.logo);
+  logo.setAttribute("alt", `Logo image for ${cardObj.name}.`);
+  logo.setAttribute("width", 160)
+  logo.setAttribute("loading", "lazy");
 
-function displayMembers(member) {
-    let card = document.createElement('section');
-    let memberName = document.createElement('h2');
-    let memberLogo = document.createElement('img');
-    let memberAddress = document.createElement('p');
-    let memberPhone = document.createElement('a');
-    let memberURL = document.createElement('a');
-    let memberEmail = document.createElement('a');
+  name.textContent = `${cardObj.name}`;
+  name.className = "dir-name";
 
+  category.textContent = `${cardObj.category}`;
+  category.className = "dir-category";
 
-    // Change the textContent property of the h2 element to contain the prophet's full name
-    memberName.textContent = member.name;
+  url.textContent = `${cardObj.url}`;
+  url.className = "dir-url";
+  url.href = `${cardObj.url}`;
+  url.target = "_blank";
+  url.rel = "noopener noreferrer";
 
-    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-    memberLogo.setAttribute('src', member.image_url);
-    memberLogo.setAttribute('alt', `logo for ${memberName}`);
-    memberLogo.width = 100;
-    memberLogo.height = 100;
-    if (member.index > 3) {
-        memberLogo.setAttribute('loading', 'lazy');
-    }
+  addr.textContent = `${cardObj.address}`;
+  addr.className = "dir-addr";
 
-    memberAddress.innerHTML = member.address1;
-    memberAddress.classList.add('member-address')
+  phone.textContent = `Phone: ${cardObj.phone}`;
+  phone.className = "dir-phone";
 
-    memberPhone.innerHTML = `${member.phone}`;
-    memberPhone.href = `tel:${member.phone}`
+  member.textContent = `${cardObj.member} member`;
+  member.className = `dir-member ${cardObj.member.toLowerCase()}`;
 
-    memberURL.textContent = 'Visit website';
-    memberURL.href = member.url;
+  card.appendChild(name);
+  card.appendChild(logo);
+  card.appendChild(category);
+  card.appendChild(url);
+  card.appendChild(addr);
+  card.appendChild(phone);
+  card.appendChild(member);
 
-    memberEmail.href = `mailto:${member.email}`;
-    memberEmail.textContent = member.email;
-    memberEmail.classList.add('member-email')
-
-    // Add/append the section(card) with the h2 element
-    card.appendChild(memberName);
-    card.appendChild(memberLogo);
-    card.appendChild(memberAddress);
-    card.appendChild(memberPhone);
-    card.appendChild(memberURL);
-    card.appendChild(memberEmail);
-    
-    // Add/append the existing HTML div with the cards class with the section(card)
-    card.classList.add('member-detail-grid')
-    document.querySelector('div.cards').appendChild(card);
-
-}
+  document.querySelector(".cards").appendChild(card);
+};
