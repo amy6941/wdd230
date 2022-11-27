@@ -22,122 +22,129 @@
     
     <body>
         <header>
-            <div id="top_header">
-                <img class="header_order" id="logo" src="images/CoClogo.png" alt="Brookshire logo">
-                <h1 class="header_order"><span class="first_line">Brookshire</span><br>
-                    <span id="subtitle">Chamber of Commerce</span>
-                </h1>
-                <div class="header_order" id="social">
-                    <a href="https://www.facebook.com"><img class="social" src="images/facebook.png" alt="Facebook"></a>
-                    <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="Twitter"></a>
-                    <a href="https://www.instagram.com"><img class="social" src="images/instagram.png" alt="Facebook"></a>
+            <div class="banner" id="banner">
+            </div>
+            <div class="top-header">
+                <div class="logo-name-div">
+                    <a class="header-order header-link" href="./index.html">
+                    <img class="logo" src="images/CoClogo.png" alt="Brookshire logo" width="420"
+                        height="420">
+                    </a>
+                    <h1 class="header-order header-first-line" >
+                        <span class="first-line">Brookshire</span>
+                        <span class="subtitle">Chamber of Commerce</span>
+                    </h1>
                 </div>
-                <p class="header_order" id="date"></p>
-                <div id="currentDate"></div>
-                <nav class="header_order">
-                    <button class="header_order" id="ham_btn"><span>&#9776;</span></button>
-                    <ul id="main_nav">
-                        <li><a class="ham" href="index.html">Menu</a></li>
+                <div class="header-order header-social">
+                    <a href="https://www.facebook.com"><img class="social" src="images/facebook.png" alt="Facebook" height="42" width="42"></a>
+                    <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="Twitter" height="42" width="42"></a>
+                    <a href="https://www.instagram.com"><img class="social" src="images/instagram.png" alt="Instagram"></a>
+                </div>
+                <button class="header-order menu-btn" id="ham_btn"><span>&#9776;</span><span>X</span></button>
+                <p class="header-order date" id="date"></p>
+                <nav class="header-order navigation" >
+                    <ul class="main-nav" id="main_nav">
+                        <li><a href="index.html" class="internal">Home</a></li>
                         <li><a href="discover.html" class="internal">Discover</a></li>
                         <li><a href="directory.html" class="internal">Directory</a></li>
                         <li><a href="join.html" class="internal">Join</a></li>
                         <li><a href="contact.html" class="internal">Contact</a></li>
                     </ul>
                 </nav>
-            </div>    
+            </div>
         </header>
-        <main class="main-discover">  
+        <main class="main-discover">
+            <div class="main-div discover-div">
+                <h2>You have had <span id="visits"></span> visits.  It's been <span id="days-since-last-visit"></span> days since your last visit.</h2>
+            </div>
             <div class="main-div sxs-div">
-                <div class="discover-text-content ">
+                <div class="flex-left ">
+                    <h2>History</h2>
+                    <p>Brookshire was named in honor of Nathan Brookshire, who was a large land owner in the vicinity and a leading resident. He was a captain in the Texas army and participated in the storming and capture of Bexar in 1835. In 1893 John Kellner donated land and filed a plat for the Town of Kellner out of the William Cooper Survey, one of the oldest headrights in the state. Also in 1893, John Brookshire and O. C. Drew filed their plat for the Town of Brookshire out of the H. H. Pennington Survey. On May 24, 1946, The City of Brookshire was incorporated, comprised of both the Kellner and the Brookshire/Drew plats.
+                    </p>
+                </div>
+                <div class="discover-div">
+                    <div class="hero-image-container">
+                    <picture class="hero-img-container">
+                        <source srcset="images/parksm.jpg" media="(max-width:747px)">
+                        <source srcset="images/parkmed.jpg" media="(min-width:748px) and (max-width:1199px)">
+                        <source srcset="images/parklg.jpg" media="(min-width:1200px)">
+                        <img src="images/placeholder.png" data-src="images/parksm.jpg"
+                            class="hero-img hover-img discover-img" alt='Brookshire Parks photo' width="400" height="300">
+                    </picture>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-div sxs-div">
+                <div class="flex-left">
                     <h2>Location</h2>
                     <p>The Brookshire area is situated ideally.  Just 30 minutes from Downtown Houston, we are close enough to the throb of big city life to enjoy the best it has to offer but still very much a part of rural America. The area is rich in churches, civic organizations, and school and youth activities.
                     </p>
                 </div>
                 <div class="discover-div">
                     <picture class="hero-img-container">
-                        <source srcset="images/" media="(max-width:747px)">
-                        <source srcset="images/"
+                        <source srcset="images/lacenterramed.jpg" media="(max-width:747px)">
+                        <source srcset="images/lacenterrasm.jpg"
                             media="(min-width:748px) and (max-width:1199px)">
-                        <source srcset="images/" media="(min-width:1200px)">
-                        <img src="images/lacenterra.jpg" data-src="images/"
-                            class="hero-img discover-img" alt='' width="400" height="300">
+                        <source srcset="images/lacenterralg.jpg" media="(min-width:1200px)">
+                        <img src="images/placeholder.png" data-src="images/lacenterrasm.jpg"
+                            class="hero-img discover-img" alt='Brookshire Chamber' width="400" height="300">
                     </picture>
                 </div>
             </div>
     
             <div class="main-div sxs-div">
-                <div class="discover-text-content ">
+                <div class="flex-left ">
                     <h2>Desirability</h2>
                     <p>The Brookshire area has emerged as one of Greater Houston's prime surburban areas.  Brookshire boasts excellent school districts, afordable cost of living with abundant housing options as well as a variety of shopping and dining. We also have plenty of entertainment, ranging from beautiful parks to multiple festival to athletic events and activities.
                 </div>
                 <div class="discover-div">
                     <picture class="hero-img-container">
-                        <source srcset="images/" media="(max-width:747px)">
-                        <source srcset="images/"
+                        <source srcset="images/shoppingmed.jpg" media="(max-width:747px)">
+                        <source srcset="images/shoppinglg.jpg"
                             media="(min-width:748px) and (max-width:1199px)">
-                        <source srcset="images/" media="(min-width:1200px)">
-                        <img src="images/placeholder.png" data-src="images/"
-                            class="hero-img discover-img" alt='' width="400" height="300" loading="lazy">
+                        <source srcset="images/shopping3lg.jpg" media="(min-width:1200px)">
+                        <img src="images/placeholder.png" data-src="images/shopping3lg.jpg"
+                            class="hero-img discover-img" alt='Brookshire Blue Bonnets' width="400" height="300" loading="lazy">
                     </picture>
                 </div>
             </div>
-    
-            <div class="main-div sxs-div">
-                <div class="discover-text-content ">
-                    <h2>History</h2>
-                    <p>Brookshire was named in honor of Nathan Brookshire, who was a large land owner in the vicinity and a leading resident. He was a captain in the Texas army and participated in the storming and capture of Bexar in 1835. In 1893 John Kellner donated land and filed a plat for the Town of Kellner out of the William Cooper Survey, one of the oldest headrights in the state. Also in 1893, John Brookshire and O. C. Drew filed their plat for the Town of Brookshire out of the H. H. Pennington Survey. On May 24, 1946, The City of Brookshire was incorporated, comprised of both the Kellner and the Brookshire/Drew plats.
-                    </p>
-                </div>
-                <div class="discover-div">
-                    <picture class="hero-img-container">
-                        <source srcset="images/" media="(max-width:747px)">
-                        <source srcset="images/"
-                            media="(min-width:748px) and (max-width:1199px)">
-                        <source srcset="images/" media="(min-width:1200px)">
-                        <img src="images/placeholder.png" data-src="images/"
-                            class="hero-img discover-img" alt='' width="400" height="300" loading="lazy">
-                    </picture>
-                </div>
-            </div> 
-            <div class="main-div discover-div">
-                <h2>You have had <span id="visits"></span> visits.  It's been <span id="days-since-last-visit"></span> days since your last visit.</h2>
-            </div>   
         </main>
         <footer>
-            <div id="footer_address">
-                <img id="footer_logo" src="images/CoClogo.png" alt="Brookshire logo">
-                
-                <div id="address">
-                    <h2><span class="first_line">Brookshire</span>
-                        <span id="footer_subtitle">Chamber of Commerce</span>
+            <div class="footer-address">
+                <img class="footer-logo" src="images/CoClogo.png" alt="Brookshire Chamber logo" width="420" height="420">
+                <div class="address">
+                    <h2 class="footer-first-line"><span class="first-line">Brookshire</span>
+                        <span class="footer-subtitle">Chamber of Commerce</span>
                     </h2>
-                    <div id="footer_contact_info">                
-                        <a id="map_link" href="http://maps.google.com"> 
-                        Find us!</a>
-                    </div>
-                    <br>
-                    <p>100 Center St<br>
-                        Brookshire, TX 77423<br>
-                        info@brookshirechamber.com</p>
+                    <p class="p-tight">100 Center St</p>
+                    <p class="p-tight">Brookshire, Tx 77423</p>
                 </div>
             </div>
-            
+            <div class="footer-contact-info">
+                <p><a href="mailto:info@brookshirechamber.com">info@brookshirechamber.com</a></p>
+                <p><a href="tel:8324567890">(832)456-7890</a></p>
+                <a class="map-link" href="http://maps.google.com">📍Find us!</a>
+            </div>
             <hr>
-            <br>
-            <div id="footer_footer">
-                <div id="footer_footer_top_row">
-                    <p>&copy; <code id="year"></code>| Amy Burton | WDD230 Project </p>
+            <div class="footer-footer">
+                <div class="footer-footer-top-row">
+                    <p>©<span id="year"></span> Brookshire Chamber</p>
+                    <p><span class="vertical-bar">|</span></p>
+                    <p><b>Amy Burton</b>
+                    <p><span class="vertical-bar">|</span></p>
+                    <p>WDD230 Project</p>
+                    <p><span class="vertical-bar">|</span></p>
                 </div>
-                <div id="footer_footer_bottom_row">
-    
+                <div class="footer-footer-bottom-row">
                     <p>
-                        | <code id="timestamp"></code></p>
+                        Last Updated: <span id="timestamp"></span>
+                    </p>
                 </div>
             </div>
         </footer>
-        <script src="scripts/toggle.js"></script>
-        <script src="scripts/date.js"></script>
-        <script src="scripts/windchill.js"></script>
-        <script src="scripts/localstorage.js"></script>
-    </body>
+        <script src="scripts/scripts.js"></script>
+        <script src="scripts/weather.js"></script>
+</body>
 </html>

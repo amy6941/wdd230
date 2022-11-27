@@ -23,22 +23,29 @@
 </head>
 <body>
     <header>
-        <div id="top_header">
-            <img class="header_order" id="logo" src="images/CoClogo.png" alt="Brookshire logo">
-            <h1 class="header_order"><span class="first_line">Brookshire</span><br>
-                <span id="subtitle">Chamber of Commerce</span>
-            </h1>
-            <div class="header_order" id="social">
-                <a href="https://www.facebook.com"><img class="social" src="images/facebook.png" alt="Facebook"></a>
-                <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="Twitter"></a>
-                <a href="https://www.instagram.com"><img class="social" src="images/instagram.png" alt="Facebook"></a>
+        <div class="banner" id="banner">
+        </div>
+        <div class="top-header">
+            <div class="logo-name-div">
+                <a class="header-order header-link" href="./index.html">
+                <img class="logo" src="images/CoClogo.png" alt="Brookshire logo" width="420"
+                    height="420">
+                </a>
+                <h1 class="header-order header-first-line" >
+                    <span class="first-line">Brookshire</span>
+                    <span class="subtitle">Chamber of Commerce</span>
+                </h1>
             </div>
-            <p class="header_order" id="date"></p>
-            <div id="currentDate"></div>
-            <nav class="header_order">
-                <button class="header_order" id="ham_btn"><span>&#9776;</span></button>
-                <ul id="main_nav">
-                    <li><a class="ham" href="index.html">Menu</a></li>
+            <div class="header-order header-social">
+                <a href="https://www.facebook.com"><img class="social" src="images/facebook.png" alt="Facebook" height="42" width="42"></a>
+                <a href="https://www.twitter.com"><img class="social" src="images/twitter.png" alt="Twitter" height="42" width="42"></a>
+                <a href="https://www.instagram.com"><img class="social" src="images/instagram.png" alt="Instagram"></a>
+            </div>
+            <button class="header-order menu-btn" id="ham_btn"><span>&#9776;</span><span>X</span></button>
+            <p class="header-order date" id="date"></p>
+            <nav class="header-order navigation" >
+                <ul class="main-nav" id="main_nav">
+                    <li><a href="index.html" class="internal">Home</a></li>
                     <li><a href="discover.html" class="internal">Discover</a></li>
                     <li><a href="directory.html" class="internal">Directory</a></li>
                     <li><a href="join.html" class="internal">Join</a></li>
@@ -46,44 +53,44 @@
                 </ul>
             </nav>
         </div>
-    </header>  
+    </header>
     <main>
 
     </main>
     <footer>
-        <div id="footer_address">
-            <img id="footer_logo" src="images/CoClogo.png" alt="Brookshire logo">
-            
-            <div id="address">
-                <h2><span class="first_line">Brookshire</span>
-                    <span id="footer_subtitle">Chamber of Commerce</span>
+        <div class="footer-address">
+            <img class="footer-logo" src="images/CoClogo.png" alt="Brookshire Chamber logo" width="420" height="420">
+            <div class="address">
+                <h2 class="footer-first-line"><span class="first-line">Brookshire</span>
+                    <span class="footer-subtitle">Chamber of Commerce</span>
                 </h2>
-                <div id="footer_contact_info">                
-                    <a id="map_link" href="http://maps.google.com"> 
-                    Find us!</a>
-                </div>
-                <br>
-                <p>100 Center St<br>
-                    Brookshire, TX 77423<br>
-                    info@brookshirechamber.com</p>
+                <p class="p-tight">100 Center St</p>
+                <p class="p-tight">Brookshire, Tx 77423</p>
             </div>
         </div>
-        
+        <div class="footer-contact-info">
+            <p><a href="mailto:info@brookshirechamber.com">info@brookshirechamber.com</a></p>
+            <p><a href="tel:8324567890">(832)456-7890</a></p>
+            <a class="map-link" href="http://maps.google.com">📍Find us!</a>
+        </div>
         <hr>
-        <br>
-        <div id="footer_footer">
-            <div id="footer_footer_top_row">
-                <p>&copy; <code id="year"></code>| Amy Burton | WDD230 Project </p>
+        <div class="footer-footer">
+            <div class="footer-footer-top-row">
+                <p>©<span id="year"></span> Brookshire Chamber</p>
+                <p><span class="vertical-bar">|</span></p>
+                <p><b>Amy Burton</b>
+                <p><span class="vertical-bar">|</span></p>
+                <p>WDD230 Project</p>
+                <p><span class="vertical-bar">|</span></p>
             </div>
-            <div id="footer_footer_bottom_row">
-
+            <div class="footer-footer-bottom-row">
                 <p>
-                    | <code id="timestamp"></code></p>
+                    Last Updated: <span id="timestamp"></span>
+                </p>
             </div>
         </div>
     </footer>
-    <script src="scripts/toggle.js"></script>
-    <script src="scripts/date.js"></script>
-    <script src="scripts/windchill.js"></script>  
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
