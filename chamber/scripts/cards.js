@@ -1,5 +1,4 @@
-const requestURL = 
-  "https://https://raw.githubusercontent.com/amy6941/wdd230/main/chamber/scripts/data.json";
+const requestURL = "scripts/data.json";
 fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -38,6 +37,18 @@ gridbutton.addEventListener("click", () => {
   cards.classList.remove("list");
 });
 listbutton.addEventListener("click", () => {
+  cards.classList.add("list");
+  cards.classList.remove(".cards");
+});
+
+const grid = document.querySelector("#grid");
+const list = document.querySelector("#list");
+const cards = document.querySelector(".cards");
+grid.addEventListener("click", () => {
+  cards.classList.add(".cards");
+  cards.classList.remove("list");
+});
+list.addEventListener("click", () => {
   cards.classList.add("list");
   cards.classList.remove(".cards");
 });
