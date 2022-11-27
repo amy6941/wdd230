@@ -55,7 +55,83 @@
         </div>
     </header>
     <main>
+        <div class="background-fill stacked">
+            <h2 class="center">Join the Brookshire Chamber of Commerce</h2>
 
+            <div class="background-fill sxs">
+                <div class="form">
+                    <form method="get" action="thankyou.html">
+                        <fieldset>
+                            <legend>Tell us more.</legend>
+                            <label class="top">First Name* <input type="text" name="fname" required ></label>
+                            <label class="top">Last Name* <input type="text" name="lname" required ></label>
+                            <label class="top">Business position/title
+                                <input type="text" pattern="[A-Za-z\- ]{7,}" name="position" ></label>
+                            <label class="top">Email*
+                                <input type="email" name="email" placeholder="someone@gmail.com" required ></label>
+                            <label class="top">Cell phone number*
+                                <input type="tel" name="cell_phone" placeholder="1235551234" required ></label>
+                            <label class="top">Business name*
+                                <input type="text" name="business_title" required ></label>
+                            <label class="top">Business description<textarea class="description-text" rows="4" cols="23"
+                                    name="business_description"></textarea>
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Membership Level</legend>
+                            <label class="sbs"><input type="radio" name="audience" value="bronze" >
+                                Bronze</label>
+                            <label class="sbs"><input type="radio" name="audience" value="silver" >
+                                Silver</label>
+                            <label class="sbs"><input type="radio" name="audience" value="gold" > Gold</label>
+                            <label class="sbs"><input type="radio" name="audience" value="np" required >
+                                Non-profit</label>
+                        </fieldset>
+
+                        <input class="submit-btn" type="submit" value="Join the Chamber!" >
+                        <input type="text" id="application_date" name="application_date" hidden >
+                    </form>
+                </div>
+                <div class="hide-base">
+                    <div class="color-box" id="gold-level">
+                        <div>Gold Membership $1200</div>
+                        <div>
+                            Gold Benefits
+                            <ul>
+                                <li>All silver benfits</li>
+                                <li>Highlighted Directory Listing</li>
+                                <li>Ribbon Cuttings</li>
+                                <li>4 tickets to Gold Member dinners</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="color-box" id="silver-level">
+                        <div>Silver Membership $900</div>
+                        <div>
+                            Silver Benefits
+                            <ul>
+                                <li>All bronze benfits</li>
+                                <li>All chamber events</li>
+                                <li>Member spotlight</li>
+                            </ul>
+                        </div>
+                        `
+                    </div>
+                    <div class="color-box" id="bronze-level">
+                        <div>Bronze Membership $500</div>
+                        <div>
+                            Bronze Benefits
+                            <ul>
+                                <li>Chamber directory listing</li>
+                                <li>Chamber email list access</li>
+                                <li>Membership plaque & decal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-address">

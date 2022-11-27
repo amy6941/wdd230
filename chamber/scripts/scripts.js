@@ -1,19 +1,28 @@
+date = new Date();
+document.querySelector("#year").textContent = date.getFullYear();
+document.querySelector("#timestamp").textContent= document.lastModified;
+var URL
+// handle case where no index.html is specified in url
+if (document.URL.split("/").slice(-2)[0] =='chamber' &
+    document.URL.split("/").slice(-1)[0] == '') {
+    URL = "index.html"
+}
+else {
+    URL = document.URL.split("/").slice(-1)[0]
+}
 
 // set date value in header
 const fullDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
 document.querySelector("#date").innerHTML = fullDate;
 
-// set date values on footer
-date = new Date();
-document.querySelector("#year").textContent = date.getFullYear();
-document.querySelector("#timestamp").textContent= document.lastModified;
-
 // set banner for monday/tuesday
 let dow = date.getDay();
 if (dow == 1 | dow ==2) {
     let banner = document.getElementById("banner");
-    banner.style.display = "block";
-    banner.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+    if (banner != undefined) {
+        banner.style.display = "block";
+        banner.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+    }
 }
 
 // toggle hamburger button
@@ -25,24 +34,211 @@ function toggleMenu() {
 // add event to toggle 
 document.getElementById("ham_btn").onclick = toggleMenu;
 
-//For discover page buttons//
-// Get the elements with class="column"
-var elements = document.getElementsByClassName("column");
 
-// Declare a loop variable
-var i;
+// highlight current menu item
+const mainNav = document.getElementById("main_nav");
+const mainNavChildren = mainNav.children;
 
-// List View
-function listView() {
+for (let i = 0; i < mainNavChildren.length; i++) {
+    if (mainNavChildren[i].children[0].href.split("/").slice(-1)[0] == URL) {
+        mainNavChildren[i].children[0].classList.add('current-menu');
+    }
 
-    for (i = 0; i < elements.length; i++) {
-        elements[i].style.width = "100%";
+}
+
+// lazy loading images
+const images = document.querySelectorAll("[data-src]");
+
+function preloadImage(img) {
+    const src = img.getAttribute("data-src");
+    if(!src) {
+        return;
+    } else {
+        img.src = src;
+        img.removeAttribute("data-src");
     }
 }
 
-// Grid View
-function gridView() {
-    for (i = 0; i < elements.length; i++) {
-        elements[i].style.width = "50%";
+const loadImage = image => {
+    image.classList.add('fade-in');
+    image.src = image.dataset.src;
+    image.srcset = image.dataset.srcset;
+  }
+
+const imgOptions = {
+	root: document.querySelector('#scrollArea'),
+	rootMargin: '10px',
+	threshold: 1.0
+};
+
+const imgObserver = new IntersectionObserver((entries, 
+    imgObserver) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            preloadImage(entry.target);
+            imgObserver.unobserve(entry.target);
+        }
+    })
+}, imgOptions);
+
+images.forEach(image => {
+    imgObserver.observe(image);
+})
+
+
+// set application date on join page
+if (URL == "join.html") {
+    document.getElementById("application_date").value = date.getTime();
+}
+
+
+// add cards and read json for directory page
+if (URL == 'directory.html') {
+
+    const requestURL = 'scripts/data.json';
+    const cards = document.querySelector('.cards');
+    
+    
+    fetch(requestURL)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (jsonObject) {
+        const members = jsonObject['data'];
+        members.forEach(displayMembers);
+    });
+
+    gridButton = document.getElementById("grid");
+    listButton = document.getElementById("list");
+    display = document.getElementById("member-data")
+
+    gridButton.addEventListener("click", () => {
+        display.classList.add("member-grid");
+        display.classList.remove("member-list");
+    });
+
+    listButton.addEventListener("click", () => {
+        display.classList.remove("member-grid");
+        display.classList.add("member-list");
+    });
+
+
+}
+
+function displayMembers(member) {
+    // Create elements to add to the document
+    let card = document.createElement('section');
+    let memberName = document.createElement('h2');
+    let memberLogo = document.createElement('img');
+    let memberAddress = document.createElement('p');
+    let memberPhone = document.createElement('a');
+    let memberURL = document.createElement('a');
+    let memberEmail = document.createElement('a');
+
+    // Change the textContent property of the h2 element to contain the prophet's full name
+    memberName.textContent = member.name;
+
+    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+    memberLogo.setAttribute('src', member.image_url);
+    memberLogo.setAttribute('alt', `logo for ${memberName}`);
+    memberLogo.width = 100;
+    memberLogo.height = 100;
+    if (member.index > 3) {
+    memberLogo.setAttribute('loading', 'lazy');
     }
+
+    memberAddress.innerHTML = member.address1;
+    memberAddress.classList.add('member-address')
+
+    memberPhone.innerHTML = `${member.phone}`;
+    memberPhone.href = `tel:${member.phone}`
+
+    memberURL.textContent = 'Visit website';
+    memberURL.href = member.url;
+
+    memberEmail.href = `mailto:${member.email}`;
+    memberEmail.textContent = member.email;
+    memberEmail.classList.add('member-email')
+
+    // Add/append the section(card) with the h2 element
+    card.appendChild(memberName);
+    card.appendChild(memberLogo);
+    card.appendChild(memberAddress);
+    card.appendChild(memberPhone);
+    card.appendChild(memberURL);
+    card.appendChild(memberEmail);
+    
+    // Add/append the existing HTML div with the cards class with the section(card)
+    card.classList.add('member-detail-grid')
+    document.querySelector('div.cards').appendChild(card);
+
+}
+
+// add spotlight for gold members
+if (URL == 'index.html') {
+
+    const requestURL = 'content/data.json';
+    
+    fetch(requestURL)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (jsonObject) {
+        const members = jsonObject['data'];
+        goldMembers = members.filter(member => member.membership_level === 'gold');
+        updateSpotlights(goldMembers);
+    })
+}
+
+// helper function to add content
+function updateSpotlights(members) {
+    const cards = document.querySelectorAll('.spotlight-div');
+    
+    shuffleArray(members)   
+    memberIndex = 0
+
+    for (i =0; i < cards.length; i++) {
+
+        // <h3>placeholder</h3>
+        // <img src="images/placeholder.png" alt="placeholder" width="75" height="75">
+        // <p class="italic">placeholder</p>
+        // <hr>
+        // <a>placeholder</a>
+        // <p>placeholder</p>
+
+        let memberName = document.createElement('h3');
+        let memberLogo = document.createElement('img');
+        let memberSlogan = document.createElement('p');
+        let memberHr = document.createElement('hr');
+        let memberEmail = document.createElement('a');
+        let memberPhone = document.createElement('p');
+
+        memberName.innerText = members[memberIndex].name;
+        memberLogo.src = members[memberIndex].image_url;
+        let ratio = members[memberIndex].image_height / members[memberIndex].image_width
+        memberLogo.style.height = "75px";
+        memberLogo.style.width =  String(ratio * 75) + "px";
+        memberLogo.alt = members[memberIndex].name;
+        memberSlogan.innerText = members[memberIndex].slogan;
+        // hr
+        memberEmail.href = "mailto:" + members[memberIndex].email;
+        memberEmail.innerText = members[memberIndex].email;
+        memberPhone.innerText = members[memberIndex].phone;
+
+        cards[i].appendChild(memberName)
+        cards[i].appendChild(memberLogo)
+        cards[i].appendChild(memberSlogan)
+        cards[i].appendChild(memberHr)
+        cards[i].appendChild(memberEmail)
+        cards[i].appendChild(memberPhone)
+
+        memberIndex ++;
+    }
+    
+
+}
+function shuffleArray(arr) {
+    arr.sort(() => Math.random() - 0.5);
 }
