@@ -1,19 +1,29 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 header {
     display: flex;
+    justify-content: center;
     background-color: #284de2;
     color: white;
     padding: 10px;
     border-radius: 10px;
 }
+
 header img {
     padding-right: 25px;
     max-width: 100px;
     max-height: 100px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
