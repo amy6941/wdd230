@@ -5,14 +5,14 @@
         color: white;
     }
     header, footer {
-        background-color: darkred;
+        background-color: #284de2;
     }
     h1 {
         text-align: center;
     }
     h2 {
         text-align: center;
-        color: rgb(235, 22, 58);
+        color: black;
     }
     img {
         max-width: 150px;

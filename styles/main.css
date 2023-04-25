@@ -10,7 +10,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    background-color: #284de2;
+    background-color: darkred;
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -29,7 +29,7 @@ h2 {
 
 footer {
     border-radius: 10px;
-    background-color: #284de2;
+    background-color: darkred;
     color: white;
 }
 
