@@ -4,6 +4,9 @@
         padding: 4px;
         color: white;
     }
+    header, footer {
+        background-color: darkred;
+    }
     h1 {
         text-align: center;
     }
