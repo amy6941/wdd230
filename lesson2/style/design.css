@@ -72,7 +72,7 @@ code {
   font-family: 'Architects Daughter', cursive;
   text-align: left;
 }
-@media (min-width: 50em) {
+/*@media (min-width: 50em) {
   @media (max-width: 80em) {
     main {
       grid-template-columns: 1fr 1fr;
