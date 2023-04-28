@@ -27,6 +27,9 @@ h2 {
     justify-content: center;
 }
 
+a {
+    text-align: center;
+}
 footer {
     border-radius: 10px;
     background-color: darkred;
