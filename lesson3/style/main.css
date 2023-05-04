@@ -1,8 +1,23 @@
 * {
     background: #333f5e;
-    display: grid;
-    margin: 25px;
+    color: white;
+    margin: 5px 15px;
 }
+
+header, footer, h3 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+header, footer {
+    display:block;
+    width: 100%; 
+}
+
+h2, h3, h4 {
+    background-color: royalblue;
+}
+
 main {
     display: block;
     background-color: floralwhite;
