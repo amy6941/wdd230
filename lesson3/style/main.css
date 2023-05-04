@@ -1,0 +1,14 @@
+* {
+    background: #333f5e;
+    display: grid;
+    margin: 25px;
+}
+main {
+    display: block;
+    background-color: floralwhite;
+}
+
+img {
+    max-width: 150px;
+    max-height: 150px;
+}
