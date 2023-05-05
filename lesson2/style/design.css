@@ -17,8 +17,11 @@ header h2, footer p {
 }
 main {
   display: grid;
-  margin: auto;
+  grid-template-columns: 1fr;
   font-family: 'Architects Daughter', cursive;
+  max-width: 767px;
+	margin: 0 auto;
+  font-size: 0.8rem;
 }
 .card_content {
   margin: auto;
@@ -71,30 +74,4 @@ p {
 code {
   font-family: 'Architects Daughter', cursive;
   text-align: left;
-}
-/*@media (min-width: 50em) {
-  @media (max-width: 80em) {
-    main {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    #repetition,
-    #contrast {
-      margin-bottom: 1em;
-    }
-  }
-}
-/*@media (min-width: 80em) {
-  main {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  #contrast {
-    grid-column: 1/4;
-    margin-bottom: 1em;
-  }
-
-  #contrast img {
-      float: right;
-  }
 }

@@ -1,8 +1,16 @@
-@media (max-width: 50em) {
+/*@media (max-width: 50em) {
   main {
     grid-template-columns: 1fr;
   }
   #contrast {
     margin-bottom: 1em;
   }
+}*/
+
+main {
+	max-width: 767px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
 }
