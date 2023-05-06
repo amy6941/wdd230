@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@500&display=swap');
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+header, footer {
+  padding: 1em;  
+  color: white;
+  background-color: #3d518c;
+}
+header > h1, header > h2 {
+  padding: .25em;
+  color: #3d518c;
+  text-align: center;
+}
+nav button {
+  margin: .2rem 2vw;
+  padding: 0;
+  border: none;
+  font-size: 2rem;
+  color: #62b6cb;
+  background-color: #3d518c;
+}
+
+nav {
+  background-color: #3d518c;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+nav ul {
+  display: none;
+}
+
+nav ul.open {
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  margin-left: -40px;
+} 
+
+nav ul li a {
+  color: #5fa8d3;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  background: linear-gradient(90deg, transparent, var(--nav-hover-link-color), transparent) bottom /var(--d, 0) 3px no-repeat;
+  transition: 0.5s;
+}
+  
+nav a:hover {
+  --d: 75%;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5em;
+  font-size: 18px;
+  text-align: left;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
+  color: black;
+  text-align: center;
+}
+
+h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #62b6cb;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+main ul {
+  margin: 0 auto;
+  list-style: none;
+  line-height: 2.5;
+  padding: 0;
+  margin-top: 30px;
+  text-align: center;
+}
+  
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 20%;
+  height: 3em;
+}
+
+.primary {
+  background-color: #3d518c;
+}
+.secondary {
+  background-color: #5fa8d3;
+}
+.accent1 {
+  background-color: #62b6cb;
+}
+.accent2{
+  background-color: white;
+}
+
+.accent3{
+  background-color: black;
+}
+
+p.colored {
+  background-color: white;
+  color: white;
+}
