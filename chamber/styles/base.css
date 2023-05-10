@@ -17,7 +17,7 @@ background-color: #5FA8D3;
 
 #hamButton {
     display: block;
-    position: absolute;
+    /*position: absolute;*/
     top: 10px;
     right: 10px;
     width: fit-content;
@@ -35,6 +35,10 @@ background-color: #5FA8D3;
     background-color: #5FA8D3;
 }
 
+.navigation li {
+    list-style-type: none;
+}
+
 .navigation li a {
     padding: 1.15rem;
     display: block;
@@ -48,12 +52,10 @@ background-color: #5FA8D3;
     font-weight: 700;
 }
 
-/* when the button is clicked - the responsive class is added and accounted for here */
-.navigation.responsive li {
-    display: block;
-    width: 100%;
+nav ul {
+    display: none;
 }
-.navigation.responsive li a {
+nav ul.open {
     display: block;
 }
 
