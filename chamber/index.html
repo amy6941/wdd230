@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/menuBtn.js"></script>
     <title>Franklin TN Chamber of Commerce</title>
@@ -12,9 +13,20 @@
 <body>
     <div class="box">
         <header>
+            <div>
+                <img src="images/logo.png" alt="Franklin Chamber of Commerce" class="logo">
+            </div>
             <h1>Welcome to Franklin, Tennessee</h1>
             <h2>Chamber of Commerce</h2>
             <h4>franklincitychamber.com</h4>
+            <div class="social">
+                <a href="www.instagram.com">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a> 
+                <a href="www.facebook.com">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a> 
+            </div>
             <nav>
                 <button id="hamburgerBtn">&#9776</button>
                 <ul id="primaryNav">
@@ -26,9 +38,37 @@
             </nav>
         </header>
         <main>
-
+            <section class="content">
+                <div class="hero">
+                    <img src="#" alt="Franklin Chamber of Commerce">
+                    <p>Join us!</p>
+                </div>
+                <div class="events">
+                    <p>Upcoming Events</p>
+                </div>
+                <div class="weather">
+                    <p>Current Weather Conditions</p>
+                </div>
+                <div class="news">
+                    <p>Latest News Release</p>
+                </div>
+                <div class="spotlight">
+                    <div class="spot1"></div>
+                    <div class="spot2"></div>
+                    <div class="spot3"></div>
+                </div>
+            </section>
         </main>
         <footer>
+            <div >
+                <img src="images/logo.png" alt="Franklin Chamber of Commerce" class="logo1">
+            </div>
+            <div class="contact">
+                <h2>Franklin Chamber of Commerce</h2>
+                <address>1140 Columbia Ave, Franklin, TN 37064</address>
+                <a href="mailto:info@franklinchamber.com">Info@FranklinChamber.com</a>
+                <a href="https://goo.gl/maps/YSMbT4j1RJTtj9TR8">Find us!</a>
+            </div>
             <p>
                 © <code id="year"></code> | Last Updated: <code id="timestamp"></code>
             </p>
