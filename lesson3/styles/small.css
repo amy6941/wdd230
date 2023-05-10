@@ -7,7 +7,7 @@ header, footer {
 }
 header > h1, header > h2 {
   padding: .25em;
-  color: #3d518c;
+  color: #FEFCFD;
   text-align: center;
 }
 nav button {
@@ -34,7 +34,6 @@ nav ul.open {
   list-style-type: none;
   overflow: hidden;
   margin: 0;
-  margin-left: -40px;
 } 
 
 nav ul li a {
@@ -70,7 +69,7 @@ h1, h2, h3 {
 h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 2px;
-  color: black;
+  color: #FEFCFD;
   text-align: center;
 }
 
@@ -97,7 +96,7 @@ main ul {
   text-align: center;
 }
 .colors th {
-  background-color: #999;
+  background-color: #FEFCFD;
 }
 .colors td{
   width: 20%;
