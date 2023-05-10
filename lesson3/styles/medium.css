@@ -1,5 +1,5 @@
 /* Tablet Views ******************************/
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 40rem) {
 	h1 {
 		font-size: 1.5rem;
 	}
@@ -20,10 +20,6 @@
 		font-size: 1rem;
 	}
 
-	nav a:hover {
-		--d: 75%;
-	}
-
 	main {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -38,16 +34,11 @@
 		height: auto;
 		border: 1px solid #bbb;
 	}
-		footer p {
+	footer p {
 		flex-direction: row;
 		/*display: flex;*/
 		justify-content: space-around;
 	}
-	
-	footer p span:not(:last-child)::after {
-		content: ' 🧪\00a0';
-	}
-	
 }
 
 /* Desktop Views ***************************

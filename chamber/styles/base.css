@@ -1,10 +1,24 @@
+body {
+    background-color: #3D518C;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #FEFCFD;
+}
+
 /*navigation*/
 nav {
-    
-
+    background-color: #5FA8D3;
 }
 
 nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0 1rem;
+}
 
+nav ul li a {
+    display: block;
+    color:#FEFCFD;
+    text-decoration: none;
+    padding: .3rem;
 }

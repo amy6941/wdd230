@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@500&display=swap');
 
-font-family: 'Open Sans', sans-serif;
-font-family: 'Raleway', sans-serif;
-
 header, footer {
   padding: 1em;  
   color: white;
@@ -46,12 +43,7 @@ nav ul li a {
   padding: 0.75rem;
   text-decoration: none;
   font-size: 0.95rem;
-  background: linear-gradient(90deg, transparent, var(--nav-hover-link-color), transparent) bottom /var(--d, 0) 3px no-repeat;
   transition: 0.5s;
-}
-  
-nav a:hover {
-  --d: 75%;
 }
 
 body {
