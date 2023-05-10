@@ -1,57 +1,134 @@
-body {
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
     background-color: #3D518C;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     color: #FEFCFD;
-}
-
-/*navigation*/
-nav {
-    display: block;
+  }
+  
+  /*navigation*/
+  
+  nav {
     background-color: #5FA8D3;
-
-}
-nav button {
-    margin: .2rem 2vw;
+  }
+  #hamButton {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: fit-content;
+      font-size: 1.5rem;
+      padding: .5rem;
+      color: #FEFCFD;
     background: transparent;
     border: none;
-    font-size: 2rem;
+  }
+  /*nav button {
+    background: transparent;
+    border: none;
+    font-size: 3rem;
     color: #FEFCFD;
-}
-
-nav ul {
+  }*/
+  
+  .navigation {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      background-color: #5FA8D3;
+  }
+  
+  .navigation li a {
+      padding: 1.15rem;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #FEFCFD;
+  }
+  .navigation li a:hover {
+      background-color: #FEFCFD;
+      color: #3D518C;
+      font-weight: 700;
+  }
+  
+  /* when the button is clicked - the responsive class is added and accounted for here */
+  .navigation.responsive li {
+      display: block;
+      width: 100%;
+  }
+  .navigation.responsive li a {
+      display: block;
+  }
+  
+  /*nav ul {
+    display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0 1rem;
-}
-
-nav ul li a {
-    display: block;
+    width: 100%;
+  }
+  
+  nav ul li a {
     color:#FEFCFD;
     text-decoration: none;
-    padding: .3rem;
-}
-
-/*Social media*/
-.social {
+    padding: .5rem;
+  }*/
+  
+  /*Social media*/
+  .social {
     display: flex;
     margin: 1rem; 
-}
-
-.logo1 {
+  }
+  
+  .logo1 {
     max-width: 100px;
-}
-
-/*Main Section*/
-.content {
+  }
+  
+  /*Main Section*/
+  .content {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2px;
-}
-.hero {
+  }
+  .hero {
     background-color: #5FA8D3;
     width: auto;
     height: 100px;
     grid-row: 1;
     margin: 1rem;
-}
+  }
+  .events {
+    background-color: #5FA8D3;
+    width: auto;
+    height: 100px;
+    grid-row: 2;
+    margin: 1rem;
+  }
+  .weather {
+    background-color: #5FA8D3;
+    width: auto;
+    height: 100px;
+    grid-row: 3;
+    margin: 1rem;
+  }
+  .news {
+    background-color: #5FA8D3;
+    width: auto;
+    height: 100px;
+    grid-row: 4;
+    margin: 1rem;
+  }
+  .spotlight {
+    background-color: #5FA8D3;
+    width: auto;
+    height: 100px;
+    grid-row: 5;
+    margin: 1rem;
+  }
+  .spot1 {
+    border: 1px solid #5FA8D3;
+    padding; 1px;
+    
+  }
