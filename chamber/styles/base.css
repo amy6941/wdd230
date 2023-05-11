@@ -28,25 +28,23 @@ background-color: #5FA8D3;
     border: none;
 }
 
-.navigation {
+ul {
+    padding-inline-start: 5px;
+}
+
+ul li {
     display: flex;
-    flex-direction: column;
     list-style: none;
     background-color: #5FA8D3;
 }
 
-.navigation li {
-    list-style-type: none;
-}
-
-.navigation li a {
-    padding: 1.15rem;
+ul li a {
+    padding: .5rem;
     display: block;
-    text-align: center;
     text-decoration: none;
     color: #FEFCFD;
 }
-.navigation li a:hover {
+ul li a:hover {
     background-color: #FEFCFD;
     color: #3D518C;
     font-weight: 700;
@@ -114,12 +112,20 @@ nav ul.open {
 .spotlight {
     background-color: #5FA8D3;
     width: auto;
-    height: 100px;
     grid-row: 5;
     margin: 1rem;
+
 }
 .spot1 {
-    border: 1px solid #5FA8D3;
-    padding: 1px;
-    
+    border: 1px solid #3D518C;
+    padding: 40px;
+    margin: 1rem;
+}
+.spot2 {
+    border: 1px solid #3D518C;
+    padding: 40px;
+    margin: 1rem;
+}
+.spot3 {
+    display: none;
 }
