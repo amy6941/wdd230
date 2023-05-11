@@ -19,7 +19,7 @@ nav {
     position: sticky;
     top: 0;
 }
-nav > ul {
+nav ul {
     margin: 0;
     padding: 0;
     display: grid;
@@ -35,5 +35,5 @@ nav ul li a:hover {
     background-color: rgba(0,0,0,0.3);
 }
     
-nav ul {display: none;}
+/*nav ul {display: none;}*/
 nav ul.open {display: block;}
