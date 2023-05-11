@@ -1,3 +1,74 @@
+
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #3d518c;
+}
+
 nav {
-    background-color: #;
+    background-color: #62b6cb;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+   display: block;
+   padding: .8rem 2vw;
+   text-decoration: none;
+   color: #fefcfd; 
+   border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+nav ul li a:active {
+    background-color: rgba(0,0,0,0.2);
+    color: #3d518c;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+nav ul li a:hover {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+/* MEDUIM VIEW */
+
+@media only screen and (min-width: 35rem) {
+    nav button {
+        display: none;
+    }
+
+    nav ul#navigation {
+        display: flex;
+        margin-left: 2vw;
+        border-left: 1px solid rgba(0,0,0,0.3);
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+}
+/* end MEDIUM */
+
+/* LARGE VIEW */
+
+@media only screen and (min-width: 64rem) {
+
+    nav ul li a {
+        padding: .5rem 1rem;
+    }
+    
+    
 }
