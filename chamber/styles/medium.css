@@ -1,0 +1,23 @@
+/* MEDUIM VIEW */
+
+@media only screen and (min-width: 35rem) {
+    #hamButton {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        border: none;
+    }
+
+
+
+
+
+
+}
+/* end MEDIUM */

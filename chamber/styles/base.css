@@ -64,8 +64,19 @@ nav ul.open {
 }
 
 .logo1 {
-    max-width: 100px;
+    max-width: 75px;
 }
+/* Header */
+
+header {
+    display: flex;
+    text-align: center;
+
+}
+ .logo {
+    max-width: 150px;
+ }
+
 
 /*Main Section*/
 .content {
