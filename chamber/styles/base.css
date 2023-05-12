@@ -1,23 +1,24 @@
 * {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
+    margin: 5px;
 }
 
 body {
 background-color: #3D518C;
-display: grid;
-grid-template-columns: 1fr;
+/*display: grid;*/
+/*grid-template-columns: 1fr;*/
 color: #FEFCFD;
 }
 
 /* navigation */
 
-nav {
+/*nav {
 background-color: #5FA8D3;
-}
+}*/
 
 #hamButton {
     display: block;
-    /*position: absolute;*/
+    position: absolute;
     top: 10px;
     right: 10px;
     width: fit-content;
@@ -58,25 +59,35 @@ nav ul.open {
 }
 
 /*Social media*/
-.social {
-    display: flex;
-    margin: 1rem; 
+.social a img {
+    display: inline;
+    max-width: 25px;
 }
 
-.logo1 {
-    max-width: 75px;
-}
 /* Header */
 
 header {
-    display: flex;
-    text-align: center;
+    display: grid;
+    justify-content: center;
 
 }
- .logo {
+.logo {
     max-width: 150px;
- }
+    padding: 1rem;
+    margin-left: 2rem;
+}
 
+h3 {
+    margin-left: 1rem;
+}
+
+h4 {
+    margin-left: 1.5rem;
+}
+
+#date1 {
+    margin-left: 2rem;
+}
 
 /*Main Section*/
 .content {
@@ -87,8 +98,7 @@ header {
 }
 .hero {
     background-color: #5FA8D3;
-    width: auto;
-    height: 300px;
+
     grid-row: 1;
     margin: 1rem;
 }
@@ -99,14 +109,12 @@ header {
 .events {
     background-color: #5FA8D3;
     width: auto;
-    height: 100px;
     grid-row: 2;
     margin: 1rem;
 }
 .weather {
     background-color: #5FA8D3;
     width: auto;
-    height: 100px;
     grid-row: 3;
     margin: 1rem;
 }
@@ -116,7 +124,6 @@ header {
 .news {
     background-color: #5FA8D3;
     width: auto;
-    height: 100px;
     grid-row: 4;
     margin: 1rem;
 }
@@ -139,4 +146,24 @@ header {
 }
 .spot3 {
     display: none;
+    border: 1px solid #3D518C;
+    padding: 5rem;
+    margin: 1rem;
+}
+
+.join {
+    display: none;
+}
+
+/* Footer */
+
+div.contact {
+    display: grid;
+    justify-content: center;
+}
+
+.logo1 {
+    max-width: 100px;
+    float: left;
+    margin: 25px;
 }
