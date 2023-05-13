@@ -59,9 +59,14 @@ nav ul.open {
 }
 
 /*Social media*/
+
+.social {
+    display: flex;
+}
+
 .social a img {
-    display: inline;
     max-width: 25px;
+    margin-top: 15px;
 }
 
 /* Header */
@@ -69,10 +74,11 @@ nav ul.open {
 .headerContainer {
     display: grid;
     justify-content: center;
-
 }
-.logo {
-    margin-left: 4rem;
+
+.headLogo {
+    display: grid;
+    justify-content: center;
 }
 
 h1, h3, h4 {
@@ -91,7 +97,7 @@ h1, h3, h4 {
 .content {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2px;
+    grid-gap: 5px;
     text-align: center;
 }
 .hero {
