@@ -2,7 +2,7 @@
 
 header, footer {
   padding: 1em;  
-  color: white;
+  color: #FEFCFD;
   background-color: #3d518c;
 }
 header > h1, header > h2 {
@@ -37,7 +37,7 @@ nav ul.open {
 } 
 
 nav ul li a {
-  color: #5fa8d3;
+  color: #FEFCFD;
   text-align: center;
   padding: 0.75rem;
   text-decoration: none;
@@ -119,9 +119,4 @@ main ul {
 
 .accent3{
   background-color: black;
-}
-
-p.colored {
-  background-color: white;
-  color: white;
 }
