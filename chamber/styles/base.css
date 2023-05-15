@@ -106,13 +106,33 @@ span.highlight {
 }
 .hero {
     background-color: #5FA8D3;
-
     grid-row: 1;
+    position: relative;
 
 }
 .hero img {
-    width: 100%;
+    width: 95%;
+    padding: .5rem;
 }
+
+.hero p {
+    position: absolute;
+    top: 5px;
+	left: 25px;
+	background: radial-gradient(#FEFCFD, #3D518C);
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 2rem;
+	box-shadow: 0 0 30px #3D518C;
+	opacity: 0.7;
+}
+
+.hero section {
+    position: absolute;
+    bottom: 25px;
+    background: scroll;
+    
+}
+
 .events {
     background-color: #5FA8D3;
     width: auto;
