@@ -1,6 +1,6 @@
 * {
     /*box-sizing: border-box;*/
-    margin: 5px;
+    /*margin: 5px;*/
 }
 
 body {
@@ -92,6 +92,10 @@ h1, h3, h4 {
 #date1 {
     grid-column: 2/5;
 }
+span.highlight {
+    display: flex;
+    justify-content: space-around;
+}
 
 /*Main Section*/
 .content {
@@ -107,8 +111,7 @@ h1, h3, h4 {
 
 }
 .hero img {
-    max-width: 150px;
-    padding: 1rem;
+    width: 100%;
 }
 .events {
     background-color: #5FA8D3;
