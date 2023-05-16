@@ -17,6 +17,9 @@
         grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 5px;
     }
+    h3 {
+        font-size: 36px;
+    }
 
     .events {
         grid-row: 1/2;
