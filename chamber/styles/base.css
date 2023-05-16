@@ -231,8 +231,14 @@ span.highlight {
     background-color: #5FA8D3;
     width: auto;
     grid-row: 4;
-
 }
+
+.news p {
+    font-size: 18px;
+    padding: 1em;
+}
+
+
 .spotlight {
     background-color: #5FA8D3;
     width: auto;
@@ -243,12 +249,22 @@ span.highlight {
     border: 1px solid #3D518C;
     padding: 40px;
     margin: 1rem;
+    background-color: white;
+    color: black;
+}
+
+.spot1 img {
+    max-width: 200px;
+    border: 2px solid red;
+    padding: 1em;
 }
 
 .spot2 {
     border: 1px solid #3D518C;
     padding: 40px;
     margin: 1rem;
+    background-color: white;
+    color: black;
 }
 .spot3 {
     display: none;

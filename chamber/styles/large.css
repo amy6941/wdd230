@@ -10,6 +10,11 @@
         display: none;
     }
 
+    .social a img {
+        max-width: 45px;
+        margin-top: 35px;
+    }
+
   /* Main */
 
     .content {
