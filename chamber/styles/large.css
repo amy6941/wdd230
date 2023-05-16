@@ -1,6 +1,6 @@
 /* LARGE VIEW */
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 60em) {
   /* Navigation */
     nav ul li a {
         padding: .5rem 1rem;
