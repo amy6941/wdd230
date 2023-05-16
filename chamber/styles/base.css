@@ -204,6 +204,10 @@ span.highlight {
     background: #3D518C;
 }
 
+.events img {
+    display: none;
+}
+
 .weather {
     background-color: #5FA8D3;
     width: auto;

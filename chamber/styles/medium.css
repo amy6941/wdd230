@@ -74,6 +74,13 @@
     grid-row: 5;
 }
 
+.events img {
+    display: block;
+    margin-top: 1em;
+    width: 400px;
+    border: 2px solid #3d518c;
+    margin-left: 10em;
+}
 
 .weather {
     grid-row: 5;
