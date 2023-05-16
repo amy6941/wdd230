@@ -129,15 +129,81 @@ span.highlight {
 .hero section {
     position: absolute;
     bottom: 25px;
-    background: scroll;
+}
+
+.hero a {
+    position: absolute;
+    bottom: 75px;
+    right: 25px;
+    border: 1px solid rgba(0,0,0,.1);
+    background: #5FA8D3;
+    padding: 1rem;
+    box-shadow: 0 0 30px #3D518C;
+    border-radius: 1em;
 }
 
 .events {
     background-color: #5FA8D3;
     width: auto;
     grid-row: 2;
+    position: relative;
+    padding: 1em;
+
 
 }
+
+.events .calendar {
+    text-align: center;
+    color: black;
+    border: 2px solid rgba(0,0,0,.5);
+    width: 65px;
+    height: 70px;
+    padding: 5px;
+    float: right;
+    margin: 35px 25px;
+
+}
+
+.calendar strong {
+    font-size: 14px;
+    display: block;
+    max-height: 20px;
+    line-height: 22px;
+    padding-bottom: 3px;
+}
+
+.calendar em {
+    font-style: normal;
+}
+
+.events h3 {
+    font-size: 25px !important;
+    text-align: left;
+    padding-left: 1em;
+    margin: 0;
+}
+.events span {
+    font-size: 27px;
+}
+
+.events p {
+    font-size: 18px !important;
+    text-align: left;
+    padding-left: 2em;
+}
+
+.eventArrow .readMore {
+    font-size: 15px;
+    padding-right: 1em;
+}
+.eventArrow .arrowBlue {
+    position: absolute;
+    float: left;
+    padding: 4px 9px;
+    font-size: 12px;
+    background: #3D518C;
+}
+
 .weather {
     background-color: #5FA8D3;
     width: auto;
