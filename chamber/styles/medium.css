@@ -30,9 +30,9 @@
         font-size: 48px;
     }
 
-    h3 {
+    /*h3 {
         font-size: 36px;
-    }
+    }*/
     .date {
         display: flex;
         justify-content: center;
@@ -74,8 +74,13 @@
     grid-row: 5;
 }
 
+
 .weather {
     grid-row: 5;
+}
+
+.weather section {
+    padding: 1em;
 }
 
 }
