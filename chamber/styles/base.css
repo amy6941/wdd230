@@ -73,17 +73,19 @@ nav ul.open {
 
 .headerContainer {
     display: grid;
-    justify-content: center;
+    /* justify-content: center; */
+    position: relative;
 }
 
 .headLogo {
-    display: grid;
-    justify-content: center;
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
 }
 
-h1, h3, h4 {
-    text-align: center;
-}
+/* h1, h3, h4 { */
+    /* text-align: center; */
+/* } */
 
 .date {
     display: grid;
