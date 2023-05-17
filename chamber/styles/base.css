@@ -74,6 +74,17 @@ span.highlight {
     margin-bottom: 5px;
 }
 
+div p {
+    text-align: center;
+    font-size: 32px;
+}
+
+.website {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
 /*Main Section*/
 .content {
     display: grid;
