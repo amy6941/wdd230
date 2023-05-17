@@ -10,12 +10,15 @@
 
     nav ul {
         display: flex;
-        justify-content: center;
+        padding: 0;
+        text-align: center;
     }
+    
 
-    nav ul li a {
+    ul#navigation li a {
         border: none;
     }
+
 /* Header */
 
     header {

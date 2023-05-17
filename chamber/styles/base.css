@@ -1,51 +1,34 @@
-* {
-    /*box-sizing: border-box;*/
-    /*margin: 5px;*/
-}
 
 body {
 background-color: #3D518C;
-/*display: grid;*/
-/*grid-template-columns: 1fr;*/
+display: grid;
+grid-template-columns: 1fr;
 color: #FEFCFD;
 }
 
 /* navigation */
 
-/*nav {
-background-color: #5FA8D3;
-}*/
-
 #hamButton {
     display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: fit-content;
+    left: 10px;
     font-size: 1.5rem;
-    padding: .5rem;
     color: #FEFCFD;
     background: transparent;
     border: none;
+    margin: 2px;
 }
 
-ul {
-    padding-inline-start: 5px;
-}
-
-ul li {
-    display: flex;
+#navigation li {
     list-style: none;
     background-color: #5FA8D3;
+    flex: 1 1 100%;
 }
 
-ul li a {
-    padding: .5rem;
-    display: block;
-    text-decoration: none;
+li.active {
     color: #FEFCFD;
 }
-ul li a:hover {
+
+ul#navigation li:hover {
     background-color: #FEFCFD;
     color: #3D518C;
     font-weight: 700;
@@ -54,49 +37,41 @@ ul li a:hover {
 nav ul {
     display: none;
 }
-nav ul.open {
+
+a {
+    text-decoration: none;
+    margin: 5px;
+}
+
+ul#navigation.open {
     display: block;
+    padding: 0;
 }
 
 /*Social media*/
 
 .social {
-    display: flex;
+  display: flex;
+  gap: 8px;
+  justify-content: end;
 }
 
-.social a img {
-    max-width: 25px;
-    margin-top: 15px;
-}
 
 /* Header */
 
-.headerContainer {
-    display: grid;
-    /* justify-content: center; */
-    position: relative;
+header {
+    padding: 1em;
 }
 
-.headLogo {
-    position: absolute;
-    bottom: 25px;
-    left: 15px;
+.logo {
+    max-width: 10em;
 }
 
-/* h1, h3, h4 { */
-    /* text-align: center; */
-/* } */
-
-.date {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-#date1 {
-    grid-column: 2/5;
-}
-span.highlight {
+span.highlight { 
     display: flex;
     justify-content: space-around;
+    background-color: #5FA8D3;
+    margin-bottom: 5px;
 }
 
 /*Main Section*/
@@ -106,6 +81,7 @@ span.highlight {
     grid-gap: 5px;
     text-align: center;
 }
+
 .hero {
     background-color: #5FA8D3;
     grid-row: 1;
@@ -139,10 +115,6 @@ span.highlight {
 	opacity: 0.7;
 }
 
-/*.hero section {
-    bottom: 25px;
-}*/
-
 .hero a {
     position: absolute;
     bottom: 75px;
@@ -160,8 +132,6 @@ span.highlight {
     grid-row: 2;
     position: relative;
     padding: 1em;
-
-
 }
 
 .events .calendar {
@@ -169,11 +139,10 @@ span.highlight {
     color: black;
     border: 2px solid rgba(0,0,0,.5);
     width: 65px;
-    height: 70px;
+    height: auto;
     padding: 5px;
     float: right;
     margin: 35px 25px;
-
 }
 
 .calendar strong {
@@ -194,6 +163,7 @@ span.highlight {
     padding-left: 1em;
     margin: 0;
 }
+
 .events span {
     font-size: 27px;
 }
@@ -226,9 +196,11 @@ span.highlight {
     grid-row: 3;
 
 }
+
 .weather p {
     text-align: center;
 }
+
 .news {
     background-color: #5FA8D3;
     width: auto;
@@ -239,7 +211,6 @@ span.highlight {
     font-size: 18px;
     padding: 1em;
 }
-
 
 .spotlight {
     background-color: #5FA8D3;
