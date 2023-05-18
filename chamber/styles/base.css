@@ -281,3 +281,8 @@ div.contact {
     float: left;
     margin: 25px;
 }
+
+.contact a {
+    color: #FEFCFD;
+    padding: 2px;
+}
