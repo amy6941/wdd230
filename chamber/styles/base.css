@@ -38,10 +38,11 @@ nav ul {
     display: none;
 }
 
-a {
+/* a {
     text-decoration: none;
     margin: 5px;
-}
+
+} */
 
 ul#navigation.open {
     display: block;
@@ -51,20 +52,30 @@ ul#navigation.open {
 /*Social media*/
 
 .social {
-  display: flex;
-  gap: 8px;
-  justify-content: end;
+    display: flex;
+    gap: 8px;
+    justify-content: end;
+}
+
+div.social a {
+    text-decoration: none;
+    margin: 5px;
 }
 
 
 /* Header */
 
 header {
+    display: grid;
     padding: 1em;
 }
 
+div .headLogo {
+    display: flex;
+}
+
 .logo {
-    max-width: 10em;
+    max-width: 8em;
 }
 
 span.highlight { 
@@ -74,7 +85,7 @@ span.highlight {
     margin-bottom: 5px;
 }
 
-div p {
+div.headLogo p {
     text-align: center;
     font-size: 32px;
 }
@@ -252,9 +263,6 @@ div p {
 }
 .spot3 {
     display: none;
-    border: 1px solid #3D518C;
-    padding: 5rem;
-    margin: 1rem;
 }
 
 .join {
