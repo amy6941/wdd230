@@ -249,15 +249,15 @@ div.headLogo p {
 }
 
 .spot1 img {
-    max-width: 200px;
+    max-width: 50px;
     border: 2px solid red;
-    padding: 1em;
+    padding: .5em;
 }
 
 .spot2 {
     border: 1px solid #3D518C;
     padding: 40px;
-    margin: 1rem;
+    margin: .5rem;
     background-color: white;
     color: black;
 }

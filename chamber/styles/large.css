@@ -18,7 +18,7 @@
   /* Main */
 
     .content {
-        grid-template-columns: .5fr 1fr .5fr;
+        grid-template-columns: 350px 1fr 350px;
         grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 5px;
     }
@@ -34,6 +34,7 @@
 
     .events img {
         margin-left: 5px;
+        max-width: 300px;
     }
 
     .weather {
@@ -68,24 +69,30 @@
     
     .spotlight div {
         display: block; 
+        align-items: center;
+    }
+
+    .spot1, .spot2, .spot3 {
+        width: 250px;
+        height: 250px;
+    }
+
+    div.spot1 img {
+        max-width: 200px;
+        border: 2px solid red;
+        padding: .5em;
     }
 
     .spot3 {
         border: 1px solid #3D518C;
         background-color: white;
         color: black;
-        width: 250px;
-        height: 250px;
-        padding: 20px;
         margin: 16px;
     }
 
-    .spot3 img {
-        width: 30%;
-        padding-top: 10px;
+    div.spot3 img {
+        width: 40%;
+        padding-top: 5px;
     }
 
-    .spot3 p {
-        padding-top: 25px;
-    }
 }
