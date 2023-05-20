@@ -34,7 +34,7 @@
 
     .events img {
         margin-left: 5px;
-        max-width: 300px;
+        max-width: 200px;
     }
 
     .weather {
@@ -48,6 +48,10 @@
         grid-column: 1/2;
         height: auto;
 
+    }
+
+    div.hero {
+        min-width: 600px;
     }
 
     .hero {
@@ -69,16 +73,22 @@
     
     .spotlight div {
         display: block; 
-        align-items: center;
+        /* align-items: center; */
+    }
+
+    .spots div {
+        align-items: center ;
+    
     }
 
     .spot1, .spot2, .spot3 {
         width: 250px;
         height: 250px;
+        margin: 16px;
     }
 
-    div.spot1 img {
-        max-width: 200px;
+    .spot1 img {
+        max-width: 150px;
         border: 2px solid red;
         padding: .5em;
     }
@@ -87,12 +97,11 @@
         border: 1px solid #3D518C;
         background-color: white;
         color: black;
-        margin: 16px;
+        padding: 20px;
     }
 
-    div.spot3 img {
+    .spot3 img {
         width: 40%;
-        padding-top: 5px;
     }
 
 }
