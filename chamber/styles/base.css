@@ -62,6 +62,10 @@ div.social a {
     margin: 5px;
 }
 
+.social a img {
+    max-width: 45px;
+    margin-top: 35px;
+}
 
 /* Header */
 
@@ -96,6 +100,10 @@ div.headLogo p {
     margin-bottom: 8px;
 }
 
+marquee {
+    font-size: 25px;
+}
+
 /*Main Section*/
 .content {
     display: grid;
@@ -110,16 +118,17 @@ div.headLogo p {
     position: relative;
 
 }
-.hero img {
+img.hero {
     width: 95%;
     padding: .5rem;
 }
 
 .heroTemp img {
     position: absolute;
-    top: 10px;
-    left: 35px;
-    width: 5%;
+    top: 9px;
+    left: 70px;
+    width: 6%;
+    padding: 1rem;
 }
 
 .heroTemp .current {
@@ -131,7 +140,7 @@ div.headLogo p {
     top: 5px;
 	left: 25px;
 	background: radial-gradient(#FEFCFD, #3D518C);
-	border: 1px solid rgba(0,0,0,.1);
+	border: 1px solid rgba(0,0,0,.01);
 	padding: 2rem;
 	box-shadow: 0 0 30px #3D518C;
 	opacity: 0.7;
@@ -249,9 +258,13 @@ div.headLogo p {
 }
 
 .spot1 img {
-    max-width: 50px;
+    max-width: 200px;
     border: 2px solid red;
     padding: .5em;
+}
+
+p.name {
+    font-size: 28px;
 }
 
 .spot2 {

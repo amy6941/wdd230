@@ -4,7 +4,7 @@
     /* Navigation */
    
 
-    #hamButton {
+    /* #hamButton {
         display: none;
     }
 
@@ -17,7 +17,7 @@
 
     ul#navigation li a {
         border: none;
-    }
+    } */
 
 /* Header */
 
@@ -45,7 +45,7 @@
     .social {
         justify-content: end;
         padding: 3px;
-        width: 40%;
+        /* width: 40%; */
     }
 
 /* Main */
@@ -67,6 +67,12 @@
     }
     .spots {
         display: flex;
+    }
+
+    .spot1, .spot2, .spot3 {
+        width: 300px;
+        height: 300px;
+        margin: 16px;
     }
 
     .spot1 {
@@ -99,7 +105,7 @@
     }
 
     .spot2 img {
-        max-width: 150px;
+        max-width: 200px;
     }
 
 
@@ -124,7 +130,7 @@
         padding: 10px;
         padding-top: 2em;
     }
-    
+
     .joinButton {
         padding: 2em;
     }
@@ -151,9 +157,9 @@
     .events img {
         display: block;
         margin-top: 1em;
-        width: 400px;
+        width: 300px;
         border: 2px solid #3d518c;
-        margin-left: 10em;
+        margin-left: 3em;
     }
 
     .weather {
