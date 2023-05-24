@@ -17,7 +17,6 @@ function addChapter() {
         const deleteButton = document.createElement('button');
         deleteButton.textContent = "❌";
 
-
         // append to list item
         listItem.appendChild(inputText);
         listItem.appendChild(deleteButton);
