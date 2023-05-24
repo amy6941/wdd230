@@ -11,7 +11,7 @@ color: #FEFCFD;
 #hamButton {
     display: block;
     left: 10px;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     color: #FEFCFD;
     background: transparent;
     border: none;
@@ -22,15 +22,16 @@ color: #FEFCFD;
     list-style: none;
     background-color: #5FA8D3;
     flex: 1 1 100%;
+    font-size: 30px;
 }
 
-li.active {
+#navigation li.active a {
     color: #FEFCFD;
 }
 
-ul#navigation li:hover {
-    background-color: #FEFCFD;
-    color: #3D518C;
+#navigation li:hover {
+    color: #5FA8D3;
+    /* background-color: #FEFCFD; */
     font-weight: 700;
 }
 

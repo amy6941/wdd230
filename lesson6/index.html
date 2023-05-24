@@ -46,10 +46,12 @@
         <main>
             <section class="content">
                 <div class="hero">
-                    <img class="hero" src="images/wddsmall.png" alt="WDD230 hero" sizes="50vw" 
-                    srcset="images/wddsmall.png 200vw, 
-                            images/wddmed.png 500vw, 
-                            images/wddlrg.png 800vw">
+                    <picture>
+                        <source media="(max-width: 300px)" srcset="images/wddsmall.png">
+                        <source media="(max-width: 600px)" srcset="images/wddmed.png">
+                        <source media="(min-width: 800px)" srcset="images/wddlrg.png">
+                        <img src="images/wddlrg.png" alt="WDD230 Responsive Images">
+                    </picture>
                     <div class="heroTemp">
                         <!-- <img src="images/116.webp" alt="Partly Cloudy"> -->
                         <p class="current">Currently: <span id="t">79</span>&#176;F</p>
