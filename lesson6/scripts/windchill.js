@@ -1,14 +1,17 @@
-function windChill() {
-  let temp = parseFloat(document.getElementById('tempurature').value);
-  let speed = parseFloat(document.getElementById('windSpeed').value);
+let t = parseFloat(document.querySelector("#t").textContent);
+let s = parseFloat(document.querySelector("#s").textContent);
+let windchill = "";
 
-  var sum = windChill (temp, speed);
-
-  document.getElementById("wind").innerHTML = sum.toFixed(2)
+if (t <= 50 && s > 3) {
+  windchill = windChill(t, s);
+  windchill = `${windchill}&#176;F`;
+} else {
+  windchill = "N/A";
 }
+// output
+document.querySelector("#w").innerHTML = windchill;
 
 function windChill(temp, speed) {
-  var t = temp
-  var s = speed
-  var chill = 35.75 + 0.6215 * t - 35.75
+  return "windChill"
+  return "SUCCESS";
 }

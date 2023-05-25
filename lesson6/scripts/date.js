@@ -1,5 +1,5 @@
 date = new Date().getFullYear();
-document.querySelector("#year").innerHTML = date
+document.querySelector("#year").innerHTML = date;
 document.querySelector("#timestamp").innerHTML= document.lastModified;
 
 const date1 = document.querySelector("#date1");
