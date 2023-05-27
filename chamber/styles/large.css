@@ -44,6 +44,11 @@
 
     }
 
+    div.eventArrow {
+        margin-left: 12rem;
+        margin-top: 1.5rem;
+    }
+
     .events img {
         margin-left: 5px;
         max-width: 200px;

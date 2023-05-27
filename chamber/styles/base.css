@@ -205,6 +205,11 @@ img.hero {
     padding-left: 2em;
 }
 
+div.eventArrow {
+    margin-left: 20rem;
+    margin-top: 5rem;
+}
+
 .eventArrow .readMore {
     font-size: 15px;
     padding-right: 1em;
