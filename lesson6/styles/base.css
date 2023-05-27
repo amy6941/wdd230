@@ -113,6 +113,10 @@ marquee {
     text-align: center;
 }
 
+picture img {
+    width: 100%;
+}
+
 .hero {
     background-color: #5FA8D3;
     grid-row: 1;
