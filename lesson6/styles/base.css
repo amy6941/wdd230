@@ -22,11 +22,12 @@ color: #FEFCFD;
     list-style: none;
     background-color: #5FA8D3;
     flex: 1 1 100%;
-    font-size: 30px;
+
 }
 
 #navigation li.active a {
     color: #FEFCFD;
+    font-size: 30px;
 }
 
 #navigation li:hover {
