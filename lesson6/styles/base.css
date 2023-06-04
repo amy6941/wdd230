@@ -317,7 +317,12 @@ body {
     
     div.contact {
         display: grid;
-        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* justify-content: center; */
+    }
+
+    footer img {
+        grid-column: 2;
     }
     
     .logo1 {
