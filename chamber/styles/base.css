@@ -116,8 +116,12 @@ div.headLogo p {
     margin-bottom: 8px;
 }
 
-marquee {
+banner {
+    background-color: #FEFCFD;
+    color: #232E4F;
+    text-align: center;
     font-size: 25px;
+    display: none;
 }
 
 /*Main Section*/
