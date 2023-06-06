@@ -15,23 +15,26 @@ const loadImages = (image) => {
 };
 
 // first check to see if Intersection Observer is suported
-
 if('IntersectionObserver' in window) {
-    const imgObserver = new IntersectionObserver((items, observer) => {
+    const Observer = new IntersectionObserver((items, observer) => {
         items.forEach((item) => {
+            if (item.isIntersecting) {
+                loadImages(item.target);
+                observer.unobserve(item.target);
+            }
         });
     }, imgOptions);
 
     // lopp through each img and check status and load if necessary
     imagesToLoad.forEach((img) => {
-        imgObserver.observe(img);
+        Observer.observe(img);
       });
 }
 else { //load all images if not supported
     imagesToLoad.forEach((img) => {
         loadImages(img);
     });
-}
+};
 
 
 
