@@ -5,15 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/lazy.css">
+    <script src="scripts/lazyimg.js" defer></script>
     <title>W07 Prepare Activity: Progressive Loading of Images</title>
 </head>
 <body>
     <h1>W07 Prepare Activity: Progressive Loading of Images</h1>
-    <img src="images/lake.jpg" alt="Star Valley Wy" loading="lazy"> <br>
-    <img src="images/Dadandmaisey.JPG" alt="picture 2" loading="lazy"> <br>
-    <img src="images/2020thankfulpumpkin.jpg" alt="picture 3" loading="lazy"> <br>
-    <img src="images/MomandDad.jpg" alt="picture 4" loading="lazy"> <br>
-    <img src="images/TominFalcon.jpg" alt="picture 5" loading="lazy"> <br>
-    <img src="images/YipYips.jpg" alt="picture 6" loading="lazy"> <br>
+    <picture>
+        <img src= "placeholderimage.png/200/400" data-src= "2020thankfulpumpkin.jpg/200/400" alt= "thankful">
+    </picture>
+    <picture>
+        <img src= "placeholderimage.png/200/400" data-src= "dadandmaisey.jpg/200/400" alt= "Dad">
+    </picture>
+    <picture>
+        <img src= "placeholderimage.png/200/400" data-src= "lake.jpg/200/400" alt= "Star Valley">
+    </picture>
+    <picture>
+        <img src= "placeholderimage.png/200/400" data-src= "momanddad.jpg/200/400" alt= "Folks">
+    </picture>
+    <picture>
+        <img src= "placeholderimage.png/200/400" data-src= "tominfalcon.jpg/200/400" alt= "Star Wars">
+    </picture>
+    <picture>
+        <img src= "placeholderimage.png/200/400" data-src= "yipyips.jpg/200/400" alt= "Yip Yips Sesame Street">
+    </picture>
+
+    
 </body>
 </html>
