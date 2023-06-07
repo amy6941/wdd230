@@ -1,0 +1,68 @@
+body {
+    font-family: 'Rock Salt', cursive;
+}
+
+caption {
+    text-align: center;
+    font-size: 12px;
+    caption-side: bottom;
+}
+
+table {
+    margin: 20px auto;
+    border: thin solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    border-collapse: collapse;
+}
+
+th.company {
+    font-size: 30px;
+}
+
+tr:first-child th {
+	background-color: black;
+	color: white;
+}
+
+th, td {
+	padding: 10px 35px;
+	border: 1px solid black;
+}
+
+.package {
+    color: white;
+    background-color:rgba(0,0,0,.8);
+}
+
+th.package {
+    font-size: 25px;
+}
+
+.feature {
+    font-size: 20px;
+}
+
+th {
+	background-color: black;
+	font-size: larger;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: lightgray;
+}
+
+td.check {
+    color: rgba(26, 26, 107, 0.733);
+    font-size: 30px;
+    font-weight: bolder;;
+}
+
+td.x {
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+}
