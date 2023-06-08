@@ -186,6 +186,10 @@
 
     /* Join Page */
 
+    div.form {
+        display: block;
+    }
+    
     
 
     

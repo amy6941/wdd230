@@ -157,10 +157,16 @@
     /* Footer */
 
 
-    .contact iframe {
+    /* .contact iframe {
         /* float: right; */
-        border: 1px solid black;
+        /* border: 1px solid black;
         margin: 1em;
+    } */ 
+
+    /* ---------- Jon Page ---------- */
+
+    form label.sbs {
+        padding: .4rem 0;
     }
 
 }

@@ -341,16 +341,19 @@ p.name {
 /* ---------- Join Page ---------- */
 .signup  {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: #FEFCFD;
     padding: 0 2%;
     min-height: 20rem;
 }
 
-#join {
+h1#join {
     margin: 15px;
-    display: flex;
-    flex-wrap: wrap;
-   
+    grid-column: span 2;
+}
+
+form {
+    margin: 30px;
 }
 
 div.form {
@@ -443,6 +446,33 @@ form label.top input:required:valid {
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-weight: bolder;
+    transition: 1s;
+    transition-timing-function: ease;
+}
+
+div.membership div:nth-child(1) {
+    display: block;
+}
+
+div.membership div, div.membership:hover div {
+    animation: appear 2s ease;
+}
+
+div.membership div:nth-child(2) {
+    display: none;
+}
+
+div#gold {
+    background-color: rgb(225, 165, 13);
+}
+
+div#silver {
+    background-color: silver;
+}
+
+div#bronze {
+    background-color: rgb(192, 161, 122);
 }
 
 /* Footer */
