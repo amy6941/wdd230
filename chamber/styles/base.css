@@ -355,6 +355,19 @@ div.start {
     justify-content: space-evenly;
 }
 
+.joinBtn {
+    padding: 2em;
+}
+
+.joinBtn a {
+    padding: 1em;
+    background-color: #9c2c13;
+    border: 2px solid #77200c;
+    border-radius: 1em;
+    color: #FEFCFD;
+    font-size: 1.25rem;
+}
+
 
 /* ------------ FORM ------------ */
 
@@ -442,17 +455,54 @@ form label.top input:required:valid {
     transition: 1s;
     transition-timing-function: ease;
 }
+/* 
+div.membership div.show {
+    display: block;
+}
+
+div.membership div.hide:hover {
+    animation: appear 2s ease;
+}
+
+div.membership div.show:hover {
+    display: none;
+}
+
+div.membership div.hide {
+    display: none;
+} */
+
+@keyframes appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 
 div.membership div:nth-child(1) {
     display: block;
 }
 
-div.membership div, div.membership:hover div {
-    animation: appear 2s ease;
+div.membership:hover div:nth-child(1) {
+    display: none;
 }
 
 div.membership div:nth-child(2) {
     display: none;
+}
+
+div.membership:hover div:nth-child(2) {
+    display: block;
+}
+
+div.membership div, div.membership:hover div {
+    animation: appear 2s;
+
+}
+.center {
+    text-align: center;
+}
+
+li {
+    text-align: left;
 }
 
 div#gold {
