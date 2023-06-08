@@ -23,7 +23,7 @@
                 <p class="title">Welcome to Franklin <br>
                 Chamber of Commerce </p>
             </div>
-            <marquee>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</marquee>
+            <banner>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</banner>
             <div class="social">
                 <a href="www.instagram.com">
                     <img src="images/instagram01.webp" alt="Instagram">
@@ -44,62 +44,101 @@
             <div class="website">www.franklincitychamber.com</div>
             <div class="date">  <span id="date1"></span> </div>
         </header>
+    </div>
+    <main class="signup">
+        <h1 id="join">Join the Franklin Chamber</h1>
+        <div class="form">
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top"> 
+                        First Name* 
+                        <input type="text" name="fname" required>
+                    </label>
+                    <label class="top"> Last Name* 
+                        <input type="text" name="lname" required></label>
+                    <label class="top">Business Name* <input type="text" name="business" required></label>
+                    <label class="top">Business Position/Title <input type="text" name="title"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">website <input type="url" name="url" placeholder="http://"></label>
+                    <label class="top">Business description
+                        <textarea name="businessdescription" cols="20" rows="4"></textarea>
+                    </label>                
+                </fieldset>
 
-        <main>
-            <table>
-                <!-- <caption>Join the Franklin Chamber</caption> -->
-                <thead>
-                    <tr>
-                        <th colspan="4" scope="colgroup" class="company">Join the Franklin Chamber</th>
-                    </tr>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col" class="package">Basic</th>
-                        <th scope="col" class="package">Premium</th>
-                        <th scope="col" class="package">Deluxe</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="feature">Feature 1</td>
-                        <td class="check">&#x2713;</td>
-                        <td class="check">&#x2713;</td>
-                        <td class="check">&#x2713;</td>
-                    </tr>
-                    <tr>
-                        <td class="feature">Feature 2</td>
-                        <td class="x">&#9932;</td>
-                        <td class="check">&#x2713;</td>
-                        <td class="check">&#x2713;</td>
-                    </tr>
-                    <tr>
-                        <td class="feature">Feature 3</td>
-                        <td class="x">&#9932;</td>
-                        <td class="x">&#9932;</td>
-                        <td class="check">&#x2713;</td>
-                    </tr>
-                </tbody>
-                
-            </table>
-
-        </main>
-        
-        <footer>
-            <div >
-                <img src="images/logo.webp" alt="Franklin Chamber of Commerce" class="logo1">
-            </div>
-            <div class="contact">
-                <p>Franklin Chamber of Commerce</p>
-                <address>1140 Columbia Ave, Franklin, TN 37064</address>
-                <a href="mailto:info@franklinchamber.com">Info@FranklinChamber.com</a>
-                <a href="https://goo.gl/maps/4z1BDKRrpZjfJtek8">Find Us!</a>
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1814.6347654350643!2d-86.87346732386285!3d35.917467194126495!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1684448768636!5m2!1sen!2sus" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-            </div>
-            <p>
-                © <span id="year"></span> | Last Updated: <span id="timestamp"></span>
-            </p>
-        </footer>
+                <fieldset>
+                    <legend>Membership</legend>
+                    <div>
+                        <label class="sbs"><input type="radio" name="account" value="Gold">  Gold</label>
+                        <label class="sbs"><input type="radio" name="account" value="silver">  Silver</label>
+                        <label class="sbs"><input type="radio" name="account" value="bronze">   Bronze</label>    
+                        <label class="sbs"><input type="radio" name="account" value="nonprofit">  Non-Profit</label>
+                    </div>
+                </fieldset> 
+            </form>
         </div>
+        <div class="memberships">
+            <div class="membership" id="gold">
+                <div>Gold Membership</div> 
+                <div>Gold Benefits
+                    <ul>
+                        <li>All Silver Benefits</li>
+                        <li>Highlighted Color Directory Listing</li>
+                        <li>Complimentary Use of Community Room</li>
+                        <li>Table of 10 to Annual Gala</li>
+                        <li>20 Annual Breakfast or Luncheon Tickets</li>
+                        <li>12 Email Blasts to Members</li>
+                        <li>Full Color Logo of Link on Chamber Homepage</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="membership" id="silver">
+                <div>Silver Membership</div>
+                <div>Silver Benefits
+                    <ul>
+                        <li>All Bronze Benefits</li>
+                        <li>Enhanced Website Package</li>
+                        <li>Table of 8 to Annual Gala</li>
+                        <li>6 Email Blasts to Members</li>
+                        <li>Greyscale Logo or Link on Chamber Homepage</li>
+                        <li>10 Annual Tickets to Breakfast or Luncheons</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="membership" id="bronze">
+                <div>Bronze Membership</div>
+                <div>Bronze Benefits
+                    <ul>
+                        <li>Certification of Origin</li>
+                        <li>Basic Website Package</li>
+                        <li>2 Tickets to Annual Gala</li>
+                        <li>2 Email Blasts to Members</li>
+                        <li>Promotional Post on Social Media</li>
+                        <li>Membership Mailing List</li>
+                    </ul>
+                </div>
+            </div>   
+        </div>     
+    </main>
+    
+    <footer>
+        <div >
+            <img src="images/logo.webp" alt="Franklin Chamber of Commerce" class="logo1">
+        </div>
+        <div class="contact">
+            <p>Franklin Chamber of Commerce</p>
+            <address>1140 Columbia Ave, Franklin, TN 37064</address>
+            <a href="mailto:info@franklinchamber.com">Info@FranklinChamber.com</a>
+            <a href="https://goo.gl/maps/4z1BDKRrpZjfJtek8">Find Us!</a>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1814.6347654350643!2d-86.87346732386285!3d35.917467194126495!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1684448768636!5m2!1sen!2sus" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+        <p>
+            © <span id="year"></span> | Last Updated: <span id="timestamp"></span>
+        </p>
+    </footer>
+    
     
 </body>
 </html>

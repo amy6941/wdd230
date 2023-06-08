@@ -79,9 +79,12 @@ form label.top, form div {
     padding-top: 1rem;
     color: #9c2c13;
     font-size: .8rem;
+   
 }
 
-fomr label.top input, form label.top select {
+form label.top input, 
+form label.top select, 
+form label.top textarea {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
