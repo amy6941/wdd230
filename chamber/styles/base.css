@@ -350,6 +350,7 @@ p.name {
 h1#join {
     margin: 15px;
     grid-column: span 2;
+    text-align: center;
 }
 
 form {
