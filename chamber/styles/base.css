@@ -339,29 +339,20 @@ p.name {
 }
 
 /* ---------- Join Page ---------- */
-.signup  {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.name  {
+    display: flex;
+    flex-flow: column nowrap;
     background-color: #FEFCFD;
-    padding: 0 2%;
-    min-height: 20rem;
+    align-items: center;
+
 }
 
-h1#join {
-    margin: 15px;
-    grid-column: span 2;
-    text-align: center;
-}
 
-form {
-    margin: 30px;
-}
-
-div.form {
+div.start {
     margin: 15px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
 }
 
 
