@@ -347,7 +347,6 @@ p.name {
 
 }
 
-
 div.start {
     margin: 15px;
     display: flex;
@@ -355,18 +354,33 @@ div.start {
     justify-content: space-evenly;
 }
 
-.joinBtn {
+.submitBtn {
     padding: 2em;
-}
-
-.joinBtn a {
-    padding: 1em;
     background-color: #9c2c13;
     border: 2px solid #77200c;
     border-radius: 1em;
     color: #FEFCFD;
     font-size: 1.25rem;
 }
+
+.thanks {
+    background-color: #FEFCFD;
+    display: block;
+    text-align: center;
+}
+
+.thanks p {
+    font-size: 18px;
+}
+
+/* .joinBtn {
+    padding: 1em;
+    background-color: #9c2c13;
+    border: 2px solid #77200c;
+    border-radius: 1em;
+    color: #FEFCFD;
+    font-size: 1.25rem;
+} */
 
 
 /* ------------ FORM ------------ */
@@ -517,23 +531,16 @@ div#bronze {
     background-color: rgb(192, 161, 122);
 }
 
-/* Footer */
+/* ---------- Footer ---------- */
 
-/* footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-footer p {
-    grid-column: 2;
-    grid-row: 2;
+footer {
+    /* display: flex; */
+    padding: 1rem;
 }
 
 address {
-    grid-column: 2;
-    grid-row: 3;
-} */
+    margin: .5rem;
+}
 
 .logo1 {
     max-width: 100px;
