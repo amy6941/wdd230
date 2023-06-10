@@ -94,7 +94,7 @@ body {
     }
     
     .logo {
-        max-width: 8em;
+        height: 7em
     }
     
     span.highlight { 
@@ -312,14 +312,55 @@ body {
     .join {
         display: none;
     }
+
+
+
+    footer {
+        display: block;
+        padding: 1rem;
+    }
+    
+    address {
+        margin: .5rem;
+    }
+    
+    .logo1 {
+        max-width: 100px;
+        float: left;
+        margin: 25px;
+        /* grid-column: 1;
+        grid-row: 2; */
+    }
+    .contact img {
+        width: 30px;
+    }
+    .contact p {
+        font-size: 25px;
+        margin: 0;
+    }
+    
+    .contact a {
+        color: #FEFCFD;
+        padding: 2px;
+        /* grid-column: 2;
+        grid-row: 3; */
+    }
+    
+    div#numvisits {
+        padding: 15px;
+    }
+    
+    footer p {
+        font-size: 12px;
+    }
     
     /* Footer */
     
-    div.contact {
+    /* div.contact {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         /* justify-content: center; */
-    }
+    /* }
 
     footer img {
         grid-column: 2;
@@ -334,4 +375,4 @@ body {
     .contact a {
         color: #FEFCFD;
         padding: 2px;
-    }
+    } */

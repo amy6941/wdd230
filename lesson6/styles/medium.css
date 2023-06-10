@@ -26,6 +26,10 @@
 
     }
 
+    .logo {
+    max-width: 8em;
+}
+
     /*.headLogo {
         justify-content: left;
     }*/
