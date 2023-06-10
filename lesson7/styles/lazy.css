@@ -1,11 +1,12 @@
 body {
     font-family: "Poppins", sans-serif;
     margin: 15px;
+    width: 75%;
 }
 
 img {
     width: 250px;
-    margin: 30px;
+    margin: 30px 35px 40px 15em;
     display: block;
 }
 
