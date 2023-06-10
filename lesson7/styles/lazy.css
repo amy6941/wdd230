@@ -1,11 +1,10 @@
 body {
-    /* display: block; */
     font-family: "Poppins", sans-serif;
     margin: 15px;
 }
 
 img {
-    width: 400px;
+    width: 250px;
     margin: 30px;
     display: block;
 }
