@@ -26,12 +26,14 @@ body {
         list-style: none;
         background-color: #A3CEE6;
         flex: 1 1 100%;
+        text-align: center;
     }
     
     #navigation li a {
         text-decoration: none;
         font-size: 30px;
         color: #232E4F;
+    
     }
     
     li.active {
