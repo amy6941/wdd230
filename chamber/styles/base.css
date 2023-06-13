@@ -148,10 +148,12 @@ div.headLogo p {
     padding: 1rem;
 } 
 
-.discover img {
+figure img {
     width: 350px;
     margin: 1em;
-    padding: 15px;
+    /* padding: 15px; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 figcaption {
