@@ -1,0 +1,46 @@
+body {
+    display: block;
+    background-color: rgb(216, 213, 213);
+}
+
+h1 {
+    text-align: center;
+}
+
+section  {
+    width: auto;
+    margin: 1rem;
+    padding: 5px;
+    background-color: lightblue;
+    border: solid 1px rgb(13, 96, 123);
+    text-align: center;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    padding: 1.5em;
+    background-color: lightblue;
+}
+
+@media only screen and (min-width: 35.5em) {
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
