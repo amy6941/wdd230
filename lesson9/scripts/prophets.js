@@ -37,8 +37,8 @@ const displayProphets = (prophets) => {
         card.appendChild(h3);
         card.appendChild(p);
         card.appendChild(portrait);
-
         cards.appendChild(card);
+        
     }) //end of forEach loop
         
 } // end of function

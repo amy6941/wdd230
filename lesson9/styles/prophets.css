@@ -1,11 +1,18 @@
 body {
     display: block;
     background-color: rgb(216, 213, 213);
+    border: solid 1px rgb(13, 96, 123);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
     text-align: center;
+    font-size: 4em;
+    background-color: lightblue;
+    border: solid 1px rgb(13, 96, 123);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
+
 
 section  {
     width: auto;
@@ -20,6 +27,16 @@ section  {
 p {
     font-size: 20px;
     font-weight: bold;
+    margin: 3px;
+}
+
+h2, h3 {
+    margin: 5px;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 2.5em;
 }
 
 
@@ -29,6 +46,10 @@ footer {
     margin: 1em;
     padding: 1.5em;
     background-color: lightblue;
+}
+
+section#shadow-host-companion {
+    display: none;
 }
 
 @media only screen and (min-width: 35.5em) {
