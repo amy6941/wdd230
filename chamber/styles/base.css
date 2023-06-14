@@ -145,7 +145,7 @@ div.headLogo p {
 }
 img.hero {
     width: 95%;
-    height: 98%;
+    height: 97%;
     padding: .5rem;
 }
 
@@ -227,7 +227,7 @@ img.hero {
 }
 
 .events p {
-    font-size: 30px !important;
+    font-size: 30px;
     text-align: left;
     /* padding-left: 2em; */
 }
