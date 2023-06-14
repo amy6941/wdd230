@@ -135,42 +135,7 @@ div.headLogo p {
     text-align: center;
 }
 
-.discover {
-    margin: 1em;
-    padding: 1em;
-    text-align: center;
-    background-color: #A3CEE6;
-}
 
-.discover p {
-    text-align: left;
-    margin: 10px;
-    padding: 1rem;
-} 
-
-figure img {
-    width: 350px;
-    margin: 1em;
-    /* padding: 15px; */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-figcaption {
-    font-style: italic;
-    font-size: 18px;
-}
-
-figure {
-    border: solid 1px #232E4F;
-    width: fit-content;
-}
-
-.hover:hover {box-shadow: 0 0 50px #3D518C;}
-
-.discover li {
-    text-align: left;
-}
 
 .hero {
     background-color: #A3CEE6;
@@ -349,6 +314,40 @@ p.name {
 
 .join {
     display: none;
+}
+
+/* ---------- Discover Page ---------- */
+
+.discover {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    background-color: #A3CEE6;
+}
+
+.discover p {
+    text-align: left;
+    margin: 10px;
+    padding: 1rem;
+} 
+
+figure img {
+    width: 350px;
+    margin: 1em;
+    /* padding: 15px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.hover:hover {box-shadow: 0 0 50px #3D518C;}
+
+.discover li {
+    text-align: left;
 }
 
 /* ---------- Join Page ---------- */
