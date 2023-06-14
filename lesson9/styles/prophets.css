@@ -8,20 +8,38 @@ body {
 h1 {
     text-align: center;
     font-size: 4em;
-    background-color: lightblue;
-    border: solid 1px rgb(13, 96, 123);
+    background-color:rgb(27, 11, 31, 1);;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.cards {
+	margin-left: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;
 }
 
 
 section  {
-    width: auto;
-    margin: 1rem;
-    padding: 5px;
-    background-color: lightblue;
-    border: solid 1px rgb(13, 96, 123);
-    text-align: center;
+    color: #fff;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+    background-color: rgb(27, 11, 31, 1);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+section img {
+    width: 240px;
+	height: auto;
+	border: 1px solid #fff;
+	box-shadow: 0 0 20px #fff;
+	margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 p {
@@ -36,23 +54,24 @@ h2, h3 {
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 
 footer {
+    color: #fff;
     display: flex;
     justify-content: center;
     margin: 1em;
     padding: 1.5em;
-    background-color: lightblue;
+    background-color: rgb(27, 11, 31, 1);
 }
 
 section#shadow-host-companion {
     display: none;
 }
 
-@media only screen and (min-width: 35.5em) {
+/* @media only screen and (min-width: 35.5em) {
     div {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -62,6 +81,6 @@ section#shadow-host-companion {
 @media only screen and (min-width: 60em) {
     div {
         grid-template-columns: 1fr 1fr 1fr;
-    }
+    } */
 
 }
