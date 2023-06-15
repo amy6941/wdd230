@@ -1,15 +1,18 @@
 body {
+    display: flex;
+    flex-direction: column;
     font-family: "Poppins", sans-serif;
+    font-size: 30px;
     margin: 15px;
     width: 75%;
 }
-
+ 
 img {
-    width: 250px;
-    margin: 30px 35px 40px 15em;
-    display: block;
+    margin: 20px;
+
+    transition: filter 0.5s;
 }
 
-h1 {
-    font-size: 30px;
+img[data-src] {
+    filter: blur(0.5em);
 }

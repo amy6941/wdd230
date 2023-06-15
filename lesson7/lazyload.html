@@ -5,32 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/lazy.css">
-    <script src="scripts/lazyimg.js" defer></script>
+    
     <title>W07 Prepare Activity: Progressive Loading of Images</title>
 </head>
 <body>
-    <h1>W07 Prepare Activity: Progressive Loading of Images</h1>
-    <picture>
-        <img src= "images/placeholder.png" data-src= "images/2020thankfulpumpkin.jpg" alt= "thankful" >
-    </picture>
-    <picture>
-        <img src= "images/placeholder.png" data-src= "images/Dadandmaisey.JPG" alt= "Dad" >
-    </picture>
-    <picture>
-        <img src= "images/placeholder.png" data-src= "images/lake.jpg" alt= "Star Valley" >
-    </picture>
-    <picture>
-        <img src= "images/placeholder.png" data-src= "images/MomandDad.jpg" alt= "Folks" >
-    </picture>
-    <picture>
-        <img src= "images/placeholder.png" data-src= "images/TominFalcon.jpg" alt= "Star Wars" ">
-    </picture>
-    <picture>
-        <img src= "images/placeholder.png" data-src= "images/YipYips.jpg" alt= "Yip Yips Sesame Street" >
-    </picture>
-    <picture>
-        <img src= "images/placeholder.png" data-src= "images/hero3.jpeg" alt= "waterfall" >
-    </picture>
-    
+    <h1>Activity: Lazy Load</h1>
+    <img src="./images/placeholder.png" data-src="images/dadandmaisey.jpg" height=400 width= 300 alt="Dad and Maisey" loading="lazy">
+    <img src="./images/placeholder.png" data-src="images/thankfulpumpkin.jpg" height=300 width= 400 alt="Thankful Pumpkin" loading="lazy">
+    <img src="./images/placeholder.png" data-src="images/starwarscrochet.jpg" height=400 width= 300 alt="ATAT and Grogu" loading="lazy">
+    <img src="./images/placeholder.png" data-src="images/yipyips.jpg" height=300 width= 400 alt="Yip Yips" loading="lazy">
+    <img src="./images/placeholder.png" data-src="images/sandersonsisters.jpg" height=400 width= 300 alt="sanderson sisters" loading="lazy">
+    <img src="./images/placeholder.png" data-src="images/capeverde.jpg" height=300 width= 400 alt="my mission" loading="lazy">
+
 </body>
+<script src="scripts/lazyimg.js"></script>
 </html>
