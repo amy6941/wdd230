@@ -1,6 +1,6 @@
 
 
-const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+const url = 'https://amy6941.github.io/chamber/json/data.json';
 
 async function getProphetData() {
     const response = await fetch(url);
