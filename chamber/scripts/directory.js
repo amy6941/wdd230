@@ -39,16 +39,15 @@ const displayMembers = (members) => {
         portrait.setAttribute('src', member.imageurl);
         portrait.setAttribute('alt', `${member.name} logo`);
         portrait.setAttribute('loading', 'lazy');
-        // portrait.setAttribute('width', '50');
-        // portrait.setAttribute('height', '100');
 
         //append the section(card) with the createds elements
         card.appendChild(h2);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(website);
         card.appendChild(description);
         card.appendChild(portrait);
+        card.appendChild(website);
+        card.appendChild(address);
+        card.appendChild(phone);
+       
 
         cards.appendChild(card);
 
