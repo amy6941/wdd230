@@ -9,7 +9,7 @@ async function getMemberData() {
     displayMembers(data.members);
 }
 
-getDirectoryData();
+getMemberData();
 
 const displayMembers = (members) => {
     const cards = document.querySelector('div.cards');
@@ -18,7 +18,7 @@ const displayMembers = (members) => {
         //Create elements to add to the div.cards element
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
-        let imageurl = document.createElement('img');
+        let portrait = document.createElement('img');
         let membership = document.createElement('p');
         let address = document.createElement('p');
         let phone = document.createElement('tel');
@@ -27,7 +27,7 @@ const displayMembers = (members) => {
 
         
 
-        //build the h2 content out to show the prophets full name - finish the template string
+        //build the card content out
         h2.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
         phone.textContent = `${member.phone}`;
@@ -39,8 +39,8 @@ const displayMembers = (members) => {
         portrait.setAttribute('src', member.imageurl);
         portrait.setAttribute('alt', `${member.name} logo`);
         portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '140');
-        portrait.setAttribute('height', '240');
+        // portrait.setAttribute('width', '50');
+        // portrait.setAttribute('height', '100');
 
         //append the section(card) with the createds elements
         card.appendChild(h2);
@@ -49,7 +49,7 @@ const displayMembers = (members) => {
         card.appendChild(website);
         card.appendChild(description);
         card.appendChild(portrait);
-        
+
         cards.appendChild(card);
 
     }) //end of forEach loop
