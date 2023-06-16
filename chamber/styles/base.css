@@ -570,44 +570,40 @@ main.members {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #bed;
+	background-color: #A3CEE6;
 	text-align: center;
 }
 
 .menu button {
-	padding: 1rem;
+	padding: .5rem;
 	font-weight: 700;
 }
 
 section {
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
+	padding: 1rem;
     margin: .5em;
 	background-color: #A3CEE6;
 }
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(autofit(100px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
 }
 
-.grid section {
+/* .grid section {
 	text-align: center;
-}
+} */
 
 .grid img {
-	border: 1px solid #fff;
-	box-shadow: 0 0 10px #333;
+	border: 1px solid #FEFCFD;
+	box-shadow: 0 0 10px #232E4F;
 }
 
 .grid section > * {
 	margin: 0.1rem;
-}
-
-.grid h3 {
-	font-family: "Caveat", cursive;
 }
 
 .list {
@@ -617,7 +613,7 @@ section {
 
 .list section {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-columns: 2fr 1.5fr 1.5fr;
 	margin: 0;
 	padding: 0.25rem;
 }
@@ -627,12 +623,12 @@ section {
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+	display: none; 
 }
 
 .list section h3 {
 	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
+
 }
 
 .list section:nth-child(even) {
@@ -648,20 +644,15 @@ section p {
 	font-size: smaller;
 }
 
+.list section p {
+    display: none;
+}
+
 section a {
-	font-family: "Roboto", Arial, sans-serif;
 	font-size: 0.85rem;
 	color: #232E4F;
-	letter-spacing: 1.1pt;
+	/* letter-spacing: 1.1pt; */
 }
-
-img {
-	height: 75px;
-	max-width: 100%; /* Images are jerks - Seattle*/
-}
-
-
-
 
 /* ---------- Footer ---------- */
 
@@ -702,4 +693,8 @@ div#numvisits {
 
 footer p {
     font-size: 12px;
+}
+
+section#shadow-host-companion {
+    display: none;
 }

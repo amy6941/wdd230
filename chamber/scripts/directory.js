@@ -22,7 +22,7 @@ const displayMembers = (members) => {
         let membership = document.createElement('p');
         let address = document.createElement('p');
         let phone = document.createElement('tel');
-        let website = document.createElement('url');
+        let website = document.createElement('a');
         let description = document.createElement('p');
 
         
@@ -42,15 +42,32 @@ const displayMembers = (members) => {
 
         //append the section(card) with the createds elements
         card.appendChild(h2);
-        card.appendChild(description);
+        // card.appendChild(description);
         card.appendChild(portrait);
         card.appendChild(website);
         card.appendChild(address);
         card.appendChild(phone);
-       
+        
 
         cards.appendChild(card);
 
     }) //end of forEach loop
         
 } // end of function
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", () => {
+
+	display.classList.add("list");
+	display.classList.remove("grid");
+});
