@@ -552,6 +552,16 @@ main.members {
 	max-width: 700px;
 	background-color: #fff;
 }
+
+#grid img, #list img {
+    height: 24px;
+}
+
+div#directory {
+    display: grid;
+    grid-template-columns: repeat(autofill, 300px);
+}
+
 .members h1 {
     text-align: center;
 }
@@ -586,24 +596,18 @@ section {
 	background-color: #A3CEE6;
 }
 
-.grid {
+.grid section {
 	display: grid;
-	grid-template-columns: repeat(autofit(100px, 1fr));
+	grid-template-columns: repeat(autofill, 150px);
 	grid-gap: 5px;
 	align-items: center;
+    margin: 0.1rem;
 }
 
-/* .grid section {
-	text-align: center;
-} */
 
 .grid img {
 	border: 1px solid #FEFCFD;
 	box-shadow: 0 0 10px #232E4F;
-}
-
-.grid section > * {
-	margin: 0.1rem;
 }
 
 .list {

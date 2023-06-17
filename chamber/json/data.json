@@ -7,7 +7,7 @@
         "phone": "(629)259-4663",
         "website": "https://feelgoodfranklin.com/",
         "description": "Gentle chiropractic care for mindful women and their families. We specialize in perinatal care and pediatrics.",
-        "imageurl": "https://content.app-sources.com/s/08485715697152524/thumbnails/640x480/Brand_Files/19-7341471.png"
+        "imageurl": "https://amy6941.github.io/wdd230/chamber/images/directory/feelgoodchiro.jpg"
       },
       {
         "name": "Morning Pointe of Brentwood",
@@ -80,34 +80,34 @@
         "phone": "(615)656-4062",
         "website": "https://buffcitysoap.com/",
         "description": "Retail: Plantbased & hand made soaps, bodycare, & laundry",
-        "imageurl": "https://cdn.shopify.com/s/files/1/0616/0659/2736/files/header_f151c14b-686a-4a4c-aa65-83977a9af414.svg?v=1677622913"
+        "imageurl": "https://amy6941.github.io/wdd230/chamber/images/directory/buffcitysoap.png"
       },
       {
-        "name": "The Factory at Franklin",
+        "name": "Williamson County Library",
         "membership": "silver",
-        "address": "230 Franklin Road Franklin, TN 37064",
-        "phone": "(615)791-1777",
-        "website": "https://factoryatfranklin.com/",
-        "description": "The Factory at Franklin is a 12-building dining, retail and entertainment complex listed in the National Register of Historic Places.",
-        "imageurl": "https://factoryatfranklin.com/wp-content/uploads/2023/03/THE-FACTORY.png"
+        "address": "1314 Columbia Avenue Franklin, TN 37064",
+        "phone": "(615)595-1243",
+        "website": "https://wcpltn.org/",
+        "description": "Discover Learn Succeed",
+        "imageurl": "https://amy6941.github.io/wdd230/chamber/images/directory/library.jpg"
       },
       {
-        "name": "NovaTech",
-        "membership": "gold",
-        "address": "4106 Charlotte Ave Nashville, TN 37209",
-        "phone": "(615)577-7698",
-        "website": "https://novatech.net/",
-        "description": "Managed Office, Printers & Copiers, Managed IT Services, Document Solutions",
-        "imageurl": "https://novatech.net/wp-content/uploads/2021/11/Image_1.png"
+        "name": "Lotz House Museum",
+        "membership": "Non-profit",
+        "address": "1111 Columbia Ave franklin, TN 37064",
+        "phone": "(615)790-7190",
+        "website": "https://www.lotzhouse.com/",
+        "description": "Lotz House, which has been on the National Historic Register since 1976 is located in the heart of downtown historic Franklin, Tennessee at ''ground zero'' for the Battle of Franklin.",
+        "imageurl": "https://amy6941.github.io/wdd230/chamber/images/directory/Lotzhouse.jpg"
       },
       {
-        "name": "Residence Inn by Marriott Franklin Berry Farms",
-        "membership": "gold",
-        "address": "8078 Berry Farms Crossing Franklin, TN 37064",
-        "phone": "(615) 716-1810",
-        "website": "https://www.marriott.com/",
-        "description": "Extended stay upscale hotel from the Marriott brand of hotels.",
-        "imageurl": "https://cache.marriott.com/content/dam/marriott-digital/ri/global-property-shared/en_us/logo/assets/ri_logo_L.png"
+        "name": "Vanderbilt University",
+        "membership": "bronze",
+        "address": "2007 Terrace Place Nashville TN 37203",
+        "phone": "(615) 322-7311",
+        "website": "https://www.vanderbilt.edu/",
+        "description": "Together we excel",
+        "imageurl": "https://amy6941.github.io/wdd230/chamber/images/directory/vanderbilt.png"
       },
       {
         "name": "Kilwins",
@@ -125,7 +125,7 @@
         "phone": "(615)794-5527",
         "website": "https://puckettsgro.com/franklin/",
         "description": "A community restaurant with live music just feet from your table.",
-        "imageurl": "https://amy6941.github.io/wdd230/chamber/images/main/pucketts.jpeg"
+        "imageurl": "https://amy6941.github.io/wdd230/chamber/images/directory/pucketts.png"
       },
       {
         "name": "Tractor Supply",
@@ -134,7 +134,7 @@
         "phone": "(615) 791-0791",
         "website": "https://www.tractorsupply.com/",
         "description": "Chain with a wide variety of agricultural & livestock supplies, plus tools, workwear & boots.",
-        "imageurl": "https://www.tractorsupply.com/content/experience-fragments/tsc/en/site/header/master/_jcr_content/root/header/cmp-header__image-logo.coreimg.svg/1686584781711/tsc-logo.svg"
+        "imageurl": "https://amy6941.github.io/wdd230/chamber/images/directory/tractorco.jpg"
       }
     ]
   }
