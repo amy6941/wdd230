@@ -557,9 +557,9 @@ main.members {
     height: 24px;
 }
 
-div#directory {
+#grid div.cards {
     display: grid;
-    grid-template-columns: repeat(autofill, 300px);
+    grid-template-columns: 1fr 1fr;
 }
 
 .members h1 {
