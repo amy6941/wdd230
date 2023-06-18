@@ -45,13 +45,14 @@ const displayMembers = (members) => {
 
         //append the section(card) with the createds elements
         
-        card.appendChild(portrait);
+       
         card.appendChild(h2);
         // card.appendChild(description);
         
         card.appendChild(website);
         card.appendChild(address);
         card.appendChild(phone);
+        card.appendChild(portrait);
         
 
         cards.appendChild(card);

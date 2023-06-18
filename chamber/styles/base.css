@@ -573,11 +573,11 @@ main.members {
     margin: 2px;
 }
 
-.members img {
+/* .members img {
     float: right;
     height: 38px;
     background-color: #FEFCFD;
-}
+} */
 
 .menu {
 	margin: 1rem auto;
@@ -599,6 +599,7 @@ section {
     margin: .5em;
 	background-color: #A3CEE6;
     height: 250px;
+
 }
 
 .grid {
@@ -609,10 +610,26 @@ section {
     margin: 0.1rem;
 }
 
+.grid a {
+    display: none;
+}
+
+.grid h2 {
+    font-size: 18px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.grid p {
+    padding: 15px;
+}
+
 .grid img {
+    margin: 20px;
 	border: 1px solid #FEFCFD;
 	box-shadow: 0 0 10px #232E4F;
-    float: left;
+    /* float: right; */
+    background-color: #FEFCFD;
 }
 
 .list {
