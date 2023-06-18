@@ -570,6 +570,7 @@ main.members {
 
 .members h2 {
     text-align: center;
+    margin: 2px;
 }
 
 .members img {
@@ -591,15 +592,13 @@ main.members {
 	font-weight: 700;
 }
 
-/* article.cards .grid {
-    display: grid;
-} */
 
 section {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 1rem;
     margin: .5em;
 	background-color: #A3CEE6;
+    height: 250px;
 }
 
 .grid {
@@ -610,10 +609,10 @@ section {
     margin: 0.1rem;
 }
 
-
 .grid img {
 	border: 1px solid #FEFCFD;
 	box-shadow: 0 0 10px #232E4F;
+    float: left;
 }
 
 .list {

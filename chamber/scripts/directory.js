@@ -24,6 +24,8 @@ const displayMembers = (members) => {
         let phone = document.createElement('tel');
         let website = document.createElement('a');
         let description = document.createElement('p');
+    
+        
 
         
 
@@ -34,6 +36,7 @@ const displayMembers = (members) => {
         website.textContent = `${member.website}`;
         description.textContent = `${member.description}`;
         
+        
 
         //build the image portrait by setting all the relevant attributes
         portrait.setAttribute('src', member.imageurl);
@@ -41,9 +44,11 @@ const displayMembers = (members) => {
         portrait.setAttribute('loading', 'lazy');
 
         //append the section(card) with the createds elements
+        
+        card.appendChild(portrait);
         card.appendChild(h2);
         // card.appendChild(description);
-        card.appendChild(portrait);
+        
         card.appendChild(website);
         card.appendChild(address);
         card.appendChild(phone);
