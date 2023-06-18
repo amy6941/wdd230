@@ -551,20 +551,22 @@ main.members {
 	padding: 0.5rem;
 	max-width: 700px;
 	background-color: #fff;
+    box-sizing: border-box;
 }
 
 #grid img, #list img {
     height: 24px;
 }
 
-#grid div.cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
+
+
 
 .members h1 {
     text-align: center;
 }
+
+
 
 .members h2 {
     text-align: center;
@@ -589,6 +591,10 @@ main.members {
 	font-weight: 700;
 }
 
+article {
+    display: grid;
+}
+
 section {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 1rem;
@@ -596,9 +602,9 @@ section {
 	background-color: #A3CEE6;
 }
 
-.grid section {
-	display: grid;
-	grid-template-columns: repeat(autofill, 150px);
+.grid {
+ 	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
     margin: 0.1rem;
