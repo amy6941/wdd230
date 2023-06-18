@@ -12,7 +12,7 @@ async function getMemberData() {
 getMemberData();
 
 const displayMembers = (members) => {
-    const cards = document.querySelector('div.cards');
+    const cards = document.querySelector('article.cards');
 
     members.forEach((member) => {
         //Create elements to add to the div.cards element
