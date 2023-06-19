@@ -559,9 +559,10 @@ main.members {
     height: 24px;
 }
 
-
-
-
+div.button {
+    display: flex;
+    justify-content: center;
+}
 
 .members h1 {
     text-align: center;
