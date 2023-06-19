@@ -555,6 +555,7 @@ main.members {
 }
 
 #grid img, #list img {
+    display: block;
     height: 24px;
 }
 
@@ -573,11 +574,9 @@ main.members {
     margin: 2px;
 }
 
-/* .members img {
-    float: right;
-    height: 38px;
-    background-color: #FEFCFD;
-} */
+.members img {
+    display: none;
+}
 
 .menu {
 	margin: 1rem auto;
@@ -587,7 +586,7 @@ main.members {
 	text-align: center;
 }
 
-.menu button {
+button#grid.button, button#list.button {
 	padding: .5rem;
 	font-weight: 700;
 }
@@ -598,7 +597,7 @@ section {
 	padding: 1rem;
     margin: .5em;
 	background-color: #A3CEE6;
-    height: 250px;
+    height: 300px;
 
 }
 
@@ -625,11 +624,12 @@ section {
 }
 
 .grid img {
+    display: block;
     margin: 20px;
 	border: 1px solid #FEFCFD;
 	box-shadow: 0 0 10px #232E4F;
-    /* float: right; */
     background-color: #FEFCFD;
+    width: 65%;
 }
 
 .list {
