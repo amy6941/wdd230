@@ -1,0 +1,22 @@
+* {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+} 
+
+body {
+    display: inline-block;
+    padding: 15px;
+    border: solid 1px darkgrey;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .5);
+}
+
+img#weather-icon {
+    width: 40%;
+}
+
+p {
+    font-size: 23px;
+    font-family: 'RocknRoll One', sans-serif;
+}
