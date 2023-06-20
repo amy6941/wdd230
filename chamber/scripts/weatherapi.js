@@ -2,7 +2,9 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const tempNow = document.querySelector('current');
 const windSpeed = document.querySelector('speed');
+const feel = document.querySelector('feelslike');
 
 
 
@@ -27,6 +29,9 @@ async function apiFetch() {
 
   function  displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    tempNow.innerHTML = `${weatherData.main.temp.toFixed(0)}`;
+    windSpeed.innerHTML = `${weatherData.wind.speed.toFixed}`;
+    feel.innerHTML = `${weatherData.wind.feels_like.toFixed}`;
   
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
