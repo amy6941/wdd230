@@ -71,6 +71,7 @@
     }
     .spots {
         display: flex;
+        justify-content: center;
     }
 
     .spot1, .spot2, .spot3 {
