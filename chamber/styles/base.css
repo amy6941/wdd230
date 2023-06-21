@@ -124,7 +124,7 @@ div.headLogo p {
     color: #232E4F;
     text-align: center;
     /* font-size: 25px; */
-    display: none;
+    /* display: none; */
 }
 
 /*Main Section*/
@@ -610,9 +610,9 @@ section {
     margin: 0.1rem;
 }
 
-.grid a {
+/* .grid a {
     display: none;
-}
+} */
 
 .grid h2 {
     font-size: 18px;

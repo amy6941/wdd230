@@ -30,8 +30,8 @@ async function apiFetch() {
   function  displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
     tempNow.innerHTML = `${weatherData.main.temp.toFixed(0)}`;
-    windSpeed.innerHTML = `${weatherData.wind.speed.toFixed}`;
-    feel.innerHTML = `${weatherData.wind.feels_like.toFixed}`;
+    windSpeed.innerHTML = `${weatherData.wind.speed.toFixed(0)}`;
+    feel.innerHTML = `${weatherData.wind.feels_like.toFixed(0)}`;
   
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
