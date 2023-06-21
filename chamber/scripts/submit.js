@@ -13,6 +13,6 @@ try {
 	};
 	date3.innerHTML = `<span class="highlight">${new Date().toLocaleDateString("en-UK", options)}</span>`;
 } catch (e) {
-	console.log("Browser does not support Locale");
+	console.log("Error");
 }
 console.log(date3);
