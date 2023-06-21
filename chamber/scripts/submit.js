@@ -1,5 +1,18 @@
-const today = document.querySelector('.today');
 
+date = new Date().getFullYear();
+document.querySelector("#subdate").innerHTML = date
 
-document.querySelector('.today').textContent = Date.now();
-console.log(Date.now)
+let date3 = document.querySelector(".date3");
+
+try {
+	const options = {
+		weekday: "short",
+		day: "numeric",
+		month: "short",
+		year: "numeric"
+	};
+	date3.innerHTML = `<span class="highlight">${new Date().toLocaleDateString("en-UK", options)}</span>`;
+} catch (e) {
+	console.log("Browser does not support Locale");
+}
+console.log(date3);

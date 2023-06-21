@@ -1,5 +1,5 @@
 function windChill() {
-  let temp = parseFloat(document.getElementById('tempurature').value);
+  let temp = parseFloat(document.getElementById('temperature').value);
   let speed = parseFloat(document.getElementById('windSpeed').value);
 
   var sum = windChill (temp, speed);
