@@ -276,6 +276,7 @@ figure {
     border: solid 1px #3D518C;
     box-shadow: 0 0 10px #3D518C;
     background-color: #9ad6f6;
+    max-width: 70%;
 }
 
 .news {
