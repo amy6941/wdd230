@@ -617,7 +617,8 @@ section {
 	padding: 1rem;
     margin: .5em;
 	background-color: #A3CEE6;
-    height: 300px;
+    height: 350px;
+    text-align: center;
 
 }
 
@@ -634,22 +635,24 @@ section {
 } */
 
 .grid h2 {
-    font-size: 18px;
-    margin: 0;
+    font-size: 20px;
+    margin: 10px;
     padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #FEFCFD;
 }
 
 .grid p {
-    padding: 15px;
+    padding: 5px;
 }
 
 .grid img {
-    display: block;
-    margin: 20px;
+    display: inline-block;
+    margin: 15px;
 	border: 1px solid #FEFCFD;
 	box-shadow: 0 0 10px #232E4F;
     background-color: #FEFCFD;
-    width: 65%;
+    width: 60%;
 }
 
 .list {
