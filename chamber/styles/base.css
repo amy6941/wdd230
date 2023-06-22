@@ -1,6 +1,6 @@
 
 body {
-background-color: #3D518C;
+background-color: #3B4F89;
 display: grid;
 grid-template-columns: 1fr;
 color: #FEFCFD;
@@ -108,7 +108,7 @@ span.highlight {
 
 div.headLogo p {
     text-align: center;
-    font-size: 32px;
+    font-size: 45px;
 }
 
 .website {
@@ -179,7 +179,7 @@ img.hero {
     border: 1px solid rgba(0,0,0,.1);
     background: #A3CEE6;
     padding: 1rem;
-    box-shadow: 0 0 30px #3D518C;
+    box-shadow: 0 0 30px #3B4F89;
     border-radius: 1em;
     color: #232E4F;
 }
@@ -246,7 +246,7 @@ div.eventArrow {
     float: left; */
     padding: 4px 9px;
     font-size: 15px;
-    background: #3D518C;
+    background: #3B4F89;
     color: #FEFCFD;
 }
 
@@ -273,8 +273,8 @@ figcaption {
 }
 
 figure {
-    border: solid 1px #3D518C;
-    box-shadow: 0 0 10px #3D518C;
+    border: solid 1px #3B4F89;
+    box-shadow: 0 0 10px #3B4F89;
     background-color: #9ad6f6;
     max-width: 70%;
 }
@@ -297,7 +297,7 @@ figure {
 }
 
 .spot1 {
-    border: 1px solid #3D518C;
+    border: 1px solid #3B4F89;
     padding: 40px;
     margin: 1rem;
     background-color: white;
@@ -315,7 +315,7 @@ p.name {
 }
 
 .spot2 {
-    border: 1px solid #3D518C;
+    border: 1px solid #3B4F89;
     padding: 40px;
     margin: .5rem;
     background-color: white;
@@ -358,7 +358,7 @@ div.image p {
     text-align: center;
 }
 
-.hover:hover {box-shadow: 0 0 50px #3D518C;}
+.hover:hover {box-shadow: 0 0 50px #3B4F89;}
 
 .discover li {
     text-align: left;
