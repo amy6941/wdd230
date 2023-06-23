@@ -90,7 +90,7 @@ header {
     padding: 1em;
 }
 
-div .headLogo {
+img.logo {
     display: flex;
 }
 
