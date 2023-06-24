@@ -161,9 +161,9 @@
         grid-row: 5;
     }
 
-    div.eventArrow {
+    /* div.eventArrow {
         margin-top: 0;
-    }
+    } */
 
     .events img {
         display: block;
