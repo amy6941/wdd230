@@ -93,6 +93,7 @@ header {
 
 img.logo {
     display: flex;
+    height: -webkit-fill-available;
 }
 
 /* .logo {
