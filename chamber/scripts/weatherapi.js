@@ -8,7 +8,7 @@ const feel = document.querySelector('#feelslike');
 
 
 
-const url = 'http://api.openweathermap.org/data/2.5/weather?q=Franklin,TN,USA&units=imperial&appid=6aff75021ab94cb437039d85aee16f36';
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Franklin,TN,USA&units=imperial&appid=6aff75021ab94cb437039d85aee16f36';
 
 async function apiFetch() {
     try {
