@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amy Burton">
+    <meta name="description" content="Chamber of Commerce Franklin City Contact Information">
+    <link rel="shortcut icon" href="images/main/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/menuBtn.js" defer></script>
+    <script src="scripts/wind.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <title>Franklin Chamber of Commerce</title>
+</head>
+<body>
+    <header>   
+        <div class="banner">
+            <div class="banner__content">
+                <div class="banner__text" id="meeting"> 
+                    🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. 🤝🏼
+                </div>
+            </div>
+        </div>
+        
+        <div class="headLogo">
+            <img src="images/main/logo.webp" alt="Franklin Chamber of Commerce" class="logo">
+            <p class="title">Welcome to Franklin <br>
+            Chamber of Commerce </p>
+        </div>
+
+        <div class="social">
+            <a href="www.instagram.com">
+                <img src="images/main/instagram01.webp" alt="Instagram">
+            </a> 
+            <a href="www.facebook.com">
+                <img src="images/main/facebook.webp" alt="Facebook">
+            </a> 
+        </div>
+        <nav>
+            <button id="hamButton">&#9776;</button>
+            <ul id="navigation">
+                <li class="active"><a href="index.html" title="Home">Home</a></li>
+                <li><a href="discover.html" title="Discover">Discover</a></li>
+                <li><a href="directory.html" title="Directory">Directory</a></li>
+                <li><a href="join.html" title="Join">Join</a></li>
+            </ul>
+        </nav>
+        <div class="website">www.franklincitychamber.com</div>
+        <div class="date">  <span id="date1"></span> </div>
+    </header>
+
+    <main id="connect">
+        <div class="contact">
+            <h1>Contact The Chamber</h1>
+        </div>
+        <section class="form">
+            <form method="get" action="contactthanks.html">
+                <fieldset class="connect">
+                    <!-- <legend></legend> -->
+                    <h2>Contact Form</h2>
+                    <label class="reach">Name* <input type="text" name="name" placeholder="John Smith" required></label>
+                    <label class="reach">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="reach">Comments/Questions* <textarea name="comments" cols="40" rows="4" required></textarea>
+                    </label>                
+                </fieldset>
+                <input type="submit" value="Contact the Chamber" class="submitBtn" id="today">
+                <p id="date2"></p>
+            </form>
+        </section>
+        <section class="form1">
+            <div class="form1">
+                <h2>Contact Us</h2>
+                <h3>Address</h3>
+                <span class="address">1140 Columbia Ave.
+                    Franklin, TN 37064</span>
+
+                <h3>Phone</h3>
+                <span> <a href="tel:615-789-1234" runtime_url="tel:615-789-1234" type="call" style="display: initial;" target="_blank">615-789-1234</a> </span>
+
+                <h3>Email</h3>
+                <a href="mailto:Info@FranklinChamber.com">Info@FranklinChamber.com</a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div >
+            <img src="images/main/logo.webp" alt="Franklin Chamber of Commerce" class="logo1">
+        </div>
+        <div class="contact">
+            <p>Franklin Chamber of Commerce</p>
+            <address>1140 Columbia Ave, Franklin, TN 37064</address>
+            <a href="mailto:info@franklinchamber.com">Info@FranklinChamber.com</a>
+            <a href="https://goo.gl/maps/4z1BDKRrpZjfJtek8">📍Find Us!</a>
+           </div>
+        <p>
+            © <span id="year"></span> | Last Updated: <span id="timestamp"></span>
+        </p>
+    </footer>
+</body>
+</html>
