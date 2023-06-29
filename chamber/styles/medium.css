@@ -1,42 +1,17 @@
 /* MEDUIM VIEW */
 
-@media only screen and (min-width: 635px) {
+@media (min-width: 768px) {
     /* Navigation */
    
 
-    /* #hamButton {
-        display: none;
-    }
 
-    nav ul {
-        display: flex;
-        padding: 0;
-        text-align: center;
-    }
-    
-
-    ul#navigation li a {
-        border: none;
-    } */
 
 /* Header */
-
-    header {
-        display: grid;
-
-    }
-
-    /*.headLogo {
-        justify-content: left;
-    }*/
 
     h1 {
         font-size: 48px;
     }
 
-    /*h3 {
-        font-size: 36px;
-    }*/
     .date {
         display: flex;
         justify-content: center;
