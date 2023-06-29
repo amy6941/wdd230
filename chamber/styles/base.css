@@ -246,9 +246,13 @@ div.eventArrow {
 
 }
 
+p#title {
+    font-size: 30px;
+}
+
 .weather p {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 figcaption {
@@ -260,13 +264,17 @@ figcaption {
 figure {
     border: solid 1px #3B4F89;
     box-shadow: 0 0 10px #3B4F89;
-    max-width: 70%;
+
 }
 
 .news {
     background-color: #A3CEE6;
     width: auto;
     grid-row: 4;
+}
+
+p#news {
+    font-size: 30px;
 }
 
 .news p {
@@ -749,13 +757,9 @@ footer {
     padding: 1rem;
 }
 
-address {
-    margin: .5rem;
-    font-size: 18px;
-}
-
 .logo1 {
     max-width: 86px;
+    float: left;
 }
 
 .contact img {
@@ -763,31 +767,26 @@ address {
 }
 
 .contact p {
-    font-size: 20px;
     margin: 0;
 }
 
 .contact a {
-    color: #232E4F;
+    color: #FEFCFD;
     padding: 4px;
-    font-size: 18px;
 }
 
 div.contact {
     display: flex;
-    background-color: #A3CEE6;
-    font-size: 25px;
+    align-items: center;
     padding: 10px;
     margin: .1em;
-    color: #232E4F;
-
 }
 
 div#numvisits {
     padding: 15px;
 }
 
-footer p {
+footer span {
     font-size: 12px;
 }
 
