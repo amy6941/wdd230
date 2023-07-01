@@ -1,3 +1,11 @@
+html, body {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
 
 body {
     background-color: #3B4F89;
@@ -64,11 +72,10 @@ ul#navigation.open {
 
 /* -------- Social media --------*/
 
-.social {
+/* .social {
     display: flex;
     gap: 8px;
-    justify-content: end;
-}
+} */
 
 div.social a {
     text-decoration: none;
@@ -82,9 +89,9 @@ div.social a {
 
 /* -------- Header -------- */
 
-header {
+/* header {
     display: grid;
-}
+} */
 
 img.logo {
     display: flex;
@@ -272,7 +279,7 @@ figure {
 }
 
 hr {
-    height: 1px;
+    height: 2px;
     background-color: #3B4F89;
     border: none;
 }

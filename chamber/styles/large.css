@@ -1,6 +1,6 @@
 /* LARGE VIEW */
 
-@media (min-width: 1024px) {
+@media (min-width: 1238px) {
   /* Navigation */
     nav ul li a {
         padding: .5rem 1rem;
@@ -25,12 +25,18 @@
         font-size: 25px;
     }
 
+    .social {
+        display: block;
+        float: right;
+        gap: 8px;
+    }
+
 
   /* Main */
 
     .content {
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: .5fr .5fr .5fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 5px;
     }
     h3 {
