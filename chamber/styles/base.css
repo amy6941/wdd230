@@ -78,7 +78,7 @@ ul#navigation.open {
     gap: 8px;
 }
 
-div.social a, div.social1 a {
+div.social a {
     text-decoration: none;
     margin: 5px;
 }
