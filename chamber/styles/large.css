@@ -58,9 +58,9 @@
         grid-column: 1/2;
     }
 
-    .events p, .weather p {
+    /* .events p, .weather p {
         font-size: 20px;
-    }
+    } */
 
     .join {
         grid-row: 3/4;

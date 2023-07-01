@@ -193,9 +193,7 @@ img.hero {
     border: 2px solid rgba(0,0,0,.5);
     width: 65px;
     height: auto;
-    padding: 5px;
     float: right;
-    margin: 35px 25px;
 }
 
 .calendar strong {
@@ -215,7 +213,7 @@ img.hero {
 }
 
 .events p {
-    font-size: 30px;
+    font-size: 20px;
     text-align: left;
 }
 
@@ -229,6 +227,7 @@ div.eventArrow {
     padding-right: 1em;
 }
 .eventArrow .arrowBlue {
+    display: inline-block;
     padding: 4px 9px;
     font-size: 15px;
     background: #3B4F89;
@@ -248,11 +247,13 @@ div.eventArrow {
 
 p#title {
     font-size: 30px;
+    margin: 10px;
 }
 
 .weather p {
     text-align: center;
     font-size: 20px;
+    margin: 5px;
 }
 
 figcaption {
@@ -262,9 +263,18 @@ figcaption {
 }
 
 figure {
-    border: solid 1px #3B4F89;
-    box-shadow: 0 0 10px #3B4F89;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
 
+hr {
+    height: 1px;
+    background-color: #3B4F89;
+    border: none;
 }
 
 .news {
