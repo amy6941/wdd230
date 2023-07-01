@@ -90,9 +90,6 @@ div.social a {
 
 /* -------- Header -------- */
 
-/* header {
-    display: grid;
-} */
 
 img.logo {
     display: flex;
@@ -196,12 +193,11 @@ img.hero {
 }
 
 .events .calendar {
-    text-align: center;
-    color: #232E4F;
     border: 2px solid rgba(0,0,0,.5);
     width: 65px;
     height: auto;
     float: right;
+    margin-top: 50px;
 }
 
 .calendar strong {
@@ -276,7 +272,7 @@ figure {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+
 }
 
 hr {
@@ -433,7 +429,6 @@ form label.top, form div {
 
 form label.top input, form label.top select,
 form label.top textarea {
-    -webkit-appearance: none;
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
@@ -724,7 +719,6 @@ form label.reach {
 
 form label.reach input, form label.reach select,
 form label.reach textarea {
-    -webkit-appearance: none;
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
