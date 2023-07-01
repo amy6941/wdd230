@@ -4,6 +4,7 @@ html, body {
     left: 0;
     top: 0;
     bottom: 0;
+    overflow: auto;
 }
 
 
@@ -77,7 +78,7 @@ ul#navigation.open {
     gap: 8px;
 }
 
-div.social a {
+div.social a, div.social1 a {
     text-decoration: none;
     margin: 5px;
 }
@@ -682,8 +683,11 @@ section a {
 /* ---------- Contact Page ---------- */
 
 #connect {
-    background-color: #FEFCFD;
+    display: grid;
+    justify-content: center;
     margin: 1em;
+    background-color: #A3CEE6;
+    padding: 5px;
 }
 
 .connect h2 {
@@ -692,21 +696,15 @@ section a {
     text-align: center;
 }
 
-section.form {
-    background-color: #A3CEE6;
-    float: left;
-    border-radius: 10px;
-    margin: 0 1em .5em;
-    height: auto;
+div.contactus h1 {
+text-align: center;
+color: #3D518C;
 }
 
-section.form1 {
+section.form, section.form1 {
     background-color: #A3CEE6;
-    float: right;
     border-radius: 10px;
-    margin: 0 1em .5em; 
-    height: fit-content;
-    width: 40%;
+    margin: 0 1em .5em;
 
 }
 
@@ -748,9 +746,10 @@ div.form1 {
 div.form1 h2 {
     font-size: 30px;
     text-align: center;
+    color: #232E4F;
 }
 
-div.contactus {
+footer div.contactus {
     background-color: #FEFCFD;
     text-align: left;
     margin: 30px;
@@ -764,6 +763,10 @@ div.contactus a, span.address {
 
 div.contactus h3 {
     font-size: 22px;
+}
+
+.social1 {
+    float: right;
 
 }
 
@@ -793,7 +796,7 @@ footer {
 }
 
 div.contact {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     padding: 10px;
     margin: .1em;
