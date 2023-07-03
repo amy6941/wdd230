@@ -42,6 +42,7 @@ nav {
 }
 
 #navigation li a {
+    display: block;
     text-decoration: none;
     font-size: 30px;
     color: #232E4F;
@@ -70,6 +71,8 @@ ul#navigation.open {
     display: block;
     padding: 0;
 }
+
+
 
 /* -------- Social media --------*/
 
@@ -347,8 +350,11 @@ p.name {
 .discover p {
     text-align: left;
     margin: 10px;
-    padding: 1rem;
 } 
+
+p.underline {
+    text-decoration: underline;
+}
 
 .discover img {
     width: 350px;
