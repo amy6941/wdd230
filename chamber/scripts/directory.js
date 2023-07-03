@@ -24,6 +24,8 @@ const displayMembers = (members) => {
         let phone = document.createElement('tel');
         let website = document.createElement('a');
         let description = document.createElement('p');
+ 
+
     
         
 
@@ -36,6 +38,7 @@ const displayMembers = (members) => {
         website.textContent = `${member.website}`;
         description.textContent = `${member.description}`;
         membership.textContent = `${member.membership}`;
+
 
         
         
@@ -67,7 +70,7 @@ const displayMembers = (members) => {
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("div");
+const display = document.querySelector("div#cards");
 
 
 gridbutton.addEventListener("click", () => {
