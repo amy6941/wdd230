@@ -35,20 +35,24 @@ const displayMembers = (members) => {
         phone.textContent = `${member.phone}`;
         website.textContent = `${member.website}`;
         description.textContent = `${member.description}`;
+        membership.textContent = `${member.membership}`;
+
         
         
 
         //build the image portrait by setting all the relevant attributes
+        portrait.setAttribute('href', member.website);
         portrait.setAttribute('src', member.imageurl);
         portrait.setAttribute('alt', `${member.name} logo`);
         portrait.setAttribute('loading', 'lazy');
+        
+        website.setAttribute('href', member.website);
+        
 
         //append the section(card) with the createds elements
         
        
         card.appendChild(h2);
-        // card.appendChild(description);
-        
         card.appendChild(website);
         card.appendChild(address);
         card.appendChild(phone);

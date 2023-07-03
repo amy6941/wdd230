@@ -592,7 +592,7 @@ button#grid.button, button#list.button {
 }
 
 
-#cards section {
+.grid section {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 1rem;
     margin: .5em;
@@ -604,7 +604,7 @@ button#grid.button, button#list.button {
 
 .grid {
  	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
     margin: 0.1rem;
@@ -644,6 +644,7 @@ button#grid.button, button#list.button {
     height: 100px;
     align-items: center;
     text-align: center;
+    background-color: #A3CEE6;
 }
 
 .list section > * {
@@ -676,7 +677,7 @@ section p {
     display: none;
 }
 
-section a {
+.grid a {
 	font-size: 0.85rem;
 	color: #232E4F;
 }
