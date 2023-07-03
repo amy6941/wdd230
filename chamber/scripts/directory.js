@@ -12,7 +12,7 @@ async function getMemberData() {
 getMemberData();
 
 const displayMembers = (members) => {
-    const cards = document.querySelector('article#cards');
+    const cards = document.querySelector('div#cards');
 
     members.forEach((member) => {
         //Create elements to add to the div.cards element
@@ -67,7 +67,7 @@ const displayMembers = (members) => {
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+const display = document.querySelector("div");
 
 
 gridbutton.addEventListener("click", () => {
