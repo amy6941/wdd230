@@ -1,7 +1,7 @@
 /* LARGE VIEW */
 
 @media (min-width: 1238px) {
-  /* Navigation */
+  /* -------- Navigation -------- */
     nav ul li a {
         padding: .5rem 1rem;
     }
@@ -32,7 +32,7 @@
     }
 
 
-  /* Main */
+  /* -------- Main -------- */
 
     .content {
         grid-template-columns: 1fr 1fr 1fr;
@@ -64,9 +64,9 @@
         grid-column: 1/2;
     }
 
-    /* .events p, .weather p {
-        font-size: 20px;
-    } */
+    img#weather-icon {
+        margin-left: 35%;
+    }
 
     .join {
         grid-row: 3/4;
@@ -99,7 +99,6 @@
     
     .spotlight div {
         display: block; 
-        /* align-items: center; */
     }
 
     .spots div {
@@ -138,7 +137,6 @@
     /* Discover Page */
 
     .about {
-        /* grid-template-columns: 1fr; */
         font-size: 25px;
     }
 
@@ -151,19 +149,7 @@
         margin-right: auto;
     }
     
-    /* img.right {
-        float: right;
-    }  */
 
-
-    /* Footer */
-
-
-    /* .contact iframe {
-        /* float: right; */
-        /* border: 1px solid black;
-        margin: 1em;
-    } */ 
 
     /* ---------- Join Page ---------- */
 
@@ -173,9 +159,6 @@
 
      /* ---------- Directory Page ---------- */
 
-        /* div.cards {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        } */
+
 
 }

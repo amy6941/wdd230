@@ -229,9 +229,8 @@ div.eventArrow {
     margin-top: 5rem;
 }
 
-.eventArrow .readMore {
-    font-size: 25px;
-    padding-right: 1em;
+.eventArrow a {
+color: #FEFCFD;
 }
 span.arrowBlue {
     display: inline-block;
@@ -266,20 +265,21 @@ p#title {
 figcaption {
     font-size: large;
     text-transform: capitalize;
-    text-align: center;
+
 }
 
-figure {
+img#weather-icon {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    margin-left: 35%;
+}
 
+span#current-temp {
+    font-size: 25px;
 }
 
 hr {
-    height: 2px;
+    width: 70%;
+    height: 1.5px;
     background-color: #3B4F89;
     border: none;
 }
@@ -292,6 +292,16 @@ hr {
 
 p#news {
     font-size: 30px;
+    margin: 5px 8px;
+}
+
+.newsArrow {
+    float: right;
+    margin: 20px;
+}
+
+.newsArrow a {
+    color: #FEFCFD;
 }
 
 .spotlight {
