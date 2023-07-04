@@ -138,13 +138,13 @@
 
     .about {
         font-size: 25px;
+        margin: 5em;
     }
 
     .discover img {
         display: block;
         width: 500px;
         margin: 5px;
-        padding: 15px;
         margin-left: auto;
         margin-right: auto;
     }

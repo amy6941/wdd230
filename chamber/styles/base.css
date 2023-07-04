@@ -374,7 +374,9 @@ div.image p {
     text-align: center;
 }
 
-.hover:hover {box-shadow: 0 0 50px #3B4F89;}
+.hover:hover {
+    box-shadow: 0 0 50px #3B4F89;
+}
 
 .discover li {
     text-align: left;
