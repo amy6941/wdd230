@@ -427,12 +427,6 @@ form fieldset {
     width: fit-content;
 }
 
-/* form legend {
-    color: #232E4F;
-    margin: 0 1rem;
-    padding: 0 .5rem;
-} */
-
 form label.top, form div {
     display: block;
     padding-top: 1rem;
