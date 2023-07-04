@@ -394,8 +394,6 @@ div.image p {
 
 div.start {
     margin: 15px;
-    display: flex;
-    flex-flow: row nowrap;
     justify-content: space-evenly;
 }
 
@@ -721,7 +719,6 @@ section.form, section.form1 {
 
 fieldset.connect {
     background-color: #FEFCFD;
-    padding: 1em;
     margin: 1em;
 }
 
@@ -730,7 +727,6 @@ form label.reach {
     padding-top: 1rem;
     color: #9c2c13;
     font-size: 1rem;
-    text-align: left;
 }
 
 form label.reach input, form label.reach select,
@@ -741,7 +737,7 @@ form label.reach textarea {
     border-radius: 4px;
     padding: .5rem;
     color: #555;
-    max-width: 30em;
+    max-width: 60em;
     background-color: rgba(0,0,0,0.1);
 }
 

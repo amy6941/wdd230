@@ -156,7 +156,9 @@
 
     /* -------- Directory Page -------- */
 
-
+    .grid section {
+        height: 350px;
+    }
 
 
 
@@ -166,8 +168,8 @@
         display: block;
     }
     
-    .grid section {
-        height: 350px;
+    div.start {
+       display: flex;
     }
     
 
