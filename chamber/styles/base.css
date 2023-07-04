@@ -7,7 +7,6 @@ html, body {
     overflow: auto;
 }
 
-
 body {
     background-color: #3B4F89;
     color: #FEFCFD;
@@ -130,6 +129,7 @@ div.headLogo p {
 }
 
 /*---------Main Section---------*/
+
 .content {
     margin: 1em;
     display: grid;
@@ -138,14 +138,13 @@ div.headLogo p {
     text-align: center;
 }
 
-
-
 .hero {
     background-color: #A3CEE6;
     grid-row: 1;
     position: relative;
 
 }
+
 img.hero {
     width: 95%;
     height: 97%;
@@ -230,8 +229,9 @@ div.eventArrow {
 }
 
 .eventArrow a {
-color: #FEFCFD;
+    color: #FEFCFD;
 }
+
 span.arrowBlue {
     display: inline-block;
     padding: 4px 9px;
@@ -335,6 +335,7 @@ p.name {
     background-color: white;
     color: #232E4F;
 }
+
 .spot3 {
     display: none;
 }
@@ -379,6 +380,7 @@ div.image p {
 }
 
 /* ---------- Join Page ---------- */
+
 .name  {
     display: flex;
     flex-flow: column nowrap;
@@ -572,8 +574,6 @@ div.button {
     text-align: center;
 }
 
-
-
 .members h2 {
     text-align: center;
     margin: 2px;
@@ -596,7 +596,6 @@ button#grid.button, button#list.button {
 	font-weight: 700;
 }
 
-
 .grid section {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 1rem;
@@ -604,7 +603,6 @@ button#grid.button, button#list.button {
 	background-color: #A3CEE6;
     height: 90%;
     text-align: center;
-
 }
 
 .grid {
@@ -663,7 +661,6 @@ button#grid.button, button#list.button {
 
 .list section h3 {
 	font-size: 1rem;
-
 }
 
 .list section:nth-child(even) {
@@ -705,8 +702,8 @@ section p {
 }
 
 div.contactus h1 {
-text-align: center;
-color: #3D518C;
+    text-align: center;
+    color: #3D518C;
 }
 
 section.form, section.form1 {
@@ -803,7 +800,6 @@ footer {
 }
 
 div.contact {
-    /* display: flex; */
     align-items: center;
     padding: 10px;
     margin: .1em;
@@ -820,4 +816,3 @@ footer span {
 section#shadow-host-companion {
     display: none;
 }
-
