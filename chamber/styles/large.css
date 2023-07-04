@@ -157,8 +157,25 @@
         padding: .4rem 0;
     }
 
-     /* ---------- Directory Page ---------- */
+     /* ---------- Contact Page ---------- */
 
+    #connect {
+        margin: 15em;
+    }
+
+    .contactus {
+        text-align: center;
+    }
+
+    .contactus h3 {
+        margin: 1px;
+        margin-top: 24px;
+        padding: 5px;
+    }
+
+    span.address {
+        margin-top: 0;
+    }
 
 
 }

@@ -172,8 +172,23 @@
        display: flex;
     }
     
+    /* -------- Join Page -------- */
 
-    
+    #connect {
+        margin: 5em;
+      }
 
-}
+    fieldset.connect {
+        padding: 4em;
+      }
+
+    /* -------- Contact Page -------- */
+
+    form input.submitBtn {
+        margin-left: 6rem;
+    }
+
+
+
+
 /* end MEDIUM */
