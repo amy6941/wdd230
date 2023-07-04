@@ -233,7 +233,7 @@ div.eventArrow {
     font-size: 25px;
     padding-right: 1em;
 }
-.eventArrow .arrowBlue {
+span.arrowBlue {
     display: inline-block;
     padding: 4px 9px;
     font-size: 15px;
@@ -292,11 +292,6 @@ hr {
 
 p#news {
     font-size: 30px;
-}
-
-.news p {
-    font-size: 18px;
-    padding: 1em;
 }
 
 .spotlight {
