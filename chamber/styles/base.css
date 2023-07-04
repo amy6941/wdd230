@@ -142,12 +142,10 @@ div.headLogo p {
     background-color: #A3CEE6;
     grid-row: 1;
     position: relative;
-
 }
 
 img.hero {
     width: 95%;
-    height: 97%;
     padding: .5rem;
 }
 
@@ -176,7 +174,7 @@ img.hero {
 
 .hero a {
     position: absolute;
-    bottom: 75px;
+    bottom: 20px;
     right: 25px;
     border: 1px solid rgba(0,0,0,.1);
     background: #A3CEE6;
@@ -188,9 +186,9 @@ img.hero {
 
 .events {
     background-color: #A3CEE6;
-    width: auto;
+    /* width: auto;
     grid-row: 2;
-    position: relative;
+    position: relative; */
     padding: 1em;
 }
 
@@ -199,7 +197,6 @@ img.hero {
     width: 65px;
     height: auto;
     float: right;
-    margin-top: 50px;
 }
 
 .calendar strong {
@@ -223,21 +220,15 @@ img.hero {
     text-align: left;
 }
 
-div.eventArrow {
-    margin-left: 20rem;
-    margin-top: 5rem;
-}
-
-.eventArrow a {
-    color: #FEFCFD;
+.eventArrow {
+    float: right;
+    margin: 20px;
 }
 
 span.arrowBlue {
-    display: inline-block;
     padding: 4px 9px;
     font-size: 15px;
     background: #3B4F89;
-    color: #FEFCFD;
 }
 
 .events img {
@@ -290,9 +281,19 @@ hr {
     grid-row: 4;
 }
 
+p.news1 {
+    padding: 5px;
+    text-align: left;
+    margin-left: 10px;
+}
+
 p#news {
     font-size: 30px;
     margin: 5px 8px;
+}
+
+p strong {
+    margin: 10px;
 }
 
 .newsArrow {
@@ -300,7 +301,7 @@ p#news {
     margin: 20px;
 }
 
-.newsArrow a {
+.newsArrow a, .eventArrow a {
     color: #FEFCFD;
 }
 
