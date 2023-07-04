@@ -27,10 +27,6 @@ const displayMembers = (members) => {
  
 
     
-        
-
-        
-
         //build the card content out
         h2.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
@@ -39,10 +35,7 @@ const displayMembers = (members) => {
         description.textContent = `${member.description}`;
         membership.textContent = `${member.membership}`;
 
-
         
-        
-
         //build the image portrait by setting all the relevant attributes
         portrait.setAttribute('href', member.website);
         portrait.setAttribute('src', member.imageurl);

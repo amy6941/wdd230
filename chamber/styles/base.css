@@ -600,11 +600,12 @@ button#grid.button, button#list.button {
 }
 
 .grid section {
-	border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+	border: 2px solid rgba(0, 0, 0, 0.1);
 	padding: 1rem;
     margin: .5em;
 	background-color: #A3CEE6;
-    height: 90%;
     text-align: center;
 }
 
@@ -629,12 +630,14 @@ button#grid.button, button#list.button {
 }
 
 .grid img {
-    display: inline-block;
+    display: flex;
     margin: 15px;
 	border: 1px solid #FEFCFD;
 	box-shadow: 0 0 10px #232E4F;
     background-color: #FEFCFD;
-    width: 60%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .list {
@@ -647,7 +650,7 @@ button#grid.button, button#list.button {
 	display: grid;
 	padding: 0.25rem;
     height: 100px;
-    width: 50%;
+    width: 70%;
     align-items: center;
     text-align: center;
     background-color: #A3CEE6;

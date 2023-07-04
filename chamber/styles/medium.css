@@ -156,12 +156,19 @@
 
     /* -------- Directory Page -------- */
 
+
+
+
+
     /* -------- Join Page -------- */
 
     div.form {
         display: block;
     }
     
+    .grid section {
+        height: 350px;
+    }
     
 
     
