@@ -49,7 +49,7 @@
     }
 
     img.hero {
-        height: 97%;
+        /* height: 97%; */
     }
 
     .events {
@@ -115,41 +115,19 @@
         grid-row: 1/4;
         display: grid;
         align-items: center;
-    }
-    
-    .spotlight div {
-        display: block; 
+        background-color: #A3CEE6;
     }
 
-    .spots div {
-        align-items: center ;
-    
-    }
 
-    .spot1, .spot2, .spot3 {
+    .spots {
+        display: block;
+        align-items: center;
         width: 250px;
         margin: 16px;
     }
 
-    .spot1 img {
-        max-width: 150px;
-        border: 2px solid red;
-        padding: .5em;
-    }
-
-    .spot2 img {
-        max-width: 150px;
-    }
-
-    .spot3 {
-        border: 1px solid #3D518C;
-        background-color: white;
-        color: black;
-        padding: 20px;
-    }
-
-    .spot3 img {
-        width: 40%;
+    .spot2 {
+        display: block;
     }
 
 
