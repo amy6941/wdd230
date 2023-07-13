@@ -5,7 +5,6 @@ const url = 'https://amy6941.github.io/wdd230/chamber/json/data.json';
 async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
-    //console.table(data.prophets);
     displayMembers(data.members);
 }
 
