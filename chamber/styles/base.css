@@ -311,7 +311,7 @@ p strong {
     grid-row: 5;
 }
 
-.spot1 {
+.spot0, .spot1 {
     border: 1px solid #3B4F89;
     padding: 40px;
     margin: 1rem;
@@ -319,7 +319,7 @@ p strong {
     color: #232E4F;
 }
 
-.spot1 img {
+.spots img {
     max-width: 200px;
     border: 2px solid red;
     padding: .5em;
@@ -329,15 +329,15 @@ p.name {
     font-size: 28px;
 }
 
-.spot2 {
+/* .spot2 {
     border: 1px solid #3B4F89;
     padding: 40px;
     margin: .5rem;
     background-color: white;
     color: #232E4F;
-}
+} */
 
-.spot3 {
+.spot2 {
     display: none;
 }
 
