@@ -1,0 +1,122 @@
+/* MEDUIM VIEW */
+
+@media (min-width: 768px) {
+    /*  -------- Navigation -------- */
+
+    /* -------- Header -------- */
+    header h1 {
+        display: inline-flex;
+    }
+
+    h1 img {
+        min-width: 240px;
+    }
+
+    
+    /*  -------- Main -------- */
+
+
+    .fruit.free {
+        width: 1000px;
+    }
+
+    .weather {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2.store-card {
+        font-size: 40px;
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    .about-card p {
+        font-size: 30px;
+    }
+
+    .about-card {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    div.carlsbad2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    div.carlsbad2 p, div.carlsbad3 p {
+        font-size: 20px;
+    }
+    
+    div.carlsbad3 {
+        display: flex;
+        align-items: center;
+    }
+    .carlsbad3 p {
+        padding: 10px;
+    }
+
+    .freshcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+ 
+    }
+
+
+    /*  -------- Footer -------- */
+
+    .footcontainer {
+        display: block;
+        /* flex-direction: row;
+        justify-content: center;
+        align-items: flex-end; */
+    }
+
+    /* .foot-logo {
+        display: flex;   
+        flex-direction: row;
+        justify-content: center; 
+    } */
+
+    img.footlogo {
+        height: 60px;
+    }
+
+    .footname {
+        font-size: 20px;
+    }
+
+    .footer-text-content p {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .footer-text-heading {
+        margin: 5px;
+    }
+
+    .footer-social img{
+        width: 30px;
+    }
+
+    .footer-social {
+        float: right;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-social li {
+        padding-left: 0;
+    }
+
+    p.last-update {
+        font-size: 15px;
+        padding: 0 30px;
+        margin: 0 30px;
+    }
+}

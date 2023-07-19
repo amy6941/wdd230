@@ -1,0 +1,162 @@
+body {
+    box-sizing: border-box;
+    background-color: #0BC5B4;
+    margin: 2em;
+    color: #F6FAFA;
+    font-family: 'Rock Salt', cursive;
+}
+
+/* --------------- Header --------------- */
+
+.headcontainer h1 {
+    color: #F6FAFA;
+    text-align: center;
+    font-size: 100px;
+}
+
+.headcontainer img {
+    width: 250px;
+}
+
+.headcontainer h2 {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.head-banner {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --------------- Navigation --------------- */
+
+nav {
+    margin: 5px;
+}
+
+button.wavy {
+    border: 0;
+    background-color: transparent;
+}
+
+.wavy img  {
+    background-color: transparent;
+    fill: #0BC5B4;
+    width: 100px;
+}
+
+.menucontainer {
+    width: 10%;
+    line-height: 2.5;
+}
+
+
+li::marker {
+    display: none;
+}
+
+
+nav li a {
+    display: flex;
+    font-size: 40px;
+    color: #0BC5B4;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {display: none;}
+nav ul.open {
+    position: absolute;
+    display: block;
+    background: #F6FAFA;
+    border-radius: 50%;
+    list-style: none;
+    width: 400px;
+}
+
+/* --------------- Main ---------------*/
+
+.maincontainer {
+    display: block;
+}
+
+.hero .strawberry {
+    width: 95%;
+    margin: 20px;
+}
+
+div.summary {
+    display: inline-flex;
+}
+
+.cali h1 {
+    text-align: center;
+    font-size: 75px;
+    padding: 20px;
+}
+
+p {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 40px;
+}
+
+img.village, img.beach {
+    width: 650px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.freshdrink a {
+    color: #F6FAFA;
+    text-decoration: none;
+}
+
+.freshcontainer {
+    margin: 3em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/* --------------- Footer ---------------*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footname {
+    font-size: 35px;
+    font-family: 'Rock Salt', cursive;
+}
+
+.footlogo {
+    height: 100px;
+}
+
+.footer-text-heading, .footer-text-content p {
+    font-size: calc(.763vw + 12.83969px);
+}
+
+footer a {
+    color: #F6FAFA;
+}
+
+.footer-social {
+    display: flex;
+
+}
+
+.footer-social li {
+    list-style: none;
+
+}

@@ -1,0 +1,76 @@
+/* LARGE VIEW */
+
+@media (min-width: 1238px) {
+    /* -------- Navigation -------- */
+
+
+
+
+    /* -------- Main -------- */
+
+
+    .home-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    
+    }
+
+    h2.store-card {
+        font-size: 40px;
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    .find-text {
+        margin: 5px;
+        font-size: 30px;
+    }
+
+    .find-icon {
+        width: 40px;
+    }
+
+    .find-icon-text {
+        font-size: 25px;
+    }
+
+    img.village {
+        grid-column: 1/2;
+    }
+
+    img.apples {
+        grid-column: 2/3;
+    }
+
+    img.beach, img.village, .fruit {
+       height: 450px;
+       width: auto;
+    }
+
+    .free {
+        width: 700px;
+    }
+
+    .freshcontainer {
+        margin: 3em 1em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 5px;
+    }
+
+    .fresh-card {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .fresh-card-order {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+
+
+    /* -------- Footer -------- */
+}
