@@ -32,11 +32,11 @@
         margin: 10px;
     }
 
-    /* img.beach, img.village {
+    img.beach, img.village {
         height: 300px;
         width: auto;
         margin: 20px;
-    } */
+    }
 
     .find-card {
         display: block;
