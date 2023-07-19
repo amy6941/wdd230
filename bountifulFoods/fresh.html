@@ -38,7 +38,7 @@
             </picture>
         </div>
         <hr>
-        <form class="drink-form" onsubmit="return false">
+        <form class="drink-form">
             <div class="orders">   
                 <h2 class="fresh-order">Create your own drink</h2>
                 <h2 class="your-drinks">Your Drink Orders</h2>
@@ -48,18 +48,18 @@
                     <label class="top">Email* <input id="email" type="email" name="email" placeholder="someone@gmail.com" autocomplete="email" required></label>
                                     
                     <label class="top">Select a fruit*
-                        <select name="fruit1" id="fruit1" required>
-                            <option value="">---choose a fruit---</option>
+                        <select name="fruit1" id="fruit" class="fruit1" required>
+                            <option value="">--Select--</option>
                         </select>
                     </label>
                     <label class="top">Select a fruit*
-                        <select name="fruit2" id="fruit2" required>
-                            <option value="">---choose a fruit---</option>
+                        <select name="fruit2" id="fruit" class="fruit2">
+                            <option value="">--Select--</option>
                         </select>
                     </label>
                     <label class="top">Select a fruit*
-                        <select name="fruit3" id="fruit3" required>
-                            <option value="">---choose a fruit---</option>
+                        <select name="fruit3" id="fruit" class="fruit3">
+                            <option value="">--Select--</option>
                         </select>
                     </label>
 
@@ -71,35 +71,51 @@
                 </fieldset>
             </form>
             <div class="your-drinks-card">
-                
-                <div class="cards"></div>
+                <p>You have ordered <span class="order-num"> 0 </span>drinks.</p>    
             </div>
         </div>
         <hr>
-        <div class="nutrition-wrapper">
+        <div class="nutrition-wrapper" id="show-order">
             <h2 class="nutrition-facts">Nutrition Facts</h2>
             <hr>
             <table>
+                <th class="order-name"></th>
+                <th class="order-email"></th>
+                <th class="order-phone"></th>
                 <tr>
                     <td>Date</td>
+                    <td class="order-date"></td>
                 </tr>
                 <tr>
-                    <td>Fruit</td>
+                    <td>Fruit 1</td>
+                    <td class="order-fruit1"></td>
+                </tr>
+                <tr>
+                    <td>Fruit 2</td>
+                    <td class="order-fruit2"></td>
+                </tr><tr>
+                    <td>Fruit 3</td>
+                    <td class="order-fruit3"></td>
                 </tr>
                 <tr>
                     <td>Carbohydrates</td>
+                    <td class="order-carbohydrates">  g</td>
                 </tr>
                 <tr>
                     <td>Protein</td>
+                    <td class="order-protein">  g</td>
                 </tr>
                 <tr>
-                    <td>Fat</td>
+                    <td>Fats</td>
+                    <td class="order-fats">  g</td>
                 </tr>
                 <tr>
                     <td>Calories</td>
+                    <td class="order-calories">  g</td>
                 </tr>
                 <tr>
                     <td>Sugar</td>
+                    <td class="order-sugar">  g</td>
                 </tr>
             </table>
         </div>
@@ -108,5 +124,6 @@
     <footer class="footcontainer">
 
     </footer>
+    <script src="scripts/update.js"></script>
 </body>
 </html>

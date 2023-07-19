@@ -118,36 +118,37 @@
                 <p>Humidity: <span id="humidity"></span>&percnt;</p>
                 <p>Wind Chill: <span id="chill"></span>&deg;</p>
             </div>
+            <div id="forecast"></div>
             <div class="forecast">
                 <table>
                     <thead>
                         <tr>
-                            <th id="day1-name"> day1</th>
-                            <th id="day2-name"> day2</th>
-                            <th id="day3-name"> day3</th>
+                            <th id="weekday1-name"> day1</th>
+                            <th id="weekday2-name"> day2</th>
+                            <th id="weekday3-name"> day3</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <p><img class="temp" id="temp" src="" alt="forecast">&deg;</p>
+                                <p><img class="temp1" id="temp" src="https://openweathermap.org/img/w/01d.png" alt="forecast">&deg;</p>
                             </td>
                             <td>
-                                <p><img class="temp" id="temp" src="" alt="forecast">&deg;</p>
+                                <p><img class="temp2" id="temp" src="" alt="forecast">&deg;</p>
                             </td>
                             <td>
-                                <p><img class="temp" id="temp" src="" alt="forecast">&deg;</p>
+                                <p><img class="temp3" id="temp" src="" alt="forecast">&deg;</p>
                             </td>
                         </tr>
-                        <tr>
+                        <tr> 
                             <td>
-                                <p><img class="weather-icon" id="day1-icon" src="" alt="weather icon"></p>
+                                <p><img class="weather-icon" id="day1-icon" src="https://openweathermap.org/img/w/01d.png" alt="weather icon"></p>
                             </td>
                             <td>
-                                <p><img class="weather-icon" id="day2-icon" src="" alt="weather icon"></p>
+                                <p><img class="weather-icon" id="day2-icon" src="https://openweathermap.org/img/w/02d.png" alt="weather icon"></p>
                             </td>
                             <td>
-                                <p><img class="weather-icon" id="day3-icon" src="" alt="weather icon"></p>
+                                <p><img class="weather-icon" id="day3-icon" src="https://openweathermap.org/img/w/03d.png" alt="weather icon"></p>
                             </td>
                         </tr>
                         <tr>
@@ -214,5 +215,6 @@
     <script src="scripts/weather.js"></script>
     <script src="scripts/forecast.js"></script>
     <script src="scripts/date.js"></script>
+    <script src="scripts/update.js"></script>
 </body>
 </html>

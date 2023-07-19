@@ -4,6 +4,7 @@ function toggleMenu() {
     console.log('it works!');
   }
   
-  const x = document.getElementById("wavyBtn")
-  x.onclick = toggleMenu;
+const x = document.getElementById("wavyBtn")
+x.onclick = toggleMenu;
+
   
