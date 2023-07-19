@@ -7,37 +7,34 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/menu.js" defer></script>
     <title>Bountiful Foods</title>
 </head>
 <body>
     <div class="headcontainer">
-        <div class="head-banner">
-            <div class="cards">
-                
-            </div>
-        </div>
         <header>
-            <h1>
-                <img src="images/bflogo.jpg" alt="Bountiful Foods Logo" loading="lazy">
-            Bountiful Foods
-            </h1>
-            <h2>Local - Organic - Fresh</h2>
-        </header> 
+            <label for="trigger">
+              <input type="checkbox" class="trigger" id="trigger">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="menu"></span>
+              <nav>
+                <ul>
+                    <li><a class="zoom" href="index.html">Home</a></li>
+                    <li><a class="zoom" href="fresh.html">Fresh</a></li>
+                    <li><a class="zoom" href="about.html">About Us</a></li>
+                </ul> 
+              </nav>
+            </label>
+          </header>
+        <h1>
+            <a href="imdex.html"><img src="images/bflogo.jpg" alt="Bountiful Foods Logo" loading="lazy">
+        Bountiful Foods</a>
+        </h1>
+        <h2>Local - Organic - Fresh</h2>
     </div>
-    <aside class="menucontainer">
-        <nav>
-            <button class="wavy" id="wavyBtn">
-                <img src="images/icon-menu.svg" alt="wavy burger menu">
-            </button>
-            <ul id="navigation" class="menu">
-                <li><br><a class="zoom" href="index.html">Home</a></li><br>
-                <li><a class="zoom" href="fresh.html">Fresh</a></li><br>
-                <li><a class="zoom" href="about.html">About Us</a></li><br>
-
-            </ul>
-        </nav>
-    </aside>
     <div class="hero">
             <img class="strawberry" src="images/strawberry-2293337_640.jpg" alt="Strawberry" loading="lazy">
     </div> 
@@ -58,8 +55,12 @@
                 <p>Our mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags, to the local population and to tourists visiting the coastal California areas.  We proudly partner with local farmers to help grow our communities as well as provide the freshest fruits and vegetables available. The fresher the food, the better the taste!</p>
             </div>
         </div>
-        <img class="fruit free" src="images/fruit-6630377_640.jpg" alt="Grapes" loading="lazy">
-        <img class="fruit free" src="images/raspberries-3454504_640.jpg" alt="Raspberries" loading="lazy">
+        <div class="fruit free">
+            <img class="fruit free" src="images/fruit-6630377_640.jpg" alt="Grapes" loading="lazy">
+            <img class="fruit free" src="images/raspberries-3454504_640.jpg" alt="Raspberries" loading="lazy">
+            <img class="showLg" src="images/tangerines-1721590_640.jpg" alt="tangerines" loading="lazy">
+        </div>
+        <br>
         <hr>
         <div class="cali">
             <h1>California Fresh!</h1>
@@ -92,17 +93,16 @@
             <aside class="fresh-card">
                 <a href="fresh.html"><img class="smoothie" src="images/smoothies-2253430_640.jpg" alt="Fresh Smoothies" loading="lazy"></a>
                 <h1 class="freshdrink"><a class="freshdrink" href="fresh.html">Create your own fruit smoothie!</a></h1>
-                <p class="freshdrink">Head over to our <a class="freshdrink" href="fresh.html">FRESH</a> page to see all our fresh ingredients!</p>
+                <p class="freshdrink"><a class="freshdrink" href="fresh.html">Head over to our FRESH page to see all our fresh ingredients!</a></p>
             </aside>
-            <hr>
+
             <aside class="fresh-card-order">
-                <a class="fresh-card-order" href="fresh.html">Your Orders</a>
-                <img class="pink-smoothie" src="images/smoothie-2340399_640.jpg" alt="Smoothie">
-                <p class="fresh-card-order">You have <span id="past-orders"></span>previous orders.</p>
+                <a class="fresh-card-order" href="fresh.html">Your Orders
+                    <img class="pink-smoothie" src="images/smoothie-2340399_640.jpg" alt="Smoothie">
+                    <p class="fresh-card-order">You have <span id="past-orders">0 </span>previous orders.</p></a>
                 <a class="fresh-card-order" href="fresh.html">Order Now!</a>
             </aside>
         </div>
-
         <hr>
         <div class="weather">
             <p id="title">Weather</p>
@@ -123,21 +123,21 @@
                 <table>
                     <thead>
                         <tr>
-                            <th id="weekday1-name"> day1</th>
-                            <th id="weekday2-name"> day2</th>
-                            <th id="weekday3-name"> day3</th>
+                            <th id="weekday1-name"> Thu</th>
+                            <th id="weekday2-name"> Fri</th>
+                            <th id="weekday3-name"> Sat</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <p><img class="temp1" id="temp" src="https://openweathermap.org/img/w/01d.png" alt="forecast">&deg;</p>
+                                <p><img class="temp1" id="temp" src="https://api.openweathermap.org/data/2.5/forecast?id=5334223&units=imperial&appid=6aff75021ab94cb437039d85aee16f36" alt="forecast">79&deg;</p>
                             </td>
                             <td>
-                                <p><img class="temp2" id="temp" src="" alt="forecast">&deg;</p>
+                                <p><img class="temp2" id="temp" src="https://api.openweathermap.org/data/2.5/forecast?id=5334223&units=imperial&appid=6aff75021ab94cb437039d85aee16f36" alt="forecast">81&deg;</p>
                             </td>
                             <td>
-                                <p><img class="temp3" id="temp" src="" alt="forecast">&deg;</p>
+                                <p><img class="temp3" id="temp" src="https://api.openweathermap.org/data/2.5/forecast?id=5334223&units=imperial&appid=6aff75021ab94cb437039d85aee16f36" alt="forecast">80&deg;</p>
                             </td>
                         </tr>
                         <tr> 
@@ -153,13 +153,13 @@
                         </tr>
                         <tr>
                             <td>
-                                <span id="day1-description"> desc</span>
+                                <span id="day1-description">Sunny</span>
                             </td>
                             <td>
-                                <span id="day2-description"> desc</span>
+                                <span id="day2-description"> Partly Cloudy</span>
                             </td>
                             <td>
-                                <span id="day3-description"> desc</span>
+                                <span id="day3-description">Scattered Clouds</span>
                             </td>
                         </tr>
                     </tbody>

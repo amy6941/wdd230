@@ -1,8 +1,8 @@
-function toggleContact() {
+function toggleOrder() {
 
-    document.getElementById("contact").classList.toggle("open");
-    console.log('it works!');
+  document.getElementById("show-order").classList.toggle("open");
+  console.log('it works!');
   }
-    
-  const t = document.getElementById("today")
-  t.onclick = toggleContact;
+  
+const x = document.getElementById("submitBtn")
+x.onclick = toggleOrder;

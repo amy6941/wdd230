@@ -7,34 +7,42 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/menu.js" defer></script>
     <script src="scripts/fruit.js"></script>
+    <script src="scripts/contact.js" defer></script>
     <title>Bountiful Foods Fresh</title>
 </head>
+
 <body class="fresh-page">
     <div class="headcontainer">
         <header>
-            <h1>Bountiful Foods</h1>
-        </header> 
+            <label for="trigger">
+              <input type="checkbox" class="trigger" id="trigger">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="menu"></span>
+              <nav>
+                <ul>
+                    <li><a class="zoom" href="index.html">Home</a></li>
+                    <li><a class="zoom" href="fresh.html">Fresh</a></li>
+                    <li><a class="zoom" href="about.html">About Us</a></li>
+                </ul> 
+              </nav>
+            </label>
+          </header>
+        <h1>
+            <img src="images/bflogo.jpg" alt="Bountiful Foods Logo" loading="lazy">
+        Bountiful Foods
+        </h1>
+        <h2>Local - Organic - Fresh</h2>
     </div>
-    <aside class="menucontainer">
-        <nav>
-            <button class="wavy" id="wavyBtn">
-                <img src="images/icon-menu.svg" alt="wavy burger menu">
-            </button>
-            <ul id="navigation" class="menu">
-                <li><br><a href="index.html">Home</a></li><br>
-                <li><a href="fresh.html">Fresh</a></li><br>
-                <li><a href="about.html">About Us</a></li><br>
-
-            </ul>
-        </nav>
-    </aside>
-    </div> 
+    <hr>
     <main class="main-fresh-container">
         <div class="fresh-hero">
             <picture class="fresh-hero-img">   
-                <img src="images/berries-3504149_1280.png" alt="fresh berries">
+                <img class="fresh-hero" src="images/berries-3504149_1280.jpg" alt="fresh berries">
             </picture>
         </div>
         <hr>
@@ -43,26 +51,143 @@
                 <h2 class="fresh-order">Create your own drink</h2>
                 <h2 class="your-drinks">Your Drink Orders</h2>
                 <fieldset>
-                    <label class="top" id="user-name">Name* <input type="text" name="user-name" required></label>
+                    <label class="top" id="user-name">Name* <input type="text" name="user-name" placeholder="Bob Smith" required></label>
                     <label class="top">Phone* <input id="phone" type="tel" name="phone" placeholder="1235551234" autocomplete="tel" required></label>
                     <label class="top">Email* <input id="email" type="email" name="email" placeholder="someone@gmail.com" autocomplete="email" required></label>
                                     
-                    <label class="top">Select a fruit*
-                        <select name="fruit1" id="fruit" class="fruit1" required>
+                    <label class="fruit">Select a fruit*
+                        <select name="fruit1" id="fruit1" class="fruit1" required>
                             <option value="">--Select--</option>
+                            <option value="">Apple</option>
+                            <option value="">Apricot</option>
+                            <option value="">Avocado</option>
+                            <option value="">Banana</option>
+                            <option value="">Blackberry</option>
+                            <option value="">Blueberry</option>
+                            <option value="">Cherry</option>
+                            <option value="">Dragonfruit</option>
+                            <option value="">Durian</option>
+                            <option value="">Feijoa</option>
+                            <option value="">Fig</option>
+                            <option value="">Gooseberry</option>
+                            <option value="">Grape</option>
+                            <option value="">Grapes</option>
+                            <option value="">Green Apple</option>
+                            <option value="">Guava</option>
+                            <option value="">Kiwi</option>
+                            <option value="">kiwifruit</option>
+                            <option value="">Lemon</option>
+                            <option value="">Lime</option>
+                            <option value="">Lingonberry</option>
+                            <option value="">Lychee</option>
+                            <option value="">Mango</option>
+                            <option value="">Melon</option>
+                            <option value="">Morus</option>
+                            <option value="">Orange</option>
+                            <option value="">Papaya</option>
+                            <option value="">Passionfruit</option>
+                            <option value="">Pear</option>
+                            <option value="">Persimmon</option>
+                            <option value="">Pineapple</option>
+                            <option value="">Pitahaya</option>
+                            <option value="">Plum</option>
+                            <option value="">Pomegrantate</option>
+                            <option value="">Raspberry</option>
+                            <option value="">Strawberry</option>
+                            <option value="">Tangerine</option>
+                            <option value="">Tomato</option>
+                            <option value="">Watermelon</option>
                         </select>
                     </label>
-                    <label class="top">Select a fruit*
-                        <select name="fruit2" id="fruit" class="fruit2">
+                    <label class="fruit">Select a fruit
+                        <select name="fruit2" id="fruit2" class="fruit2">
                             <option value="">--Select--</option>
+                            <option value="">--Select--</option>
+                            <option value="">Apple</option>
+                            <option value="">Apricot</option>
+                            <option value="">Avocado</option>
+                            <option value="">Banana</option>
+                            <option value="">Blackberry</option>
+                            <option value="">Blueberry</option>
+                            <option value="">Cherry</option>
+                            <option value="">Dragonfruit</option>
+                            <option value="">Durian</option>
+                            <option value="">Feijoa</option>
+                            <option value="">Fig</option>
+                            <option value="">Gooseberry</option>
+                            <option value="">Grape</option>
+                            <option value="">Grapes</option>
+                            <option value="">Green Apple</option>
+                            <option value="">Guava</option>
+                            <option value="">Kiwi</option>
+                            <option value="">kiwifruit</option>
+                            <option value="">Lemon</option>
+                            <option value="">Lime</option>
+                            <option value="">Lingonberry</option>
+                            <option value="">Lychee</option>
+                            <option value="">Mango</option>
+                            <option value="">Melon</option>
+                            <option value="">Morus</option>
+                            <option value="">Orange</option>
+                            <option value="">Papaya</option>
+                            <option value="">Passionfruit</option>
+                            <option value="">Pear</option>
+                            <option value="">Persimmon</option>
+                            <option value="">Pineapple</option>
+                            <option value="">Pitahaya</option>
+                            <option value="">Plum</option>
+                            <option value="">Pomegrantate</option>
+                            <option value="">Raspberry</option>
+                            <option value="">Strawberry</option>
+                            <option value="">Tangerine</option>
+                            <option value="">Tomato</option>
+                            <option value="">Watermelon</option>
                         </select>
                     </label>
-                    <label class="top">Select a fruit*
-                        <select name="fruit3" id="fruit" class="fruit3">
+                    <label class="fruit">Select a fruit
+                        <select name="fruit3" id="fruit3" class="fruit3">
                             <option value="">--Select--</option>
+                            <!-- <option value="">Apple</option>
+                            <option value="">Apricot</option>
+                            <option value="">Avocado</option>
+                            <option value="">Banana</option>
+                            <option value="">Blackberry</option>
+                            <option value="">Blueberry</option>
+                            <option value="">Cherry</option>
+                            <option value="">Dragonfruit</option>
+                            <option value="">Durian</option>
+                            <option value="">Feijoa</option>
+                            <option value="">Fig</option>
+                            <option value="">Gooseberry</option>
+                            <option value="">Grape</option>
+                            <option value="">Grapes</option>
+                            <option value="">Green Apple</option>
+                            <option value="">Guava</option>
+                            <option value="">Kiwi</option>
+                            <option value="">kiwifruit</option>
+                            <option value="">Lemon</option>
+                            <option value="">Lime</option>
+                            <option value="">Lingonberry</option>
+                            <option value="">Lychee</option>
+                            <option value="">Mango</option>
+                            <option value="">Melon</option>
+                            <option value="">Morus</option>
+                            <option value="">Orange</option>
+                            <option value="">Papaya</option>
+                            <option value="">Passionfruit</option>
+                            <option value="">Pear</option>
+                            <option value="">Persimmon</option>
+                            <option value="">Pineapple</option>
+                            <option value="">Pitahaya</option>
+                            <option value="">Plum</option>
+                            <option value="">Pomegrantate</option>
+                            <option value="">Raspberry</option>
+                            <option value="">Strawberry</option>
+                            <option value="">Tangerine</option>
+                            <option value="">Tomato</option>
+                            <option value="">Watermelon</option> -->
                         </select>
                     </label>
-
                     <label class="top">Special Instructions
                         <textarea id="comments" name="comments" cols="20" rows="4"></textarea>
                     </label>
@@ -71,7 +196,9 @@
                 </fieldset>
             </form>
             <div class="your-drinks-card">
-                <p>You have ordered <span class="order-num"> 0 </span>drinks.</p>    
+                <ul>
+                    <li>You have ordered <span class="order-num"> 0 </span>drinks.</li>
+                </ul>  
             </div>
         </div>
         <hr>
@@ -120,10 +247,51 @@
             </table>
         </div>
     </main>
-    
+    <hr>
     <footer class="footcontainer">
+        <div class="foot-logo">
+            <img class="footlogo" src="images/bflogo.jpg" alt="Bountiful Foods logo" loading="lazy">
+            <p class="footname">Bountiful Foods</p>
+        </div>       
 
+        <div class="footer-text">
+            <p class="footer-text-heading">Contact Us</p>
+            <div class="footer-text-content">
+                <p>
+                    1000 Village Way
+                    <br>
+                    Carlsbad, CA 92018
+                </p>
+                <p>
+                    <a href="mailto:info@bountifulfoods.com" target="_blank">info@bountifulfoods.com</a>
+                </p>
+                <p>
+                    <a class="attributions" href="attributions.html">Attributions</a>
+                </p>
+            </div>
+        </div>
+
+        <ul class="footer-social">
+            <li>
+                <a href="https://www.facebook.com">
+                    <img src="images/facebook.png" alt="facebook">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com">
+                    <img src="images/instagram.png" alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.pinterest.com">
+                    <img src="images/pinterest.png" alt="pinterest">
+                </a>
+            </li>
+        </ul>
+        <p class="last-update">
+            © <span id="year"></span> | Last Updated: <span id="timestamp"></span>
+        </p>
     </footer>
-    <script src="scripts/update.js"></script>
+    <script src="scripts/date.js"></script>
 </body>
 </html>

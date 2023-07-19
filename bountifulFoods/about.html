@@ -7,40 +7,48 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/menu.js" defer></script>
     <script src="scripts/contact.js" defer></script>
     <title>About Bountiful Foods</title>
 </head>
 <body>
     <div class="headcontainer">
         <header>
-            <h1>Bountiful Foods</h1>
-        </header> 
+            <label for="trigger">
+              <input type="checkbox" class="trigger" id="trigger">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="menu"></span>
+              <nav>
+                <ul>
+                    <li><a class="zoom" href="index.html">Home</a></li>
+                    <li><a class="zoom" href="fresh.html">Fresh</a></li>
+                    <li><a class="zoom" href="about.html">About Us</a></li>
+                </ul> 
+              </nav>
+            </label>
+          </header>
+        <h1>
+            <img src="images/bflogo.jpg" alt="Bountiful Foods Logo" loading="lazy">
+        Bountiful Foods
+        </h1>
+        <h2>Local - Organic - Fresh</h2>
     </div>
-    <aside class="menucontainer">
-        <nav>
-            <button class="wavy" id="wavyBtn">
-                <img src="images/icon-menu.svg" alt="wavy burger menu">
-            </button>
-            <ul id="navigation" class="menu">
-                <li><br><a href="index.html">Home</a></li><br>
-                <li><a href="fresh.html">Fresh</a></li><br>
-                <li><a href="about.html">About Us</a></li><br>
-            </ul>
-        </nav>
-    </aside>
-    </div> 
+    <hr>
     <main class="maincontainer">
 
         <div class="aboutus">
             <p>Locally sourced produce is what we are all about!  With over twenty farm partners, our customers are makeing more than just a purchase.  They are helping to create a healthy Carlsbad ecosystem.
             </p>
-            <img src="images/fresh-fruits-2305192_640.jpg" alt="fresh fruit">
+            <img class="about" src="images/fresh-fruits-2305192_640.jpg" alt="fresh fruit">
             <p>Our mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas. We are here to support you with healthy, organic foods made convenient!</p>
-            <img src="images/watermelon-2367029_640.jpg" alt="watermelon">
+            <img class="about" src="images/watermelon-2367029_640.jpg" alt="watermelon">
             <p>Founded in 2018, Southern California-based Bountiful Foods is an award-winning modern health food bar concept offering guests a delicious selection of fresh, clean and nutrient-rich juices, smoothies, açaí bowls, and healthy snacks at our flagship store in beautiful Carlsbad to our mobile food trucks found throughout San Diego, Orange and Los Angeles Counties.  
             </p>
         </div>
+        <hr>
         <div class="contactus">
             <h1>Contact Us</h1>
         </div>
@@ -48,19 +56,17 @@
             <div class="form1">
                 <h2>Contact Us</h2>
                 <div class="contactus">
-                    <h3>Address</h3>
-                    <span class="address"><a href="https://goo.gl/maps/4z1BDKRrpZjfJtek8">
-                        1000 Village Way
-                        <br>
-                        Carlsbad, CA 92018</a></span><br>
-                    <h3>Phone</h3>
-                    <a href="tel:760-456-1234" runtime_url="tel:760-456-1234" type="call" style="display: initial;" target="_blank"></a>
-                    <h3>Email</h3>
-                    <a class="email" href="mailto:Info@bountifulfoods.com">Info@bountifulfoods.com</a>
+                    <h3 class="address">Address:<br>
+                    <a class="address" href="https://goo.gl/maps/4z1BDKRrpZjfJtek8">1000 Village Way <br> Carlsbad, CA 92018</a></h3>
+                    <h3 class="address">Phone:
+                    <a class="address" href="tel:760-456-1234" runtime_url="tel:760-456-1234" type="call" style="display: initial;" target="_blank">760-456-1234</a></h3>
+                    <h3 class="address">Email:  
+                    <a class="address" class="email" href="mailto:Info@bountifulfoods.com">Info@bountifulfoods.com</a></h3>
                 </div>
             </div>
         </section>
     </main>
+    <hr>
     <footer class="footcontainer">
         <div class="foot-logo">
             <img class="footlogo" src="images/bflogo.jpg" alt="Bountiful Foods logo" loading="lazy">

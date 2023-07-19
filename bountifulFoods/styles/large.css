@@ -1,9 +1,11 @@
 /* LARGE VIEW */
 
-@media (min-width: 1238px) {
+@media screen and (min-width: 1238px) {
     /* -------- Navigation -------- */
 
-
+    .headcontainer h1 { 
+        font-size: 120px;
+    }
 
 
     /* -------- Main -------- */
@@ -43,14 +45,22 @@
         grid-column: 2/3;
     }
 
-    img.beach, img.village, .fruit {
+    img.beach, img.village {
        height: 450px;
        width: auto;
     }
 
-    .free {
-        width: 700px;
+    div.fruit.free {
+        display: flex;
+        justify-content: center;
     }
+
+    .showLg {
+        display: flex;
+        margin-top: 10px;
+        height: 300px;
+    }
+
 
     .freshcontainer {
         margin: 3em 1em;
@@ -68,9 +78,24 @@
     .fresh-card-order {
         grid-column: 2/3;
         grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
+    /* -------- Fresh Page -------- */
+
+    div.fresh-hero {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1000px;
+    }
 
 
-    /* -------- Footer -------- */
+
+
+
 }
+
+

@@ -1,10 +1,10 @@
-function toggleMenu() {
+function toggleOrder() {
 
-    document.getElementById("navigation").classList.toggle("open");
-    console.log('it works!');
+  document.getElementById("show-order").classList.toggle("open");
+  console.log('it works!');
   }
   
-const x = document.getElementById("wavyBtn")
+const x = document.getElementById("submitBtn")
 x.onclick = toggleMenu;
 
   

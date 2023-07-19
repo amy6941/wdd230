@@ -1,0 +1,67 @@
+.trigger {
+    display: none;
+}
+
+.hambuger {
+    cursor: pointer;
+    margin-right: 10px;
+    float: left;
+
+    span {
+        height: 3px;
+        width: 30px;
+        background: #ea6952;
+        display: block;
+        margin-bottom: 5px;
+        position: relative;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    
+        .trigger:checked ~ &:first-child {
+            transform: rotate(45deg);
+            top: 8px;
+        }
+    
+        .trigger:checked ~ &:last-child {
+            transform: rotate(-45deg);
+            top: -8px;
+        }
+        
+        .trigger:checked ~ &:nth-child(2) {
+            opacity: 0;
+        }
+    }
+}
+
+.menu {
+    cursor: pointer;
+}
+
+nav {
+    background-color: #0BC5B4;
+    width: 100vh;
+    padding: 30px 70px;
+    margin-top: 10px;
+    position: absolute;
+    left: -100vw;
+    box-sizing: border-box;
+    transition: left 0.3s ease-in-out;
+
+    .trigger:checked ~ & {
+        left: 0;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+            margin-bottom: 10px;
+            
+            a {
+                text-decoration: none;
+                color: #0BC5B4;
+            }
+        }
+    }
+}
